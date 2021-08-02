@@ -208,11 +208,11 @@ body {
     color: var(--white);
     font-size: 1.5rem;
     text-align: left;
-    margin: 0 0 0 1rem;
     text-decoration: underline;
     position: absolute;
-    top: 2.5rem;
+    top: 0;
     left: 1.5rem;
+
 }
 
 #score {
@@ -220,4 +220,10 @@ body {
     top: 5rem;
     left: 2.5rem;
     font-size: 2rem;
+}
+
+#question {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 1rem;
 }
