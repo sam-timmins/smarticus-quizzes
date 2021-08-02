@@ -24,6 +24,12 @@ body {
     background-color: var(--white);
 }
 
+.center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #header {
     background-color: var(--red);
     height: 7.5rem;
