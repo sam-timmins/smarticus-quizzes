@@ -125,3 +125,12 @@ body {
 #user-form label {
     font-weight: 100;
 }
+
+#user-name {
+    outline: none;
+    background-color: var(--white);
+    color: var(--grey);
+    width: 80%;
+    padding: 2px;
+    font-size: 2.5rem;
+}
