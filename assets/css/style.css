@@ -195,3 +195,12 @@ body {
     justify-content: space-evenly;
     position: fixed;
 }
+
+#close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
