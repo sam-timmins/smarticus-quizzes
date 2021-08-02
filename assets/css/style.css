@@ -194,6 +194,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     position: fixed;
+    padding: 4rem 1rem ;
 }
 
 #close {
