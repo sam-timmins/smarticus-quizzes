@@ -102,6 +102,14 @@ The colours use are explained from left to right:
 
 ### Structure
 
+I will be building my website with a mobile first approach. Using the chrome developer tools to give me the iPhone 5/SE (320px), I will use this as the smallest screen size for styling. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/ "Bootstrap").
+
+| Screen Size | Breakpoint |
+| ----------- | ---------- |
+| x-small     | <576px     |
+| small       | => 576px   |
+| medium      | => 768px   |
+| large       | => 992px   |
 
 \
 &nbsp;
