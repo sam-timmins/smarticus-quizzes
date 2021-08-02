@@ -139,3 +139,12 @@ body {
     background-color: var(--grey);
     color: var(--white);
 }
+
+#user-submit {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    color: var(--grey);
+    background-color: var(--white);
+    box-shadow: 0px 0px 20px 4px rgba(58,50,50,0.63);
+}
