@@ -51,6 +51,7 @@ Smarticus is an online quiz that allows the user to select form several catagori
 * Create a visually appealing site through choce of colours and layout.
 * Give feedback to the user on performance.
 * Have a touch of humour to make the user experience more fun.
+* Ensure that a username mush be entered in order to proceed.
 
 ### Requirements
 * Responsive design, based on mobile first.
@@ -59,6 +60,7 @@ Smarticus is an online quiz that allows the user to select form several catagori
 * Give feedback based of performance.
 
 ### Expectations
+
 
 
 \
