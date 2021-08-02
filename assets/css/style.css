@@ -64,3 +64,8 @@ body {
     justify-content: space-evenly;
     cursor: pointer;
 }
+
+.grid-odd {
+    justify-content: space-evenly;
+    cursor: pointer;
+}
