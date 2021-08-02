@@ -25,3 +25,25 @@ function handleSubmit(event) {
     let showCatagoriesGrid = document.querySelector('#main-catagory-grid');
     showCatagoriesGrid.style.display = 'grid';
 }
+
+
+/**
+ * Opens sports question and answer box and closes the catagories grid
+ */
+
+const openSportsQuestions = document.querySelector('#catagorySports');
+openSportsQuestions.addEventListener('click', sportsQuestions);
+
+function sportsQuestions(){
+    // Hide grid for catagories
+    let hideCatagories = document.querySelector('#main-catagory-grid');
+    hideCatagories.style.display='none';
+
+    // Show questions section
+    let openQuestionScreen = document.querySelector('#questions');
+    openQuestionScreen.style.display = 'block';
+
+    // Add catagory title
+    let catagoryName = document.querySelector('#quiz-catagory');
+    catagoryName.innerHTML = 'Sport';
+}
