@@ -1,3 +1,16 @@
+/* Contnets */
+/*
+    1. Global Styles
+    2. Center All
+    3. Header
+    4. Main Catagories Grid
+    
+*/
+
+
+/* 1. Global */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
@@ -24,11 +37,15 @@ body {
     background-color: var(--white);
 }
 
+/* 2. Center All */
+
 .center-all {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* 3. Header */
 
 #header {
     background-color: var(--red);
@@ -49,6 +66,8 @@ body {
     font-size: 2rem;
     margin: 0;
 }
+
+/* Main Catagories Grid */
 
 #main-catagory-grid {
     
