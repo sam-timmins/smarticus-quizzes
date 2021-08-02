@@ -115,3 +115,9 @@ body {
     padding: 2rem;
     text-align: center;
 }
+
+#user-form {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+}
