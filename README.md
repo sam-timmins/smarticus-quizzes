@@ -33,6 +33,10 @@ Smarticus is an online quiz that allows the user to select form several catagori
 # UX
 
 ## User Goals
+* Visually appealing, not cluttered with information or images.
+* Easily navigate through.
+* Medium standard of difficulty for the questions.
+* Rating on performance.
 
 ## User Stories
 
