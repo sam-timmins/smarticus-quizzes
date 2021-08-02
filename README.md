@@ -83,6 +83,21 @@ I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to aid me i
 I will use some icons to enhance the user experience for the choice of catagories, they will not be stand alone but there to accompany the text and break up te look of all text. The icons will be sourced from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
 
 ### Colours
+In order to create the colour scheme for the quiz, I used [Colourmind](http://colormind.io/). I went the the generate new website colours until I found a colour that I likes, locked it in and kept going to get my basic scheme. I decided that as this was not a complex project where lots of different colours were needed, I would only use three. The generated colour scheme can be seen [here](wireframes/colour-pallet-original.jpg). 
+
+When I checked the contrast in [WebAIM](https://webaim.org/resources/contrastchecker/ "WebAIM"). Where the two colours were gray and white, I had an instant pass on the contrast checker, the results are [here](wireframes/contrast-checker-black-on-white.jpg). However, I had some fails on the tests where the background was red and the foreground was white, the result can be seen [here](wireframes/contrast-checker-fail-white-on-red.jpg). After a small adjustment the results passed and are [here](wireframes/contrast-checker-white-on-red.jpg), I created my final pallet.
+
+\
+&nbsp;
+
+![Colour Pallet](wireframes/colour-pallet.jpg)
+
+\
+&nbsp;
+The colours use are explained from left to right:
+* #9F2323 (red) This will be the base colour that will be on the header, also for any forms or information, such as the username input and feedback sections. 
+* #F5F6F4 (white) This will be used as a background colour on the catagories grid, but primerilary as a font colour.
+* #3A3232 (grey) This will be used mostly as a background colour for the questions card but also as a font colour where the background is white.
 
 
 ### Structure
