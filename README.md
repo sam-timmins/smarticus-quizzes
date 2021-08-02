@@ -47,6 +47,10 @@ Smarticus is an online quiz that allows the user to select form several catagori
 
 
 ## Site owners Goals
+* Create an easily navigated site using a single page format.
+* Create a visually appealing site through choce of colours and layout.
+* Give feedback to the user on performance.
+* Have a touch of humour to make the user experience more fun.
 
 ### Requirements
 
