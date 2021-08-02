@@ -76,9 +76,11 @@ Smarticus is an online quiz that allows the user to select form several catagori
 
 ### Fonts
 
+I have used [Google Fonts](https://fonts.google.com/ "Google Fonts") to aid me in seclecting a suitable font. In order to keep the font for this game to a clean and simple look, I have chosen [Noto Serif](https://fonts.google.com/specimen/Noto+Serif?query=noto&preview.text=Smarticus&preview.text_type=custom#standard-styles). This is the only one that I will use as I don't feel there is enough content involved to warrent complicating the look with different fonts for headers and text.
 
 ### Icons
 
+I will use some icons to enhance the user experience for the choice of catagories, they will not be stand alone but there to accompany the text and break up te look of all text. The icons will be sourced from the [Font Awesome library](https://fontawesome.com/ "Font Awesome"). 
 
 ### Colours
 
