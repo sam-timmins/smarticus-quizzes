@@ -119,7 +119,15 @@ I will be building my website with a mobile first approach. Using the chrome dev
 
 # Wireframes
 
+In order to develop my wireframes, I have used [Balsamiq](https://balsamiq.com/wireframes/). i created the mobile verision firstly and then the tablet and desktop versions followed. As it is a requirement that the site is on one static page, I have broken my wireframes down to reflect. 
 
+The wireframes can be viewed below.
+
+[Mobile Wireframe](wireframes/mobile.png)
+
+[Tablet Wireframe](wireframes/tablet.png)
+
+[Desktop Wireframe](wireframes/desktop.png)
 
 \
 &nbsp;
@@ -152,7 +160,9 @@ I will be building my website with a mobile first approach. Using the chrome dev
 # Technologies used
 
 ## Languages
-
+* [HTML](https://en.wikipedia.org/wiki/HTML "HTML")
+* [CSS](https://en.wikipedia.org/wiki/CSS "CSS")
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Libraries & Framework
 
