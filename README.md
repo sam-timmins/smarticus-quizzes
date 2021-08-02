@@ -66,7 +66,6 @@ Smarticus is an online quiz that allows the user to select form several catagori
 * I expect feedback on performance.
 * I expect screen size not to affect the quality of my experience.
 
-
 \
 &nbsp;
 [Back to Top](#table-of-contents)
