@@ -47,3 +47,20 @@ function sportsQuestions(){
     let catagoryName = document.querySelector('#quiz-catagory');
     catagoryName.innerHTML = 'Sport';
 }
+
+/**
+ * Close the questions section and return to the catagory grid
+ */
+
+const closeQuestions = document.querySelector('#close');
+closeQuestions.addEventListener('click', closeQuestionSection);
+
+function closeQuestionSection(){
+    // Show catagories grid 
+    let showCatagories = document.querySelector('#main-catagory-grid');
+    showCatagories.style.display = 'grid';
+
+    // Close questions sction
+    let closeQuestionSection = document.querySelector('#questions');
+    closeQuestionSection.style.display = 'none';
+}
