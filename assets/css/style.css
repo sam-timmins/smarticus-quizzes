@@ -4,7 +4,7 @@
     2. Center All
     3. Header
     4. Main Catagories Grid
-    
+    5. User form
 */
 
 
@@ -67,7 +67,7 @@ body {
     margin: 0;
 }
 
-/* Main Catagories Grid */
+/* 4. Main Catagories Grid */
 
 #main-catagory-grid {
     
@@ -97,3 +97,6 @@ body {
     color: var(--white);
     font-size: 2.5rem;
 }
+
+/* 5. User form */ 
+
