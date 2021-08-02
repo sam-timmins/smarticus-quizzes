@@ -2,7 +2,9 @@
 
 
 # Goal for this Project
+"I AM SMARTICUS!"
 
+Smarticus is an online quiz that allows the user to select form several catagories and prove that they are indeed 'Smarticus' or just a big thumbs down. 
 
 # Table of Contents
 * [UX](#ux "UX")
