@@ -39,11 +39,12 @@ Smarticus is an online quiz that allows the user to select form several catagori
 * Rating on performance.
 
 ## User Stories
-* As a user, I want to have the site personalised to my user name.
+* As a user, I want to have the site personalised to my username.
 * As a user, I want to have clear options to the catagories to choose from.
 * As a user, I want to see my score progress during a quiz catagory.
-* As a user, I want to see my rating based from my score after cmpleting a catagory. 
+* As a user, I want to see my rating based on my score after completing a category. 
 * As a user, I want to exit out of a set of catagory questions and back to the main selection page.
+
 
 ## Site owners Goals
 
