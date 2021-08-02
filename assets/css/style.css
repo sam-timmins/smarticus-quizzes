@@ -121,3 +121,7 @@ body {
     justify-content: space-evenly;
     height: 60%;
 }
+
+#user-form label {
+    font-weight: 100;
+}
