@@ -165,7 +165,8 @@ The wireframes can be viewed below.
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Libraries & Framework
-
+* [Google Fonts](https://fonts.google.com/ "Google Fonts")
+* [Font Awesome library](https://fontawesome.com/ "Font Awesome")
 ## Tools
 
 
