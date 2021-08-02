@@ -60,7 +60,11 @@ Smarticus is an online quiz that allows the user to select form several catagori
 * Give feedback based of performance.
 
 ### Expectations
-
+* I expect to know that this is my game based on my username.
+* I expect that all the catagory choices lead to the correct questions.
+* I expect to be able to exit out of a catagory back to my personalised landing page.
+* I expect feedback on performance.
+* I expect screen size not to affect the quality of my experience.
 
 
 \
