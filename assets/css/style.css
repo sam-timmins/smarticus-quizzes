@@ -147,4 +147,30 @@ body {
     color: var(--grey);
     background-color: var(--white);
     box-shadow: 0px 0px 20px 4px rgba(58,50,50,0.63);
+    position: relative;
+}
+
+#user-submit:hover {
+    animation: 1s bounce forwards;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: 4px;
+    }
+    40% {
+        top: -2px;
+    }
+    60% {
+        top: 4px;
+    }
+    80% {
+        top: -2px;
+    }
+    100% {
+        top: 0px;
+    }
 }
