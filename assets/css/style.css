@@ -193,7 +193,7 @@ body {
     color: var(--white);
     flex-direction: column;
     justify-content: space-evenly;
-    position: fixed;
+    position: relative;
     padding: 4rem 1rem ;
 }
 
@@ -227,4 +227,28 @@ body {
     color: var(--white);
     font-size: 2.5rem;
     padding: 1rem;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--red);
+    width: 80%;
+    height: 6rem;
+    margin: auto;
+}
+
+.option {
+    background-color: var(--white);
+    color: var(--grey);
+    font-weight: 500;
+    padding: 1.8rem 2.5rem;
+    margin: 0;
+}
+
+.option-text {
+    color: var(--white);
+    padding: 1.5rem;
+    margin: 0;
 }
