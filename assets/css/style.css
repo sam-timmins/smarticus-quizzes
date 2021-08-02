@@ -145,10 +145,14 @@ body {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    color: var(--grey);
-    background-color: var(--white);
-    box-shadow: 0px 0px 20px 4px rgba(58,50,50,0.63);
+    color: var(--white);
+    background-color: var(--grey);
+    box-shadow: 0px 0px 20px 4px rgba(245, 246, 244, 0.63);
     position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 2px;
 }
 
 #user-submit:hover {
