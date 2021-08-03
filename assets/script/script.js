@@ -41,11 +41,11 @@ function sportsQuestions(){
 
     // Show questions section
     let openQuestionScreen = document.querySelector('#questions');
-    openQuestionScreen.style.display = 'block';
+    openQuestionScreen.style.display = 'flex';
 
     // Add catagory title
     let catagoryName = document.querySelector('#quiz-catagory');
-    catagoryName.innerHTML = 'Sport';
+    catagoryName.innerHTML = 'Smarticus:  Sport';
 }
 
 /**
