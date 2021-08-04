@@ -49,6 +49,12 @@ function sportsQuestions(){
 }
 
 /**
+ * Creates sports questions
+ */
+
+
+
+/**
  * Close the questions section and return to the catagory grid
  */
 
