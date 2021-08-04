@@ -50,7 +50,8 @@ function handleSubmit(event) {
 }
 
 /**
- * Opens sports question and answer box and closes the catagories grid
+ * Opens sports question and answer box, closes the catagories grid, adds the catagory name 
+ * into the title.
  */
 
 const openSportsQuestions = document.querySelector('#catagorySports');
@@ -67,7 +68,7 @@ function sportsQuestions(){
 }
 
 /**
- * Close the questions section and return to the catagory grid
+ * Close the questions section and returns to the catagory grid
  */
 
 const closeQuestions = document.querySelector('#close');
