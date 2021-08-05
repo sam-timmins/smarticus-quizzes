@@ -1,31 +1,39 @@
+const hideUserFormRef = document.querySelector('#user');
+const userFormRef = document.querySelector('#user-form');
+const userRef = document.querySelector('#user-name');
+const hideCatagoryGridRef = document.querySelector('#main-catagory-grid');
+const showCatagoryGridRef = document.querySelector('#main-catagory-grid');
+const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
+const openQuestionsScreenRef = document.querySelector('#questions');
+const closeQuestionsScreenRef = document.querySelector('#questions');
+const openSportsQuestionsRef = document.querySelector('#catagorySports');
+const catagoryNameRef = document.querySelector('#quiz-catagory');
+const closeQuestionsRef = document.querySelector('#close-questions');
+
+
 // Hide user form
 function hideUserForm(){
-    let hideUserForm = document.querySelector('#user');
-    hideUserForm.style.display = 'none';
+    hideUserFormRef.style.display = 'none';
 }
 
 // Hide catagories grid
 function hideCatagoriesGrid(){
-    let hide = document.querySelector('#main-catagory-grid');
-    hide.style.display='none';
+    hideCatagoryGridRef.style.display='none';
 }
 
 // Show catagories grid 
 function showCatagoriesGrid(){
-    let show = document.querySelector('#main-catagory-grid');
-    show.style.display = 'grid';
+    showCatagoryGridRef.style.display = 'grid';
 }
 
 // Show questions section
 function openQuestionScreen(){
-    let openScreen = document.querySelector('#questions');
-    openScreen.style.display = 'flex';
+    openQuestionsScreenRef.style.display = 'flex';
 }
 
 // Close questions sction
 function closeQuestionScreen(){
-    let close = document.querySelector('#questions');
-    close.style.display = 'none';
+    closeQuestionsScreenRef.style.display = 'none';
 }
 
 /**
@@ -33,35 +41,34 @@ function closeQuestionScreen(){
  * adds name to the welcome box and opens catagory grid.
  */
 
-const userForm = document.querySelector('#user-form');
-userForm.addEventListener('submit', handleSubmit);
+
+userFormRef.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
     
-    let user = document.querySelector('#user-name');
-    let welcomeDiv = document.querySelector('#welcome-person');
     let welcomeMesage = document.createElement('p');
-    welcomeMesage.innerHTML = 'Hi ' + user.value + '!';
-    welcomeDiv.insertBefore(welcomeMesage, welcomeDiv.childNodes[0]);
+    welcomeMesage.innerHTML = 'Hi ' + userRef.value + '!';
+    welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
     hideUserForm();
     showCatagoriesGrid();
 }
+
 
 /**
  * Opens sports question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
  */
 
-const openSportsQuestions = document.querySelector('#catagorySports');
-openSportsQuestions.addEventListener('click', sportsQuestions);
+
+openSportsQuestionsRef.addEventListener('click', sportsQuestions);
 
 function sportsQuestions(){
 
 // Add catagory title
-    let catagoryName = document.querySelector('#quiz-catagory');
-    catagoryName.innerHTML = 'Smarticus:  Sport';
+
+    catagoryNameRef.innerHTML = 'Smarticus:  Sport';
 
     openQuestionScreen();
     hideCatagoriesGrid();
@@ -71,8 +78,8 @@ function sportsQuestions(){
  * Close the questions section and returns to the catagory grid
  */
 
-const closeQuestions = document.querySelector('#close');
-closeQuestions.addEventListener('click', closeQuestionSection);
+
+closeQuestionsRef.addEventListener('click', closeQuestionSection);
 
 function closeQuestionSection(){
     showCatagoriesGrid()
