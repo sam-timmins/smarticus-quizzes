@@ -52,9 +52,9 @@ const closeQuestionScreen = () => {
  */
 
 
-userFormRef.addEventListener('submit', handleSubmit);
+userFormRef.addEventListener('submit', handleUserFormSubmit);
 
-function handleSubmit(event) {
+function handleUserFormSubmit(event) {
     event.preventDefault();
     
     let welcomeMesage = document.createElement('p');
