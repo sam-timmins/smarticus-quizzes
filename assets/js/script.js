@@ -11,27 +11,37 @@ const catagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 
 
-// Hide user form
+/**
+ * Hides the user form
+ */
 function hideUserForm(){
     hideUserFormRef.style.display = 'none';
 }
 
-// Hide catagories grid
+/**
+ * Hides the catagories grid
+ */
 function hideCatagoriesGrid(){
     hideCatagoryGridRef.style.display='none';
 }
 
-// Show catagories grid 
+/**
+ * Shows the catagories grid
+ */ 
 function showCatagoriesGrid(){
     showCatagoryGridRef.style.display = 'grid';
 }
 
-// Show questions section
+/**
+ * Shows the questions section
+ */
 function openQuestionScreen(){
     openQuestionsScreenRef.style.display = 'flex';
 }
 
-// Close questions sction
+/**
+ * Closes the questions sction
+ */
 function closeQuestionScreen(){
     closeQuestionsScreenRef.style.display = 'none';
 }
@@ -66,7 +76,6 @@ openSportsQuestionsRef.addEventListener('click', sportsQuestions);
 
 function sportsQuestions(){
 
-// Add catagory title
 
     catagoryNameRef.innerHTML = 'Smarticus:  Sport';
 
