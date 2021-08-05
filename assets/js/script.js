@@ -11,6 +11,7 @@ const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
 
+
 /**
  * Shows spin loader for 4seconds then displays the user form
  */
@@ -22,7 +23,6 @@ function hideSpinLoader() {
         spinLoaderRef.classList.add('spin-loader-vanish')
     }, 4000);
 }
-
 
 /**
  * Hides the user form
@@ -107,3 +107,18 @@ function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
+
+
+
+
+/**
+ * Get sports questions and create usable array
+ */
+
+const getQuestions = () => {
+    fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
+    .then(res => res.json())
+    .then(newData => console.log(newData))
+    .catch(res => console.log(res))
+}
+console.log(getQuestions())
