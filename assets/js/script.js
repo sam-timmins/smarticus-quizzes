@@ -74,7 +74,7 @@ function handleSubmit(event) {
 
 openSportsQuestionsRef.addEventListener('click', sportsQuestions);
 
-const sportsQuestions = () => {
+function sportsQuestions() {
 
 
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
@@ -90,7 +90,7 @@ const sportsQuestions = () => {
 
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 
-const closeQuestionSection = () => {
+function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
