@@ -9,7 +9,20 @@ const closeQuestionsScreenRef = document.querySelector('#questions');
 const openSportsQuestionsRef = document.querySelector('#catagorySports');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
-const spinLoader = document.querySelector('#spin-loader');
+const spinLoaderRef = document.querySelector('#spin-loader');
+
+/**
+ * Shows spin loader for 4seconds then displays the user form
+ */
+
+window.addEventListener('load', hideSpinLoader);
+function hideSpinLoader() {
+    setTimeout(() => {
+        hideUserFormRef.style.display = 'flex'
+        spinLoaderRef.classList.add('spin-loader-vanish')
+    }, 4000);
+}
+
 
 /**
  * Hides the user form

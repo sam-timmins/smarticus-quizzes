@@ -114,6 +114,7 @@ body {
     left: 0;
     padding: 2rem;
     text-align: center;
+    display: none;
 }
 
 #user-form {
