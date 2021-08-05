@@ -7,42 +7,42 @@ const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
 const openQuestionsScreenRef = document.querySelector('#questions');
 const closeQuestionsScreenRef = document.querySelector('#questions');
 const openSportsQuestionsRef = document.querySelector('#catagorySports');
-const catagoryNameRef = document.querySelector('#quiz-catagory');
+const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 
 
 /**
  * Hides the user form
  */
-function hideUserForm(){
+const hideUserForm = () => {
     hideUserFormRef.style.display = 'none';
 }
 
 /**
  * Hides the catagories grid
  */
-function hideCatagoriesGrid(){
+const hideCatagoriesGrid = () => {
     hideCatagoryGridRef.style.display='none';
 }
 
 /**
  * Shows the catagories grid
  */ 
-function showCatagoriesGrid(){
+const showCatagoriesGrid = () => {
     showCatagoryGridRef.style.display = 'grid';
 }
 
 /**
  * Shows the questions section
  */
-function openQuestionScreen(){
+const openQuestionScreen = () => {
     openQuestionsScreenRef.style.display = 'flex';
 }
 
 /**
  * Closes the questions sction
  */
-function closeQuestionScreen(){
+const closeQuestionScreen = () => {
     closeQuestionsScreenRef.style.display = 'none';
 }
 
@@ -74,10 +74,10 @@ function handleSubmit(event) {
 
 openSportsQuestionsRef.addEventListener('click', sportsQuestions);
 
-function sportsQuestions(){
+const sportsQuestions = () => {
 
 
-    catagoryNameRef.innerHTML = 'Smarticus:  Sport';
+    insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
 
     openQuestionScreen();
     hideCatagoriesGrid();
@@ -90,7 +90,7 @@ function sportsQuestions(){
 
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 
-function closeQuestionSection(){
+const closeQuestionSection = () => {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
