@@ -267,3 +267,14 @@ body {
     width: 100%;
     background-color: var(--white);
 }
+
+.spin-loader-vanish{
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
