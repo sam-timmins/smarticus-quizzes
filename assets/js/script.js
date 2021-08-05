@@ -118,7 +118,20 @@ function closeQuestionSection() {
 const getQuestions = () => {
     fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
     .then(res => res.json())
+    .then(jsonData => extractData(jsonData.results))
     .then(newData => console.log(newData))
     .catch(res => console.log(res))
 }
-console.log(getQuestions())
+
+
+const extractData = listOfQuestions => {
+    return listOfQuestions.map(item => {
+        return {
+            question:item.question,
+            correctAnswer:item.correct_answer,
+            answer:[...item.incorrect_answers, item.correct_answer]
+        }
+    })
+}
+
+getQuestions()
