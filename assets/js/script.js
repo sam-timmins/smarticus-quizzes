@@ -9,7 +9,7 @@ const closeQuestionsScreenRef = document.querySelector('#questions');
 const openSportsQuestionsRef = document.querySelector('#catagorySports');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
-
+const spinLoader = document.querySelector('#spin-loader');
 
 /**
  * Hides the user form
