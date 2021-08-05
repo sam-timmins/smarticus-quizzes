@@ -109,10 +109,8 @@ function closeQuestionSection() {
 }
 
 
-
-
 /**
- * Get sports questions and create usable array
+ * Get sports questions using API
  */
 
 const getQuestions = () => {
@@ -123,7 +121,9 @@ const getQuestions = () => {
     .catch(res => console.log(res))
 }
 
-
+/**
+ * Creates usuable array for sports questions
+ */
 const extractData = listOfQuestions => {
     return listOfQuestions.map(item => {
         return {
