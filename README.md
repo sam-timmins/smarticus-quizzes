@@ -168,7 +168,8 @@ The wireframes can be viewed below.
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
 * [Font Awesome library](https://fontawesome.com/ "Font Awesome")
 ## Tools
-
+* For the loading spinner I used [loading.io](https://loading.io/)
+* For the box shadows I used [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/)
 
 \
 &nbsp;
