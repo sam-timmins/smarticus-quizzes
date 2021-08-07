@@ -16,13 +16,12 @@ const spinLoaderRef = document.querySelector('#spin-loader');
  * Shows spin loader for 4seconds then displays the user form
  */
 
-window.addEventListener('load', hideSpinLoader);
-function hideSpinLoader() {
-    setTimeout(() => {
-        hideUserFormRef.style.display = 'flex'
-        spinLoaderRef.classList.add('spin-loader-vanish')
-    }, 4000);
-}
+document.addEventListener('DOMContentLoaded', function() {
+
+    spinLoaderRef.classList.add('spin-loader-vanish');
+    hideUserFormRef.style.display = 'flex';
+})
+
 
 /**
  * Hides the user form
