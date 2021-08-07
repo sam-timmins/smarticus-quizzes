@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     spinLoaderRef.classList.add('spin-loader-vanish');
     hideUserFormRef.style.display = 'flex';
+    userRef.focus();
 })
 
 
