@@ -61,10 +61,6 @@ const closeQuestionScreen = () => {
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
  */
-
-
-userFormRef.addEventListener('submit', handleUserFormSubmit);
-
 function handleUserFormSubmit(event) {
     event.preventDefault();
     
@@ -81,12 +77,7 @@ function handleUserFormSubmit(event) {
  * Opens sports question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
  */
-
-
-sportsQuestionsRef.addEventListener('click', sportsQuestions);
-
 function sportsQuestions() {
-
 
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
 
@@ -94,13 +85,10 @@ function sportsQuestions() {
     hideCatagoriesGrid();
 }
 
+
 /**
  * Close the questions section and returns to the catagory grid
  */
-
-
-closeQuestionsRef.addEventListener('click', closeQuestionSection);
-
 function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
@@ -109,31 +97,14 @@ function closeQuestionSection() {
 
 
 
-/**
- * Get sports questions and create usable array
- */
 
 
 
-const  getQuestions = () => {
-    fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
-    .then(res => res.json())
-    .then(jsonData => extractData(jsonData.results))
-    .then(newData => console.log(newData))
-    .catch(res => console.log(res));
-}
 
 
-const extractData = listOfQuestions => {
-    return listOfQuestions.map(item => {
-        return {
-            question:item.question,
-            correctAnswer:item.correct_answer,
-            answers:[...item.incorrect_answers, item.correct_answer]
-        }
-    })
-    
-}
 
 
-getQuestions()
+
+userFormRef.addEventListener('submit', handleUserFormSubmit);
+sportsQuestionsRef.addEventListener('click', sportsQuestions);
+closeQuestionsRef.addEventListener('click', closeQuestionSection);
