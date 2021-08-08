@@ -1,12 +1,10 @@
-const hideUserFormRef = document.querySelector('#user');
+const userSectionRef = document.querySelector('#user');
 const userFormRef = document.querySelector('#user-form');
-const userRef = document.querySelector('#user-name');
-const hideCatagoryGridRef = document.querySelector('#main-catagory-grid');
-const showCatagoryGridRef = document.querySelector('#main-catagory-grid');
+const userNameRef = document.querySelector('#user-name');
+const catagoryGridRef = document.querySelector('#main-catagory-grid');
 const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
-const openQuestionsScreenRef = document.querySelector('#questions');
-const closeQuestionsScreenRef = document.querySelector('#questions');
-const openSportsQuestionsRef = document.querySelector('#catagorySports');
+const questionsScreenRef = document.querySelector('#questions');
+const sportsQuestionsRef = document.querySelector('#catagorySports');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
@@ -19,7 +17,7 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 document.addEventListener('DOMContentLoaded', function() {
 
     spinLoaderRef.classList.add('spin-loader-vanish');
-    hideUserFormRef.style.display = 'flex';
+    userSectionRef.style.display = 'flex';
     userRef.focus();
 })
 
@@ -28,35 +26,35 @@ document.addEventListener('DOMContentLoaded', function() {
  * Hides the user form
  */
 const hideUserForm = () => {
-    hideUserFormRef.style.display = 'none';
+    userSectionRef.style.display = 'none';
 }
 
 /**
  * Hides the catagories grid
  */
 const hideCatagoriesGrid = () => {
-    hideCatagoryGridRef.style.display='none';
+    catagoryGridRef.style.display='none';
 }
 
 /**
  * Shows the catagories grid
  */ 
 const showCatagoriesGrid = () => {
-    showCatagoryGridRef.style.display = 'grid';
+    catagoryGridRef.style.display = 'grid';
 }
 
 /**
  * Shows the questions section
  */
 const openQuestionScreen = () => {
-    openQuestionsScreenRef.style.display = 'flex';
+    questionsScreenRef.style.display = 'flex';
 }
 
 /**
  * Closes the questions sction
  */
 const closeQuestionScreen = () => {
-    closeQuestionsScreenRef.style.display = 'none';
+    questionsScreenRef.style.display = 'none';
 }
 
 /**
@@ -71,7 +69,7 @@ function handleUserFormSubmit(event) {
     event.preventDefault();
     
     let welcomeMesage = document.createElement('p');
-    welcomeMesage.innerHTML = 'Hi ' + userRef.value + '!';
+    welcomeMesage.innerHTML = 'Hi ' + userNameRef.value + '!';
     welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
     hideUserForm();
@@ -85,7 +83,7 @@ function handleUserFormSubmit(event) {
  */
 
 
-openSportsQuestionsRef.addEventListener('click', sportsQuestions);
+sportsQuestionsRef.addEventListener('click', sportsQuestions);
 
 function sportsQuestions() {
 
