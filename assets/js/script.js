@@ -11,7 +11,10 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 
-
+let currentQuestion = {};
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
 
 
 /**
