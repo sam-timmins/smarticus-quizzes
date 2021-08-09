@@ -9,6 +9,7 @@ const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
+const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 
 
 
