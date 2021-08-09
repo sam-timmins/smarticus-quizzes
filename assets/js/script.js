@@ -16,6 +16,16 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
+    .then(res => {
+      return res.json()
+    })
+    .then(loadedQuestions => {
+        console.log(loadedQuestions)
+    })
+    .catch(err => {
+        console.log(err)
+    })
 
 /**
  * Shows spin loader for 4seconds then displays the user form
