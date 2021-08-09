@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     spinLoaderRef.classList.add('spin-loader-vanish');
     userSectionRef.style.display = 'flex';
-    userRef.focus();
+    userNameRef.focus();
 })
 
 
@@ -94,8 +94,21 @@ function closeQuestionSection() {
     closeQuestionScreen()
 }
 
+/**
+ * Get sports questions using API
+ */
 
+let sportsQuestionsData = [];
 
+fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
+    .then(res => {
+        return res.json();
+    })
+    .then(loadedData => {
+        sportsQuestionsData = loadedData;
+        console.log(sportsQuestionsData);
+    })
+    .catch(console.log('alert'));
 
 
 
