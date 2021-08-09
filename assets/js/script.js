@@ -8,6 +8,9 @@ const sportsQuestionsRef = document.querySelector('#catagorySports');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
+const questionRef = document.querySelector('#question');
+
+
 
 
 /**
@@ -93,23 +96,6 @@ function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
-
-/**
- * Get sports questions using API
- */
-
-let sportsQuestionsData = [];
-
-fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
-    .then(res => {
-        return res.json();
-    })
-    .then(loadedData => {
-        sportsQuestionsData = loadedData;
-        console.log(sportsQuestionsData);
-    })
-    .catch(console.log('alert'));
-
 
 
 
