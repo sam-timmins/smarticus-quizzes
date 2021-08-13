@@ -120,7 +120,7 @@ const fetchSportsQuestions = () => {
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title for science.
  */
- function scienceQuestions() {
+function scienceQuestions() {
 
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     openQuestionScreen();
@@ -153,8 +153,6 @@ const extractData = listOfQuestions => {
         }
     })
 }
-
-
 
 
 /**
