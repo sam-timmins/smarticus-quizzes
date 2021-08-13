@@ -11,26 +11,19 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 
+const maxQuestions = 10;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
+let questions = [];
 let availableQuestions = [];
 
-fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
-    .then(res => {
-      return res.json()
-    })
-    .then(loadedQuestions => {
-        console.log(loadedQuestions)
-    })
-    .catch(err => {
-        console.log(err)
-    })
+
+
 
 /**
  * Shows spin loader for 4seconds then displays the user form
  */
-
 document.addEventListener('DOMContentLoaded', function() {
 
     spinLoaderRef.classList.add('spin-loader-vanish');
@@ -110,7 +103,6 @@ function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
-
 
 
 
