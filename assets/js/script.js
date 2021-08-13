@@ -101,19 +101,6 @@ function sportsQuestions() {
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     openQuestionScreen();
     hideCatagoriesGrid();
-    fetchSportsQuestions();
-}
-
-/**
- * fetches the sports questions using API
- */
-const fetchSportsQuestions = () => {
-    fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
-    .then(res => res.json())
-    .then(jsonData => extractData(jsonData.results))
-    // Change to the function for inserting questions
-    .then(newData => console.log(newData))
-    .catch(res => console.log(res))
 }
 
 /**
@@ -125,19 +112,6 @@ function scienceQuestions() {
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     openQuestionScreen();
     hideCatagoriesGrid();
-    fetchScienceQuestions();
-}
-
-/**
- * fetches the science questions using API
- */
-const fetchScienceQuestions = () => {
-    fetch('https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple')
-    .then(res => res.json())
-    .then(jsonData => extractData(jsonData.results))
-    // Change to the function for inserting questions
-    .then(newData => console.log(newData))
-    .catch(res => console.log(res))
 }
 
 /**
@@ -162,9 +136,18 @@ const runGame = () => {
     for (let catagorySelection of catagorySelectionRef) {
         catagorySelection.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'sport') {
+                fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
+                    .then(res => res.json())
+                    .then(jsonData => extractData(jsonData.results))
+                    .then(newData => console.log(newData))
+                    .catch(res => console.log(res))
                 sportsQuestions()
             } else if (this.getAttribute('data-type') === 'science') {
-                scienceQuestions()
+                fetch('https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple')
+                    .then(res => res.json())
+                    .then(jsonData => extractData(jsonData.results))
+                    .then(newData => scienceQuestions(newData))
+                    .catch(res => console.log(res))
             } else if (this.getAttribute('data-type') === 'film') {
                 filmQuestions()
             } else if (this.getAttribute('data-type') === 'history') {
