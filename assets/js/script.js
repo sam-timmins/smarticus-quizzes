@@ -10,6 +10,7 @@ const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
+const catagorySelectionRef = document.querySelectorAll('.catagory');
 
 const maxQuestions = 10;
 let currentQuestion = {};
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     spinLoaderRef.classList.add('spin-loader-vanish');
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
+
 
 
 })
