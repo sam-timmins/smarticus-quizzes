@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     spinLoaderRef.classList.add('spin-loader-vanish');
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
+
+
 })
 
 
@@ -80,7 +82,6 @@ function handleUserFormSubmit(event) {
     hideUserForm();
     showCatagoriesGrid();
 }
-
 
 /**
  * Opens sports question and answer box, closes the catagories grid, adds the catagory name 
