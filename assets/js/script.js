@@ -20,7 +20,6 @@ let availableQuestions = [];
 
 
 
-
 /**
  * Shows spin loader for 4seconds then displays the user form
  */
@@ -90,11 +89,36 @@ function handleUserFormSubmit(event) {
 function sportsQuestions() {
 
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
-
     openQuestionScreen();
     hideCatagoriesGrid();
+    fetchSportsQuestions();
 }
 
+/**
+ * fetches the sports questions using API
+ */
+const fetchSportsQuestions = () => {
+    fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
+    .then(res => res.json())
+    .then(jsonData => extractData(jsonData.results))
+    .then(newData => console.log(newData))
+    .catch(res => console.log(res))
+}
+
+
+/**
+ * changes the API data into more user friendly look and creates an answers array using
+ * the correct and incorrect answers 
+ */
+const extractData = listOfQuestions => {
+    return listOfQuestions.map(item => {
+        return {
+            question:item.question,
+            correctAnswer:item.correct_answer,
+            answer:[...item.incorrect_answers, item.correct_answer]
+        }
+    })
+}
 
 /**
  * Close the questions section and returns to the catagory grid
@@ -103,6 +127,8 @@ function closeQuestionSection() {
     showCatagoriesGrid()
     closeQuestionScreen()
 }
+
+
 
 
 
