@@ -29,10 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     spinLoaderRef.classList.add('spin-loader-vanish');
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
-
-
-
 })
+
 
 
 /**
@@ -61,6 +59,7 @@ const showCatagoriesGrid = () => {
  */
 const openQuestionScreen = () => {
     questionsScreenRef.style.display = 'flex';
+    runGame();
 }
 
 /**
@@ -104,6 +103,7 @@ const fetchSportsQuestions = () => {
     fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
+    // Change to the function for inserting questions
     .then(newData => console.log(newData))
     .catch(res => console.log(res))
 }
@@ -131,7 +131,24 @@ function closeQuestionSection() {
     closeQuestionScreen()
 }
 
-
+const runGame = () => {
+    for (let catagorySelection of catagorySelectionRef) {
+        catagorySelection.addEventListener('click', function () {
+            if (this.getAttribute('data-type') === 'sport') {
+                sportsQuestions()
+            } else if (this.getAttribute('data-type') === 'science') {
+                scienceQuestions()
+            } else if (this.getAttribute('data-type') === 'film') {
+                filmQuestions()
+            } else if (this.getAttribute('data-type') === 'history') {
+                historyQuestions()
+            } else if (this.getAttribute('data-type') === 'animals') {
+                animalQuestions()
+            }
+        })
+            
+    }
+}
 
 
 
