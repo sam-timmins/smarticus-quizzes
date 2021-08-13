@@ -70,6 +70,14 @@ const closeQuestionScreen = () => {
 }
 
 /**
+ * Close the questions section and returns to the catagory grid
+ */
+ function closeQuestionSection() {
+    showCatagoriesGrid()
+    closeQuestionScreen()
+}
+
+/**
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
  */
@@ -108,6 +116,29 @@ const fetchSportsQuestions = () => {
     .catch(res => console.log(res))
 }
 
+/**
+ * Opens question and answer box, closes the catagories grid, adds the catagory name 
+ * into the title for science.
+ */
+ function scienceQuestions() {
+
+    insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
+    openQuestionScreen();
+    hideCatagoriesGrid();
+    fetchScienceQuestions();
+}
+
+/**
+ * fetches the science questions using API
+ */
+const fetchScienceQuestions = () => {
+    fetch('https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple')
+    .then(res => res.json())
+    .then(jsonData => extractData(jsonData.results))
+    // Change to the function for inserting questions
+    .then(newData => console.log(newData))
+    .catch(res => console.log(res))
+}
 
 /**
  * changes the API data into more user friendly look and creates an answers array using
@@ -123,14 +154,12 @@ const extractData = listOfQuestions => {
     })
 }
 
-/**
- * Close the questions section and returns to the catagory grid
- */
-function closeQuestionSection() {
-    showCatagoriesGrid()
-    closeQuestionScreen()
-}
 
+
+
+/**
+ * Main runGame loop, selecting the catagory based on relevant catagory click
+ */
 const runGame = () => {
     for (let catagorySelection of catagorySelectionRef) {
         catagorySelection.addEventListener('click', function () {
@@ -144,6 +173,8 @@ const runGame = () => {
                 historyQuestions()
             } else if (this.getAttribute('data-type') === 'animals') {
                 animalQuestions()
+            } else {
+                alert('Unknown catagory, please try again.')
             }
         })
             
