@@ -167,9 +167,18 @@ const getNewQuestion = () => {
         for (let i = 0; i < currentQuestion.answer.length; i++){
             optionsRef[i].innerHTML = currentQuestion.answer[i];
             }
+    
 }
 
+optionsRef.forEach(option => {
+    option.addEventListener('click', event => {
+        const selectedOption = event.target;
+        const selectedAnswer = selectedOption.dataset['number'];
 
+        console.log(selectedOption == selectedAnswer)
+        getNewQuestion()
+    })
+})
 
 
 
