@@ -12,7 +12,7 @@ const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 
-const maxQuestions = 10;
+const maxQuestions = 15;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -59,7 +59,6 @@ const showCatagoriesGrid = () => {
  */
 const openQuestionScreen = () => {
     questionsScreenRef.style.display = 'flex';
-    runGame();
 }
 
 /**
@@ -93,14 +92,14 @@ function handleUserFormSubmit(event) {
 }
 
 /**
- * Opens sports question and answer box, closes the catagories grid, adds the catagory name 
+ * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
  */
 function sportsQuestions() {
-
-    insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     openQuestionScreen();
     hideCatagoriesGrid();
+    insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
+
 }
 
 /**
@@ -112,6 +111,17 @@ function scienceQuestions() {
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     openQuestionScreen();
     hideCatagoriesGrid();
+}
+
+/**
+ * Using API to generate sports questions
+ */
+function getSportQuestions(){
+    fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
+    .then(res => res.json())
+    .then(jsonData => extractData(jsonData.results))
+    .then(newData =>  runSportQuestions(newData))
+    .catch(res => console.log(res))
 }
 
 /**
@@ -129,38 +139,15 @@ const extractData = listOfQuestions => {
 }
 
 
-/**
- * Main runGame loop, selecting the catagory based on relevant catagory click
- */
-const runGame = () => {
-    for (let catagorySelection of catagorySelectionRef) {
-        catagorySelection.addEventListener('click', function () {
-            if (this.getAttribute('data-type') === 'sport') {
-                fetch('https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple')
-                    .then(res => res.json())
-                    .then(jsonData => extractData(jsonData.results))
-                    .then(newData => console.log(newData))
-                    .catch(res => console.log(res))
-                sportsQuestions()
-            } else if (this.getAttribute('data-type') === 'science') {
-                fetch('https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple')
-                    .then(res => res.json())
-                    .then(jsonData => extractData(jsonData.results))
-                    .then(newData => scienceQuestions(newData))
-                    .catch(res => console.log(res))
-            } else if (this.getAttribute('data-type') === 'film') {
-                filmQuestions()
-            } else if (this.getAttribute('data-type') === 'history') {
-                historyQuestions()
-            } else if (this.getAttribute('data-type') === 'animals') {
-                animalQuestions()
-            } else {
-                alert('Unknown catagory, please try again.')
-            }
-        })
-            
-    }
-}
+getSportQuestions();
+
+
+
+
+
+
+
+
 
 
 
