@@ -60,6 +60,7 @@ const showCatagoriesGrid = () => {
  */
 const openQuestionScreen = () => {
     questionsScreenRef.style.display = 'flex';
+    score = 0;
 }
 
 /**
