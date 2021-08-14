@@ -140,7 +140,7 @@ const extractData = listOfQuestions => {
 
 
 /**
- * Create a copy of the questions array into availableQuestions and then caal the
+ * Create a copy of the questions array into availableQuestions and then call the
  * getNewQuestion function
  */
  function runQuiz(questions){
@@ -148,6 +148,20 @@ const extractData = listOfQuestions => {
     console.log(availableQuestions);
     getNewQuestion();
     }
+
+
+
+/**
+ * Increases the questionCounter by one. Gets the new question from the availableQuestions array
+ * via a random number selection and add the question text to the html
+ */
+const getNewQuestion = () => {
+    questionCounter++;
+    const questionNumber = Math.floor(Math.random() * availableQuestions.length);
+        currentQuestion = availableQuestions[questionNumber];
+        questionRef.innerHTML = currentQuestion.question;
+}
+
 
 
 getSportQuestions();
