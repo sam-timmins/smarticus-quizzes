@@ -11,6 +11,7 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const catagorySelectionRef = document.querySelectorAll('.catagory');
+const scoreRef = document.querySelector('#score');
 
 const maxQuestions = 15;
 let currentQuestion = {};
@@ -99,7 +100,7 @@ function sportsQuestions() {
     openQuestionScreen();
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
-
+    scoreRef.innerHTML = `${score} of ${maxQuestions}`;
 }
 
 /**
@@ -160,11 +161,11 @@ const getNewQuestion = () => {
     const questionNumber = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionNumber];
         questionRef.innerHTML = currentQuestion.question;
-            
+
         for (let i = 0; i < currentQuestion.answer.length; i++){
             optionsRef[i].innerHTML = currentQuestion.answer[i];
             }
-        }
+}
 
 
 
