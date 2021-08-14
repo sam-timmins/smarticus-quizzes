@@ -160,7 +160,13 @@ const getNewQuestion = () => {
     const questionNumber = Math.floor(Math.random() * availableQuestions.length);
         currentQuestion = availableQuestions[questionNumber];
         questionRef.innerHTML = currentQuestion.question;
-}
+            
+        for (let i = 0; i < currentQuestion.answer.length; i++){
+            optionsRef[i].innerHTML = currentQuestion.answer[i];
+            }
+        }
+
+
 
 
 
