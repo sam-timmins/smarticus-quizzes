@@ -103,6 +103,7 @@ function sportsQuestions() {
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `${score} of ${maxQuestions}`;
     getSportQuestions();
+    checkAnswer();
 }
 
 /**
@@ -170,16 +171,16 @@ const getNewQuestion = () => {
     
 }
 
-optionsRef.forEach(option => {
-    option.addEventListener('click', event => {
-        const selectedOption = event.target;
-        const selectedAnswer = selectedOption.dataset['number'];
+const checkAnswer = () => {
+    optionsRef.forEach(option => {
+        option.addEventListener('click', event => {
+            const selectedOption = event.target;
+            const selectedAnswer = selectedOption.dataset['number'];
 
-        console.log(selectedOption == selectedAnswer)
-        getNewQuestion()
-    })
-})
-
+            getNewQuestion()
+        });
+    });
+}
 
 
 
