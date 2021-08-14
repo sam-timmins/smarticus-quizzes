@@ -101,6 +101,7 @@ function sportsQuestions() {
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `${score} of ${maxQuestions}`;
+    getSportQuestions();
 }
 
 /**
@@ -171,7 +172,7 @@ const getNewQuestion = () => {
 
 
 
-getSportQuestions();
+
 
 
 
