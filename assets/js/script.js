@@ -175,8 +175,12 @@ const checkAnswer = () => {
     optionsRef.forEach(option => {
         option.addEventListener('click', event => {
             const selectedOption = event.target;
-            const selectedAnswer = selectedOption.dataset['number'];
-
+            const selectedAnswer = selectedOption.textContent;
+            if (selectedAnswer == currentQuestion.correctAnswer){
+                console.log('correct')
+            } else {
+                console.log('incorrect')
+            }
             getNewQuestion()
         });
     });
