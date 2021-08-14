@@ -120,7 +120,7 @@ function getSportQuestions(){
     fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
-    .then(newData =>  runSportQuestions(newData))
+    .then(newData =>  runQuiz(newData))
     .catch(res => console.log(res))
 }
 
@@ -137,6 +137,17 @@ const extractData = listOfQuestions => {
         }
     })
 }
+
+
+/**
+ * Create a copy of the questions array into availableQuestions and then caal the
+ * getNewQuestion function
+ */
+ function runQuiz(questions){
+    availableQuestions = [...questions];
+    console.log(availableQuestions);
+    getNewQuestion();
+    }
 
 
 getSportQuestions();
