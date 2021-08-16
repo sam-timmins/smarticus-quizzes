@@ -10,6 +10,7 @@ const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
+const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
 
@@ -176,9 +177,8 @@ const getNewQuestion = () => {
 }
 
 const checkAnswer = () => {
-    optionsRef.forEach(option => {
+    optionsContainerRef.forEach(option => {
         option.addEventListener('click', event => {
-            let score = 0;
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
             if (selectedAnswer == currentQuestion.correctAnswer){
