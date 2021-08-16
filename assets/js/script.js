@@ -167,6 +167,7 @@ const getNewQuestion = () => {
         //Change to add quiz complete screen
         questionsScreenRef.style.display = ('none');
         catagoryGridRef.style.display = ('grid');
+        questionCounter = 0;
     } else {
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
