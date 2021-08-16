@@ -163,18 +163,23 @@ const extractData = listOfQuestions => {
  */
 const getNewQuestion = () => {
     questionCounter++;
-    const questionNumber = Math.floor(Math.random() * availableQuestions.length);
-        currentQuestion = availableQuestions[questionNumber];
-        questionRef.innerHTML = currentQuestion.question;
+    if (questionCounter > maxQuestions){
+        //Change to add quiz complete screen
+        questionsScreenRef.style.display = ('none');
+        catagoryGridRef.style.display = ('grid');
+    } else {
+        const questionNumber = Math.floor(Math.random() * availableQuestions.length);
+            currentQuestion = availableQuestions[questionNumber];
+            questionRef.innerHTML = currentQuestion.question;
 
 
-        for (let i = 0; i < currentQuestion.answer.length; i++){
-            optionsRef[i].innerHTML = currentQuestion.answer[i];
+            for (let i = 0; i < currentQuestion.answer.length; i++){
+                optionsRef[i].innerHTML = currentQuestion.answer[i];
+                }
+            
+            availableQuestions.splice(questionNumber, 1);
+            console.log(availableQuestions)
             }
-        
-        availableQuestions.splice(questionNumber, 1);
-        console.log(availableQuestions)
-
 
 }
 
@@ -185,7 +190,7 @@ const getNewQuestion = () => {
  * before getting a new question.
  */
 const checkAnswer = () => {
-    optionsRef.forEach(option => {
+        optionsRef.forEach(option => {
         option.addEventListener('click', event => {
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
@@ -194,9 +199,10 @@ const checkAnswer = () => {
                 increaseScore();
                 selectedOption.classList.add('option-correct')
                 setTimeout(function(){
-                    selectedOption.classList.remove('option-correct')
-                    getNewQuestion()
-                }, 800)
+                selectedOption.classList.remove('option-correct')
+                getNewQuestion()
+                console.log(questionCounter);
+            }, 800)
                 
             } else {
                 console.log('incorrect')
@@ -204,13 +210,13 @@ const checkAnswer = () => {
                 setTimeout(function(){
                     selectedOption.classList.remove('option-incorrect')
                     getNewQuestion()
+                    console.log(questionCounter);
                 }, 800)
             }
-
-
         });
     });
 }
+
 
 
 /**
