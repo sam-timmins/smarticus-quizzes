@@ -99,6 +99,20 @@ The colours use are explained from left to right:
 * #F5F6F4 (white) This will be used as a background colour on the catagories grid, but primerilary as a font colour.
 * #3A3232 (grey) This will be used mostly as a background colour for the questions card but also as a font colour where the background is white.
 
+\
+&nbsp;
+
+During the building of the quiz, I realised that I required a colour to indicate if a correct answer was submitted. I will go into more detail of this in the [testing section](#testing). I again used [Colourmind](http://colormind.io/) and using my existing pallet to gain a complimentary green.
+\
+&nbsp;
+* #51855f (green) This will show when the user has selected a correct answer.
+\
+&nbsp;
+
+![Colour Pallet](wireframes/colour-green.jpg)
+
+\
+&nbsp;
 
 ### Structure
 
