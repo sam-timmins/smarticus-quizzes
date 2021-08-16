@@ -258,6 +258,16 @@ body {
     margin: 0;
 }
 
+.option-correct {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.option-incorrect {
+    background-color: var(--red);
+    color: var(--white);
+}
+
 
 /* 7. Page Loader */
 
