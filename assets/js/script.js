@@ -166,6 +166,7 @@ const getNewQuestion = () => {
         currentQuestion = availableQuestions[questionNumber];
         questionRef.innerHTML = currentQuestion.question;
 
+
         for (let i = 0; i < currentQuestion.answer.length; i++){
             optionsRef[i].innerHTML = currentQuestion.answer[i];
             }
@@ -183,6 +184,7 @@ const checkAnswer = () => {
             const selectedAnswer = selectedOption.textContent;
             if (selectedAnswer == currentQuestion.correctAnswer){
                 console.log('correct');
+                increaseScore();
             } else {
                 console.log('incorrect')
             }
@@ -193,7 +195,14 @@ const checkAnswer = () => {
 }
 
 
-
+/**
+ * Increases the score by one
+ */
+const increaseScore = num => {
+    num = 1;
+    score += num;
+    scoreRef.innerHTML = `${score} of ${maxQuestions}`;
+}
 
 
 
