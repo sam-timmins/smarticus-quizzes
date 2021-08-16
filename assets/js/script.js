@@ -15,7 +15,7 @@ const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
 
-const maxQuestions = 15;
+const maxQuestions = 10;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -179,7 +179,7 @@ const getNewQuestion = () => {
 }
 
 const checkAnswer = () => {
-    optionsContainerRef.forEach(option => {
+    optionsRef.forEach(option => {
         option.addEventListener('click', event => {
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
@@ -187,10 +187,18 @@ const checkAnswer = () => {
                 console.log('correct');
                 increaseScore();
                 selectedOption.classList.add('option-correct')
-                getNewQuestion()
+                setTimeout(function(){
+                    selectedOption.classList.remove('option-correct')
+                    getNewQuestion()
+                }, 800)
+                
             } else {
                 console.log('incorrect')
                 selectedOption.classList.add('option-incorrect')
+                setTimeout(function(){
+                    selectedOption.classList.remove('option-incorrect')
+                    getNewQuestion()
+                }, 1000)
             }
 
 
