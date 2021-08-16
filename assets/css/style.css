@@ -144,7 +144,7 @@ body {
     color: var(--white);
 }
 
-#user-submit {
+.round-button {
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
@@ -295,3 +295,18 @@ body {
 }
 
 /* 8. Results Screen */
+
+#results-screen {
+    width: 100%;
+    height: 100%;
+    background-color: var(--red);
+    color: var(--white);
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+#results-screen h2 {
+    font-size: 2.5rem;
+}
