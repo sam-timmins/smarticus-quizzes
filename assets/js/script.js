@@ -11,6 +11,7 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
+const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
 
@@ -185,11 +186,14 @@ const checkAnswer = () => {
             if (selectedAnswer == currentQuestion.correctAnswer){
                 console.log('correct');
                 increaseScore();
+                selectedOption.classList.add('option-correct')
+                getNewQuestion()
             } else {
                 console.log('incorrect')
+                selectedOption.classList.add('option-incorrect')
             }
 
-            getNewQuestion()
+
         });
     });
 }
