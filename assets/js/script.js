@@ -168,7 +168,7 @@ const getNewQuestion = () => {
         for (let i = 0; i < currentQuestion.answer.length; i++){
             optionsRef[i].innerHTML = currentQuestion.answer[i];
             }
-    
+
 }
 
 const checkAnswer = () => {
@@ -177,7 +177,7 @@ const checkAnswer = () => {
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
             if (selectedAnswer == currentQuestion.correctAnswer){
-                console.log('correct')
+                console.log('correct');
             } else {
                 console.log('incorrect')
             }
