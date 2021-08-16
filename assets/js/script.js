@@ -168,12 +168,17 @@ const getNewQuestion = () => {
         for (let i = 0; i < currentQuestion.answer.length; i++){
             optionsRef[i].innerHTML = currentQuestion.answer[i];
             }
+        
+        availableQuestions.splice(questionNumber, 1);
+        console.log(availableQuestions)
+
 
 }
 
 const checkAnswer = () => {
     optionsRef.forEach(option => {
         option.addEventListener('click', event => {
+            let score = 0;
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
             if (selectedAnswer == currentQuestion.correctAnswer){
@@ -181,6 +186,7 @@ const checkAnswer = () => {
             } else {
                 console.log('incorrect')
             }
+
             getNewQuestion()
         });
     });
