@@ -77,7 +77,7 @@ const closeQuestionScreen = () => {
 /**
  * Close the questions section and returns to the catagory grid
  */
- function closeQuestionSection() {
+const closeQuestionSection = () => {
     showCatagoriesGrid();
     closeQuestionScreen();
 }
@@ -105,7 +105,7 @@ const closeResultsScreen = () => {
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
  */
-function handleUserFormSubmit(event) {
+const handleUserFormSubmit = event => {
     event.preventDefault();
     
     let welcomeMesage = document.createElement('p');
@@ -120,7 +120,7 @@ function handleUserFormSubmit(event) {
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
  */
-function sportsQuestions() {
+const sportsQuestions = () => {
     openQuestionScreen();
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
@@ -133,7 +133,7 @@ function sportsQuestions() {
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title for science.
  */
-function scienceQuestions() {
+const scienceQuestions = () => {
     openQuestionScreen();
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
@@ -145,7 +145,7 @@ function scienceQuestions() {
 /**
  * Using API to generate science questions
  */
- function getScienceQuestions(){
+const getScienceQuestions = () => {
     fetch(`https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple`)
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
@@ -157,7 +157,7 @@ function scienceQuestions() {
 /**
  * Using API to generate sports questions
  */
-function getSportQuestions(){
+const getSportQuestions = () => {
     fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
@@ -184,11 +184,11 @@ const extractData = listOfQuestions => {
  * Create a copy of the questions array into availableQuestions and then call the
  * getNewQuestion function
  */
- function runQuiz(questions){
+const runQuiz = (questions) => {
     availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
-    }
+}
 
 
 
