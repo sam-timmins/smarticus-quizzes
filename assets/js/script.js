@@ -142,6 +142,18 @@ function scienceQuestions() {
 }
 
 /**
+ * Using API to generate science questions
+ */
+ function getScienceQuestions(){
+    fetch(`https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple`)
+    .then(res => res.json())
+    .then(jsonData => extractData(jsonData.results))
+    .then(newData =>  runQuiz(newData))
+    .catch(res => console.log(res))
+}
+
+
+/**
  * Using API to generate sports questions
  */
 function getSportQuestions(){
