@@ -313,3 +313,7 @@ body {
 #results-screen h2 {
     font-size: 2.5rem;
 }
+
+#results-screen p {
+    font-size: 3rem;
+}

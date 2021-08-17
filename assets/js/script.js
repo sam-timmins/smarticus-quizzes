@@ -32,7 +32,6 @@ let availableQuestions = [];
  * Shows spin loader until DOM is loaded then displays the user form
  */
 document.addEventListener('DOMContentLoaded', function() {
-
     spinLoaderRef.classList.add('spin-loader-vanish');
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
@@ -199,7 +198,6 @@ const getNewQuestion = () => {
             availableQuestions.splice(questionNumber, 1);
             console.log(availableQuestions)
             }
-
 }
 
 
@@ -221,8 +219,7 @@ const checkAnswer = () => {
                     selectedOption.classList.remove('option-correct')
                     getNewQuestion()
                     console.log(questionCounter);
-                }, 800)
-                
+                }, 800)     
             } else {
                 console.log('incorrect')
                 selectedOption.classList.add('option-incorrect')
@@ -252,11 +249,6 @@ const displayResults = () => {
     resultsUserRef.innerHTML = userNameRef.value;
     resultsScoreRef.innerHTML = score;
 }
-
-
-
-
-
 
 
 
