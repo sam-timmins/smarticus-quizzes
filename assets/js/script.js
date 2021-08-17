@@ -25,7 +25,7 @@ let availableQuestions = [];
 
 
 /**
- * Shows spin loader for 4seconds then displays the user form
+ * Shows spin loader until DOM is loaded then displays the user form
  */
 document.addEventListener('DOMContentLoaded', function() {
 
