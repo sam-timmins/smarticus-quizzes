@@ -103,7 +103,7 @@ function sportsQuestions() {
     openQuestionScreen();
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
-    scoreRef.innerHTML = `${score} of ${maxQuestions}`;
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getSportQuestions();
     checkAnswer();
 }
@@ -226,7 +226,7 @@ const checkAnswer = () => {
 const increaseScore = num => {
     num = 1;
     score += num;
-    scoreRef.innerHTML = `${score} of ${maxQuestions}`;
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
 
