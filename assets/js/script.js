@@ -16,6 +16,7 @@ const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
 const resultsScreenRef = document.querySelector('#results-screen');
 const resultsButtonRef = document.querySelector('#results-button');
+const resultsUserRef = document.querySelector('#results-user');
 
 const maxQuestions = 2;
 let currentQuestion = {};
@@ -35,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
 })
-
-
 
 /**
  * Hides the user form
@@ -88,6 +87,7 @@ const closeQuestionScreen = () => {
 const openResultsScreen = () => {
     closeQuestionScreen();
     resultsScreenRef.style.display = 'flex';
+    displayResults();
 }
 
 /**
@@ -234,8 +234,6 @@ const checkAnswer = () => {
     });
 }
 
-
-
 /**
  * Increases the score by one
  */
@@ -245,7 +243,9 @@ const increaseScore = num => {
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
-
+const displayResults = () => {
+    resultsUserRef.innerHTML = userNameRef.value;
+}
 
 
 
