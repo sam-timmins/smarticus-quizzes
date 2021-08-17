@@ -15,8 +15,9 @@ const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
 const resultsScreenRef = document.querySelector('#results-screen');
+const resultsButtonRef = document.querySelector('#results-button');
 
-const maxQuestions = 10;
+const maxQuestions = 2;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -81,13 +82,20 @@ const closeQuestionScreen = () => {
     closeQuestionScreen();
 }
 
-
 /**
  * Opens the results screen and closes the question screen
  */
 const openResultsScreen = () => {
     closeQuestionScreen();
     resultsScreenRef.style.display = 'flex';
+}
+
+/**
+ * 
+ */
+const closeResultsScreen = () => {
+    resultsScreenRef.style.display = 'none';
+    showCatagoriesGrid();
 }
 
 /**
@@ -254,3 +262,4 @@ const increaseScore = num => {
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 sportsQuestionsRef.addEventListener('click', sportsQuestions);
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
+resultsButtonRef.addEventListener('click', closeResultsScreen);
