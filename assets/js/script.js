@@ -81,6 +81,10 @@ const closeQuestionScreen = () => {
     closeQuestionScreen();
 }
 
+
+/**
+ * Opens the results screen and closes the question screen
+ */
 const openResultsScreen = () => {
     closeQuestionScreen();
     resultsScreenRef.style.display = 'flex';
