@@ -97,6 +97,8 @@ const openResultsScreen = () => {
 const closeResultsScreen = () => {
     resultsScreenRef.style.display = 'none';
     showCatagoriesGrid();
+    score = 0;
+    questionCounter = 0;
 }
 
 /**
@@ -184,7 +186,6 @@ const getNewQuestion = () => {
     questionCounter++;
     if (questionCounter > maxQuestions){
         openResultsScreen();
-        questionCounter = 0;
     } else {
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
@@ -217,10 +218,10 @@ const checkAnswer = () => {
                 increaseScore();
                 selectedOption.classList.add('option-correct')
                 setTimeout(function(){
-                selectedOption.classList.remove('option-correct')
-                getNewQuestion()
-                console.log(questionCounter);
-            }, 800)
+                    selectedOption.classList.remove('option-correct')
+                    getNewQuestion()
+                    console.log(questionCounter);
+                }, 800)
                 
             } else {
                 console.log('incorrect')
