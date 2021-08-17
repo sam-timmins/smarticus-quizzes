@@ -17,6 +17,7 @@ const scoreRef = document.querySelector('#score');
 const resultsScreenRef = document.querySelector('#results-screen');
 const resultsButtonRef = document.querySelector('#results-button');
 const resultsUserRef = document.querySelector('#results-user');
+const resultsScoreRef = document.querySelector('#results-score');
 
 const maxQuestions = 2;
 let currentQuestion = {};
@@ -243,8 +244,12 @@ const increaseScore = num => {
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
+/**
+ * 
+ */
 const displayResults = () => {
     resultsUserRef.innerHTML = userNameRef.value;
+    resultsScoreRef.innerHTML = score;
 }
 
 
