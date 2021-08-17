@@ -5,6 +5,7 @@ const catagoryGridRef = document.querySelector('#main-catagory-grid');
 const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
 const questionsScreenRef = document.querySelector('#questions');
 const sportsQuestionsRef = document.querySelector('#catagorySports');
+const scienceQuestionsRef = document.querySelector('#catagoryScience');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const spinLoaderRef = document.querySelector('#spin-loader');
@@ -137,7 +138,7 @@ function scienceQuestions() {
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-    getSportQuestions();
+    getScienceQuestions();
     checkAnswer();
 }
 
@@ -280,5 +281,6 @@ const displayResults = () => {
 
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 sportsQuestionsRef.addEventListener('click', sportsQuestions);
+scienceQuestionsRef.addEventListener('click', scienceQuestions);
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
