@@ -310,10 +310,7 @@ body {
     left: 0;
 }
 
-#results-screen h2 {
+#results-screen h2, #results-screen p {
     font-size: 2.5rem;
-}
-
-#results-screen p {
-    font-size: 3rem;
+    text-align: center;
 }
