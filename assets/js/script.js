@@ -14,6 +14,7 @@ const optionsContainerRef = Array.from(document.querySelectorAll('.options-conta
 const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
+const resultsScreenRef = document.querySelector('#results-screen');
 
 const maxQuestions = 10;
 let currentQuestion = {};
