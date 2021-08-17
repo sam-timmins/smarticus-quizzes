@@ -246,8 +246,15 @@ const increaseScore = num => {
  * Adds the username and score to the results screen
  */
 const displayResults = () => {
-    resultsUserRef.innerHTML = userNameRef.value;
-    resultsScoreRef.innerHTML = score;
+    if (score >= 7){
+        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus.`;
+    } else if (score >= 4) {
+        resultsUserRef.innerHTML = `${userNameRef.value}, that was not too bad...icus.`;
+    } else {
+        resultsUserRef.innerHTML = `${userNameRef.value}, maybe try another catagory...`;
+    }
+    
+    resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
 
