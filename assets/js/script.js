@@ -1,25 +1,30 @@
+// Spin loader
+const spinLoaderRef = document.querySelector('#spin-loader');
+// User Form
 const userSectionRef = document.querySelector('#user');
 const userFormRef = document.querySelector('#user-form');
 const userNameRef = document.querySelector('#user-name');
+// Main catagory grid
 const catagoryGridRef = document.querySelector('#main-catagory-grid');
 const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
-const questionsScreenRef = document.querySelector('#questions');
 const sportsQuestionsRef = document.querySelector('#catagorySports');
 const scienceQuestionsRef = document.querySelector('#catagoryScience');
+// Question screen
+const questionsScreenRef = document.querySelector('#questions');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
 const closeQuestionsRef = document.querySelector('#close-questions');
-const spinLoaderRef = document.querySelector('#spin-loader');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
+// Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
 const resultsButtonRef = document.querySelector('#results-button');
 const resultsUserRef = document.querySelector('#results-user');
 const resultsScoreRef = document.querySelector('#results-score');
-
+// Game variables
 const maxQuestions = 10;
 let currentQuestion = {};
 let score = 0;
