@@ -77,8 +77,13 @@ const closeQuestionScreen = () => {
  * Close the questions section and returns to the catagory grid
  */
  function closeQuestionSection() {
-    showCatagoriesGrid()
-    closeQuestionScreen()
+    showCatagoriesGrid();
+    closeQuestionScreen();
+}
+
+const openResultsScreen = () => {
+    closeQuestionScreen();
+    resultsScreenRef.style.display = 'flex';
 }
 
 /**
@@ -165,9 +170,7 @@ const extractData = listOfQuestions => {
 const getNewQuestion = () => {
     questionCounter++;
     if (questionCounter > maxQuestions){
-        //Change to add quiz complete screen
-        questionsScreenRef.style.display = ('none');
-        catagoryGridRef.style.display = ('grid');
+        openResultsScreen();
         questionCounter = 0;
     } else {
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);

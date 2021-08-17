@@ -305,6 +305,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #results-screen h2 {
