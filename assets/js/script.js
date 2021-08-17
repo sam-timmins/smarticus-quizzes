@@ -108,7 +108,7 @@ function handleUserFormSubmit(event) {
     event.preventDefault();
     
     let welcomeMesage = document.createElement('p');
-    welcomeMesage.innerHTML = 'Hi ' + userNameRef.value + '!';
+    welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
     welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
     hideUserForm();
@@ -133,10 +133,12 @@ function sportsQuestions() {
  * into the title for science.
  */
 function scienceQuestions() {
-
-    insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     openQuestionScreen();
     hideCatagoriesGrid();
+    insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+    getSportQuestions();
+    checkAnswer();
 }
 
 /**
