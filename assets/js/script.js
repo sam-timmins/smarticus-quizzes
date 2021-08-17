@@ -19,7 +19,7 @@ const resultsButtonRef = document.querySelector('#results-button');
 const resultsUserRef = document.querySelector('#results-user');
 const resultsScoreRef = document.querySelector('#results-score');
 
-const maxQuestions = 2;
+const maxQuestions = 10;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -245,7 +245,7 @@ const increaseScore = num => {
 }
 
 /**
- * 
+ * Adds the username and score to the results screen
  */
 const displayResults = () => {
     resultsUserRef.innerHTML = userNameRef.value;
