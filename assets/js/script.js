@@ -69,7 +69,6 @@ const showCatagoriesGrid = () => {
  */
 const openQuestionScreen = () => {
     questionsScreenRef.style.display = 'flex';
-    score = 0;
 }
 
 /**
@@ -102,8 +101,6 @@ const openResultsScreen = () => {
 const closeResultsScreen = () => {
     resultsScreenRef.style.display = 'none';
     showCatagoriesGrid();
-    score = 0;
-    questionCounter = 0;
 }
 
 /**
