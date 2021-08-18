@@ -210,7 +210,7 @@ const getNewQuestion = () => {
             currentQuestion = availableQuestions[questionNumber];
             questionRef.innerHTML = currentQuestion.question;
 
-
+            currentQuestion.answer.sort((a,b) => 0.5 - Math.random());
             for (let i = 0; i < currentQuestion.answer.length; i++){
                 optionsRef[i].innerHTML = currentQuestion.answer[i];
                 }
