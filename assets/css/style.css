@@ -237,7 +237,7 @@ body {
     align-items: center;
     border: 1px solid var(--red);
     width: 80%;
-    height: 6rem;
+    height: auto;
     margin: auto;
 }
 
