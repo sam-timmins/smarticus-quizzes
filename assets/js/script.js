@@ -158,7 +158,6 @@ const getScienceQuestions = () => {
     .catch(res => console.log(res))
 }
 
-
 /**
  * Using API to generate sports questions
  */
@@ -184,7 +183,6 @@ const extractData = listOfQuestions => {
     })
 }
 
-
 /**
  * Create a copy of the questions array into availableQuestions and then call the
  * getNewQuestion function
@@ -194,8 +192,6 @@ const runQuiz = (questions) => {
     console.log(availableQuestions);
     getNewQuestion();
 }
-
-
 
 /**
  * Increases the questionCounter by one. Gets the new question from the availableQuestions array
@@ -210,7 +206,7 @@ const getNewQuestion = () => {
             currentQuestion = availableQuestions[questionNumber];
             questionRef.innerHTML = currentQuestion.question;
 
-            currentQuestion.answer.sort((a,b) => 0.5 - Math.random());
+            currentQuestion.answer.sort(() => 0.5 - Math.random());
             for (let i = 0; i < currentQuestion.answer.length; i++){
                 optionsRef[i].innerHTML = currentQuestion.answer[i];
                 }
@@ -219,7 +215,6 @@ const getNewQuestion = () => {
             console.log(availableQuestions)
             }
 }
-
 
 /**
  * Checks answers when they are clicked on. Adds to the score for a correct answer, 
@@ -241,8 +236,9 @@ const checkAnswer = () => {
                     console.log(questionCounter);
                 }, 800)     
             } else {
-                console.log('incorrect')
+                console.log('incorrect');
                 selectedOption.classList.add('option-incorrect')
+
                 setTimeout(function(){
                     selectedOption.classList.remove('option-incorrect')
                     getNewQuestion()
