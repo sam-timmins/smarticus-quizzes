@@ -239,9 +239,8 @@ const checkAnswer = () => {
 /**
  * Increases the score by one
  */
-const increaseScore = num => {
-    num = 1;
-    score += num;
+const increaseScore = () => {
+    score ++;
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
