@@ -127,7 +127,7 @@ const sportsQuestions = () => {
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-    getSportQuestions();
+    getQuestions(21);
     checkAnswer();
 }
 
@@ -158,8 +158,8 @@ const getScienceQuestions = () => {
 /**
  * Using API to generate sports questions
  */
-const getSportQuestions = () => {
-    fetch(`https://opentdb.com/api.php?amount=15&category=21&difficulty=medium&type=multiple`)
+const getQuestions = (questionId) => {
+    fetch(`https://opentdb.com/api.php?amount=15&category=${questionId}&difficulty=medium&type=multiple`)
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
     .then(newData =>  runQuiz(newData))
