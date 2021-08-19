@@ -162,6 +162,7 @@ const getQuestions = (questionId) => {
 const extractData = listOfQuestions => {
     return listOfQuestions.map(item => {
         return {
+            category:item.category,
             question:item.question,
             correctAnswer:item.correct_answer,
             answer:[...item.incorrect_answers, item.correct_answer]
