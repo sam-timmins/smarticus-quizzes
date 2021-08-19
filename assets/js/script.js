@@ -140,19 +140,8 @@ const scienceQuestions = () => {
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-    getScienceQuestions();
+    getQuestions(17);
     checkAnswer();
-}
-
-/**
- * Using API to generate science questions
- */
-const getScienceQuestions = () => {
-    fetch(`https://opentdb.com/api.php?amount=15&category=17&difficulty=medium&type=multiple`)
-    .then(res => res.json())
-    .then(jsonData => extractData(jsonData.results))
-    .then(newData =>  runQuiz(newData))
-    .catch(res => console.log(res))
 }
 
 /**
