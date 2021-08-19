@@ -101,6 +101,7 @@ const openResultsScreen = () => {
 const closeResultsScreen = () => {
     resultsScreenRef.style.display = 'none';
     showCatagoriesGrid();
+    questionCounter = 0;
 }
 
 /**
