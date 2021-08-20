@@ -124,6 +124,7 @@ I will be building my website with a mobile first approach. Using the chrome dev
 | small       | => 576px   |
 | medium      | => 768px   |
 | large       | => 992px   |
+| x-large     | => 1200px  |
 
 \
 &nbsp;
