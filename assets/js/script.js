@@ -126,6 +126,7 @@ const sportsQuestions = () => {
  * into the title for science.
  */
 const scienceQuestions = () => {
+    handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
