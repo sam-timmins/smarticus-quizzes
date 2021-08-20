@@ -384,4 +384,8 @@ body {
         width: 50%;
         font-size: 2rem;
     }
+
+    #question {
+        font-size: 2.5rem;
+    }
 }
