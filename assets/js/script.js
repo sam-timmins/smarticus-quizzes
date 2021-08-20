@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /**
- * Close the questions section and returns to the catagory grid
+ * Close the questions section and returns to the catagory grid, 
+ * also resets score and questionCounters
  */
 const closeQuestionSection = () => {
     handleScreenDisplay('grid', catagoryGridRef);
