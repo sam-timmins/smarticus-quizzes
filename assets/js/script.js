@@ -46,7 +46,7 @@ let availableQuestions = [];
  */
 document.addEventListener('DOMContentLoaded', function() {
     spinLoaderRef.classList.add('spin-loader-vanish');
-    userSectionRef.style.display = 'flex';
+    handleScreenDisplay('flex', userSectionRef);
     userNameRef.focus();
 })
 
