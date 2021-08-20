@@ -134,7 +134,7 @@ const handleUserFormSubmit = event => {
     welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
     handleScreenDisplay('none', userSectionRef);
-    showCatagoriesGrid();
+    handleScreenDisplay('grid', catagoryGridRef)
 }
 
 /**
