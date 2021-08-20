@@ -121,7 +121,6 @@ const sportsQuestions = () => {
     handleScreenDisplay('none', catagoryGridRef)
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-    questionNumber.innerHTML = `Quest: ${questionCounter}`;
     getQuestions(21);
     checkAnswer();
 }
@@ -149,6 +148,7 @@ const scienceQuestions = () => {
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Film';
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(11);
     checkAnswer();
 }
@@ -196,6 +196,7 @@ const runQuiz = (questions) => {
  */
 const getNewQuestion = () => {
     questionCounter++;
+    questionNumberRef.innerHTML = `Question: ${questionCounter}`;
     if (questionCounter > maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
