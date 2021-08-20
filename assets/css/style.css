@@ -322,6 +322,7 @@ body {
 @media (min-width: 768px) {
     #main-catagory-grid {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 24rem;
     }
 
     .catagory-grid-item1 {
