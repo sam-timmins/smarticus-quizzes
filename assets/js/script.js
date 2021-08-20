@@ -163,7 +163,6 @@ const extractData = listOfQuestions => {
  */
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
-    console.log(availableQuestions);
     getNewQuestion();
 }
 
