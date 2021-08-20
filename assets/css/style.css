@@ -323,4 +323,10 @@ body {
     #main-catagory-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .catagory-grid-item1 {
+        grid-area: 1 / 1 / 1 / span 2;
+    }
+
+    
 }
