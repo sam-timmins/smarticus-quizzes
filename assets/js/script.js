@@ -56,8 +56,8 @@ const closeQuestionSection = () => {
  * 
  */
 const closeResultsScreen = () => {
-    resultsScreenRef.style.display = 'none';
-    showCatagoriesGrid();
+    handleScreenDisplay('grid', catagoryGridRef);
+    handleScreenDisplay('none', resultsScreenRef);
     questionCounter = 0;
     score = 0;
 }
