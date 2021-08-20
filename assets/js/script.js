@@ -48,8 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
  * Close the questions section and returns to the catagory grid
  */
 const closeQuestionSection = () => {
-    showCatagoriesGrid();
-    closeQuestionScreen();
+    handleScreenDisplay('grid', catagoryGridRef);
+    handleScreenDisplay('none', questionsScreenRef);
+    resetCounters();
 }
 
 /**
@@ -58,8 +59,7 @@ const closeQuestionSection = () => {
 const closeResultsScreen = () => {
     handleScreenDisplay('grid', catagoryGridRef);
     handleScreenDisplay('none', resultsScreenRef);
-    questionCounter = 0;
-    score = 0;
+    resetCounters();
 }
 
 const handleScreenDisplay = (displayProperty, htmlRef) => {
