@@ -333,3 +333,11 @@ body {
         grid-area: 3 / 2 / 4 / 3;
     }
 }
+
+@media (min-width: 992px) {
+    #main-catagory-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 24rem;
+    }  
+
+}
