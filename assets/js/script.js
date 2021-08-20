@@ -141,6 +141,7 @@ const scienceQuestions = () => {
  * into the title for film.
  */
  const filmQuestions = () => {
+    handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Film';
