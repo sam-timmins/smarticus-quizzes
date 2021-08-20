@@ -346,4 +346,8 @@ body {
         grid-area: 1 / 1 / 1 / span 3;
     }
 
+    .catagory-grid-item4 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
 }
