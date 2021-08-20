@@ -382,5 +382,6 @@ body {
 
     .options-container {
         width: 50%;
+        font-size: 2rem;
     }
 }
