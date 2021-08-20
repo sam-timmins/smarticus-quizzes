@@ -59,7 +59,7 @@ body {
     background-color: var(--red);
     height: 7.5rem;
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
