@@ -1,14 +1,17 @@
 // Spin loader
 const spinLoaderRef = document.querySelector('#spin-loader');
+
 // User Form
 const userSectionRef = document.querySelector('#user');
 const userFormRef = document.querySelector('#user-form');
 const userNameRef = document.querySelector('#user-name');
+
 // Main catagory grid
 const catagoryGridRef = document.querySelector('#main-catagory-grid');
 const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
 const sportsQuestionsRef = document.querySelector('#catagorySports');
 const scienceQuestionsRef = document.querySelector('#catagoryScience');
+
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
 const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
@@ -19,11 +22,13 @@ const optionsContainerRef = Array.from(document.querySelectorAll('.options-conta
 const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
+
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
 const resultsButtonRef = document.querySelector('#results-button');
 const resultsUserRef = document.querySelector('#results-user');
 const resultsScoreRef = document.querySelector('#results-score');
+
 // Game variables
 const maxQuestions = 10;
 let currentQuestion = {};
@@ -31,8 +36,6 @@ let score = 0;
 let questionCounter = 0;
 let questions = [];
 let availableQuestions = [];
-
-
 
 /**
  * Shows spin loader until DOM is loaded then displays the user form
@@ -42,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     userSectionRef.style.display = 'flex';
     userNameRef.focus();
 })
-
 
 /**
  * Close the questions section and returns to the catagory grid, 
@@ -64,6 +66,11 @@ const closeResultsScreen = () => {
     resetCounters();
 }
 
+/**
+ * Changes the css display property of the html property
+ * @param {''} displayProperty refers to the display property of the specific html element 
+ * @param {''} htmlRef refers to the const referance at the top of script.js
+ */
 const handleScreenDisplay = (displayProperty, htmlRef) => {
     switch (displayProperty) {
         case 'none':
