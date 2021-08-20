@@ -112,6 +112,7 @@ const handleUserFormSubmit = event => {
  * into the title.
  */
 const sportsQuestions = () => {
+    handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef)
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
