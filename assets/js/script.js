@@ -104,10 +104,6 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('grid', catagoryGridRef)
 }
 
-const catagories = () => {
-    ['Sport', 'Science', 'Film', 'History', 'Animals', 'Geography']
-} 
-
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
