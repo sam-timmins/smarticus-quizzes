@@ -331,8 +331,6 @@ body {
         grid-auto-rows: auto;
     }
 
-
-
     .catagory-grid-item1 {
         grid-area: 1 / 1 / 1 / span 2;
     }
@@ -347,7 +345,6 @@ body {
 @media (min-width: 992px) {
     #main-catagory-grid {
         grid-template-columns: 1fr 1fr 1fr;
-
     } 
     
     .catagory-grid-item1 {
@@ -412,5 +409,9 @@ body {
 
     #results-screen p {
         font-size: 3rem;
+    }
+
+    #main-catagory-grid div p {
+        font-size: 4rem;
     }
 }
