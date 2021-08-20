@@ -193,7 +193,8 @@ The wireframes can be viewed below.
 &nbsp;
 
 # Testing
-
+## Layout
+During the building of the quiz, I changed my design layout slightly from my initial wireframes design. I felt that the inclusion of a footer restricted the user’s ability to quickly and cleanly play the game. Instead of all the option boxes being within the screen height, the user would have had to scroll in order to see option D. Along with the being able to include the __Smarticus__ name on every page so the user doesn't loose contact, I felt that it was a correct design choise to omit the footer.
 
 \
 &nbsp;
