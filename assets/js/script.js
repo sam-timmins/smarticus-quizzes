@@ -11,6 +11,7 @@ const catagoryGridRef = document.querySelector('#main-catagory-grid');
 const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
 const sportsQuestionsRef = document.querySelector('#catagorySports');
 const scienceQuestionsRef = document.querySelector('#catagoryScience');
+const filmQuestionsRef = document.querySelector('#catagoryFilm');
 
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
