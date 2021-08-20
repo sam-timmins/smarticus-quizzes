@@ -317,9 +317,13 @@ body {
 
 @media (min-width: 768px) {
     #main-catagory-grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 24rem;
-        height: 86.2rem;
+        grid-auto-rows: auto;
     }
 
     .catagory-grid-item1 {
@@ -336,7 +340,7 @@ body {
 @media (min-width: 992px) {
     #main-catagory-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 24rem;
+
     } 
     
     .catagory-grid-item1 {
