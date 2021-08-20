@@ -181,14 +181,11 @@ const getNewQuestion = () => {
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
             questionRef.innerHTML = currentQuestion.question;
-
             currentQuestion.answer.sort(() => 0.5 - Math.random());
             for (let i = 0; i < currentQuestion.answer.length; i++){
                 optionsRef[i].innerHTML = currentQuestion.answer[i];
-                }
-            
+                }          
             availableQuestions.splice(questionNumber, 1);
-            console.log(availableQuestions)
             }
 }
 
