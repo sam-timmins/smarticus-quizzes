@@ -110,6 +110,15 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
         case 'none':
             htmlRef.style.display = 'none';
             break;
+        case 'flex':
+            htmlRef.style.display = 'flex';
+            break;
+        case 'grid':
+            htmlRef.style.display = 'grid';
+            break;
+        default: 
+            console.log('Display not recognised');
+        break
     }
 }
 
