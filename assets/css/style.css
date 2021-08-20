@@ -237,6 +237,13 @@ body {
     padding: 1rem;
 }
 
+#question-number {
+    position: absolute;
+    top: 4rem;
+    font-size: 2rem;
+    right: 2rem;
+}
+
 .options-container {
     display: flex;
     flex-direction: row;
