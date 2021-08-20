@@ -26,6 +26,7 @@ const optionsContainerRef = Array.from(document.querySelectorAll('.options-conta
 const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
+const questionNumber = document.querySelector('#question-number');
 
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
