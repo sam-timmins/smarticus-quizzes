@@ -203,22 +203,17 @@ const checkAnswer = () => {
             const selectedOption = event.target;
             const selectedAnswer = selectedOption.textContent;
             if (selectedAnswer == currentQuestion.correctAnswer){
-                console.log('correct');
                 increaseScore();
                 selectedOption.classList.add('option-correct')
                 setTimeout(function(){
                     selectedOption.classList.remove('option-correct')
                     getNewQuestion()
-                    console.log(questionCounter);
                 }, 800)     
             } else {
-                console.log('incorrect');
                 selectedOption.classList.add('option-incorrect')
-
                 setTimeout(function(){
                     selectedOption.classList.remove('option-incorrect')
                     getNewQuestion()
-                    console.log(questionCounter);
                 }, 800)
             }
         });
