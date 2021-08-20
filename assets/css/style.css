@@ -379,4 +379,8 @@ body {
     #score {
         top: 6rem;
     }
+
+    .options-container {
+        width: 50%;
+    }
 }
