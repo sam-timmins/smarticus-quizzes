@@ -239,6 +239,14 @@ const displayResults = () => {
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
+/**
+ * Resets the score and the question counter
+ */
+
+const resetCounters = () => {
+    score = 0;
+    questionCounter = 0;
+}
 
 
 
