@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
  * also resets score and questionCounters
  */
 const closeQuestionSection = () => {
+    handleScreenDisplay('flex', headerRef);
     handleScreenDisplay('grid', catagoryGridRef);
     handleScreenDisplay('none', questionsScreenRef);
     resetCounters();
