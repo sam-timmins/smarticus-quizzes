@@ -350,4 +350,8 @@ body {
         grid-area: 2 / 3 / 3 / 4;
     }
 
+    .options-container {
+        width: 60%;
+    }
+
 }
