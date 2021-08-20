@@ -105,6 +105,14 @@ const closeResultsScreen = () => {
     score = 0;
 }
 
+const handleScreenDisplay = (displayProperty, htmlRef) => {
+    switch (displayProperty) {
+        case 'none':
+            htmlRef.style.display = 'none';
+            break;
+    }
+}
+
 /**
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
@@ -116,7 +124,7 @@ const handleUserFormSubmit = event => {
     welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
     welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
-    hideUserForm();
+    handleScreenDisplay('none', userSectionRef)
     showCatagoriesGrid();
 }
 
