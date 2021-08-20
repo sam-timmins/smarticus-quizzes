@@ -26,7 +26,7 @@ const optionsContainerRef = Array.from(document.querySelectorAll('.options-conta
 const optionLetterRef = document.querySelector('.option');
 const catagorySelectionRef = document.querySelectorAll('.catagory');
 const scoreRef = document.querySelector('#score');
-const questionNumber = document.querySelector('#question-number');
+const questionNumberRef = document.querySelector('#question-number');
 
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
@@ -121,6 +121,7 @@ const sportsQuestions = () => {
     handleScreenDisplay('none', catagoryGridRef)
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+    questionNumber.innerHTML = `Quest: ${questionCounter}`;
     getQuestions(21);
     checkAnswer();
 }
@@ -148,7 +149,6 @@ const scienceQuestions = () => {
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Film';
-    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(11);
     checkAnswer();
 }
