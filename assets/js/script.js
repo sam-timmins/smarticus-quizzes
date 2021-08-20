@@ -55,7 +55,8 @@ const closeQuestionSection = () => {
 }
 
 /**
- * 
+ * Closes the results screen and returns to the catagory grid, 
+ * also resets score and questionCounters
  */
 const closeResultsScreen = () => {
     handleScreenDisplay('grid', catagoryGridRef);
