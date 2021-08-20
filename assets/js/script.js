@@ -275,5 +275,6 @@ const resetCounters = () => {
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 sportsQuestionsRef.addEventListener('click', sportsQuestions);
 scienceQuestionsRef.addEventListener('click', scienceQuestions);
+filmQuestionsRef.addEventListener('click', filmQuestions);
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
