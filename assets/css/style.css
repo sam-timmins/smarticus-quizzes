@@ -411,7 +411,7 @@ body {
         font-size: 3rem;
     }
 
-    #main-catagory-grid div p {
+    #main-catagory-grid div p, #main-catagory-grid div i {
         font-size: 4rem;
     }
 }
