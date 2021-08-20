@@ -393,4 +393,8 @@ body {
         right: 4rem;
         top: 2rem;
     }
+
+    #results-screen h2 {
+        font-size: 8rem;
+    }
 }
