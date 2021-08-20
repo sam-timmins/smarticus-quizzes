@@ -317,3 +317,10 @@ body {
 }
 
 
+/*  >=768px (Tablet) */
+
+@media (min-width: 768px) {
+    #main-catagory-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
