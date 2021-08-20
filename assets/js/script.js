@@ -102,6 +102,7 @@ const closeResultsScreen = () => {
     resultsScreenRef.style.display = 'none';
     showCatagoriesGrid();
     questionCounter = 0;
+    score = 0;
 }
 
 /**
@@ -146,7 +147,9 @@ const scienceQuestions = () => {
 }
 
 /**
- * Using API to generate sports questions
+ * Using API to generate questions then returns formatted data into the runQuiz function
+ * @param number based on the catagory ID number provided by opentdb.com. Changes depending on the
+ * catagory.
  */
 const getQuestions = (questionId) => {
     fetch(`https://opentdb.com/api.php?amount=15&category=${questionId}&difficulty=medium&type=multiple`)
