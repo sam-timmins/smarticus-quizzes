@@ -103,6 +103,10 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('grid', catagoryGridRef)
 }
 
+const catagories = () => {
+    ['Sport', 'Science', 'Film', 'History', 'Animals', 'Geography']
+} 
+
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
@@ -122,10 +126,23 @@ const sportsQuestions = () => {
  */
 const scienceQuestions = () => {
     handleScreenDisplay('flex', questionsScreenRef);
-    handleScreenDisplay('none', catagoryGridRef)
+    handleScreenDisplay('none', catagoryGridRef);
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(17);
+    checkAnswer();
+}
+
+/**
+ * Opens question and answer box, closes the catagories grid, adds the catagory name 
+ * into the title for film.
+ */
+ const filmQuestions = () => {
+    handleScreenDisplay('flex', questionsScreenRef);
+    handleScreenDisplay('none', catagoryGridRef);
+    insertCatagoryNameRef.innerHTML = 'Smarticus:  Film';
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+    getQuestions(11);
     checkAnswer();
 }
 
