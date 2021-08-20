@@ -142,7 +142,7 @@ const handleUserFormSubmit = event => {
  * into the title.
  */
 const sportsQuestions = () => {
-    openQuestionScreen();
+    handleScreenDisplay('flex', questionsScreenRef)
     hideCatagoriesGrid();
     insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
