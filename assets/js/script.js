@@ -43,40 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
     userNameRef.focus();
 })
 
-/**
- * Hides the user form
- */
-const hideUserForm = () => {
-    userSectionRef.style.display = 'none';
-}
-
-/**
- * Hides the catagories grid
- */
-const hideCatagoriesGrid = () => {
-    catagoryGridRef.style.display='none';
-}
-
-/**
- * Shows the catagories grid
- */ 
-const showCatagoriesGrid = () => {
-    catagoryGridRef.style.display = 'grid';
-}
-
-/**
- * Shows the questions section
- */
-const openQuestionScreen = () => {
-    questionsScreenRef.style.display = 'flex';
-}
-
-/**
- * Closes the questions sction
- */
-const closeQuestionScreen = () => {
-    questionsScreenRef.style.display = 'none';
-}
 
 /**
  * Close the questions section and returns to the catagory grid
@@ -84,15 +50,6 @@ const closeQuestionScreen = () => {
 const closeQuestionSection = () => {
     showCatagoriesGrid();
     closeQuestionScreen();
-}
-
-/**
- * Opens the results screen and closes the question screen
- */
-const openResultsScreen = () => {
-    closeQuestionScreen();
-    resultsScreenRef.style.display = 'flex';
-    displayResults();
 }
 
 /**
