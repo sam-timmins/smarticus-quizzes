@@ -371,8 +371,12 @@ body {
 /* >=1200px (xl - Desktop) */
 
 @media (min-width: 1200px) {
-    #quiz-catagory {
+    #quiz-catagory, #score {
         font-size: 2.5rem;
         left: 4rem;
+    }
+
+    #score {
+        top: 6rem;
     }
 }
