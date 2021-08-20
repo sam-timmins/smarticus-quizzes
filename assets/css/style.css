@@ -362,4 +362,7 @@ body {
         font-size: 4rem;
     }
 
+    #welcome-person p {
+        font-size: 4rem;
+    }
 }
