@@ -124,7 +124,7 @@ const handleUserFormSubmit = event => {
     welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
     welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
     
-    handleScreenDisplay('none', userSectionRef)
+    handleScreenDisplay('none', userSectionRef);
     showCatagoriesGrid();
 }
 
