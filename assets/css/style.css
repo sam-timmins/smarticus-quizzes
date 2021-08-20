@@ -397,4 +397,8 @@ body {
     #results-screen h2 {
         font-size: 8rem;
     }
+
+    #results-screen p {
+        font-size: 3rem;
+    }
 }
