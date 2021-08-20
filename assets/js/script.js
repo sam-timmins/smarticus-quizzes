@@ -210,6 +210,7 @@ const getNewQuestion = () => {
     if (questionCounter > maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
+        displayResults();
     } else {
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
