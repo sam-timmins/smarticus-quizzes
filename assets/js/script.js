@@ -67,6 +67,7 @@ const closeQuestionSection = () => {
 const closeResultsScreen = () => {
     handleScreenDisplay('grid', catagoryGridRef);
     handleScreenDisplay('none', resultsScreenRef);
+    handleScreenDisplay('flex', headerRef);
     resetCounters();
 }
 
