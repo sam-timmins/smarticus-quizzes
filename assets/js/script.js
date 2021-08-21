@@ -229,14 +229,14 @@ const checkAnswer = () => {
                 setTimeout(function(){
                     selectedOption.classList.remove('option-correct')
                     getNewQuestion()
-                }, 800)     
+                }, 1000)     
             } else {
                 for (let i = 0; i < optionsRef.length; i++) {
                     if (optionsRef[i].innerHTML == currentQuestion.correctAnswer){ 
                         optionsRef[i].classList.add('option-correct');
                         setTimeout(function(){
                             optionsRef[i].classList.remove('option-correct')
-                        }, 800)
+                        }, 1000)
                     }
                 }
                 selectedOption.classList.add('option-incorrect')
@@ -244,7 +244,7 @@ const checkAnswer = () => {
                     selectedOption.classList.remove('option-incorrect')
 
                     getNewQuestion()
-                }, 800)
+                }, 1000)
             }
         });
     });
