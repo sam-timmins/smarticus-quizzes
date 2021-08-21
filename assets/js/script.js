@@ -215,7 +215,8 @@ const getNewQuestion = () => {
 
 /**
  * Checks answers when they are clicked on. Adds to the score for a correct answer, 
- * adds correct or incorrect class to the selected option then creates a small delay 
+ * adds correct or incorrect class to the selected option. If the answer is wrong, 
+ * adds correct class to the correct answer then creates a small delay 
  * before getting a new question.
  */
 const checkAnswer = () => {
