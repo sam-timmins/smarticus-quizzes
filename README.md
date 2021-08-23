@@ -210,7 +210,7 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 ```
 
-
+An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidence I added it to the head section of the html and it worked perfectly.
 
 \
 &nbsp;
