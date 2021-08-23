@@ -196,6 +196,10 @@ The wireframes can be viewed below.
 ## Layout
 During the building of the quiz, I changed my design layout slightly from my initial wireframes design. I felt that the inclusion of a footer restricted the user’s ability to quickly and cleanly play the game. Instead of all the option boxes being within the screen height, the user would have had to scroll in order to see option D. Along with the being able to include the __Smarticus__ name on every page so the user doesn't loose contact, I felt that it was a correct design choise to omit the footer.
 
+In relation to responsive design, in my initial planning stages I thought that a final responsive screen size of min-width 992px would be sufficient, however the layout did not suit extra large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
+
+
+
 \
 &nbsp;
 
