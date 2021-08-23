@@ -202,6 +202,16 @@ Occasionally, with using the API to generate questions, a long answer was genera
 
 As mentioned earlier in the [Colours](#colours) section, I had to add to add a green to my pallet. This came as a suggestion from people that I used for testing. They felt that they needed to have some sort of feedback when an answer was answered wrong, with the correct answer shown. An alert was recommended or some sort of pop-up screen with the correct answer included in it and the user then clicks through it to the next question. This idea however would have ment that the user would have had to carry out another action by clicking or tapping on a button to progress. I didn't feel that this was slick enough so decided to add a flash of green on the correct answer if the incorrect option was selected. Initially I had the timer set for 0.8 seconds but this wasn't just enough time to read the correct answer before the next question was loaded. I adjusted this to 1 second and I feel it works great now.
 
+A second suggestion that was fed back to me during testing was a simple thing to overcome, everyone mentioned that they didn't like the autocomplete on the user name input form. They felt that it covered over the screen and took away from the design. I felt that it improved user friendliness but the argument put back to me was that predictive text does not require many extra clicks, gives the same result but doesn't take from the design. A quick autocomplete set to off on the form within the html fixed this.
+
+```html
+
+<form class="center-all" id="user-form" autocomplete="off" 
+
+```
+
+
+
 \
 &nbsp;
 
