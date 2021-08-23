@@ -154,8 +154,17 @@ The wireframes can be viewed below.
 
 ## Existing Features
 
+### Spin Loader
+
+The spin loader is, regardles of the screen size always located in the middle of the screen. The size is standard and the colours are consistant with the design. The spin loader only apears while the DOM content is loading. Usually it won't be seen, but is there as a fall back if something doesn't load correctly. 
 
 \
+&nbsp;
+![Spin Loader](wireframes/loader.gif)
+\
+&nbsp;
+
+
 &nbsp;
 [Back to Top](#table-of-contents)
 \
