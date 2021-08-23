@@ -216,6 +216,7 @@ With this being my first project using JavaScript, naturally I encountered some 
 
 One of my major headaches was getting the initial array of data from the API out to use. I lost many hours attempting to work this out. Eventually, after a lot of commits when I thought I had it, then deleting when I really didn't and some help from my mentor, I worked it out. This was a huge moment for me as JavaScript then started to then make sense. 
 
+When I ran test on the quiz, I quickly realised that the initial itteration of the question answers into the option boxes alway left the correct answer as option D. This led to a very easy way to cheat if the user worked this out. I had carried out some research and came across the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle "Fisher-Yates shuffle"), although this was gaining the random number to slot the correct anser into, I felt that there was no need for a more complex, multy line code to be included as there was only four options. I added a random sort to the function where a new question is generated, and this simple method works well.
 
 \
 &nbsp;
