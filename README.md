@@ -212,6 +212,11 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidence I added it to the head section of the html and it worked perfectly.
 
+With this being my first project using JavaScript, naturally I encountered some issues that I had to work through.
+
+One of my major headaches was getting the initial array of data from the API out to use. I lost many hours attempting to work this out. Eventually, after a lot of commits when I thought I had it, then deleting when I really didn't and some help from my mentor, I worked it out. This was a huge moment for me as JavaScript then started to then make sense. 
+
+
 \
 &nbsp;
 
