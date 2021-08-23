@@ -198,7 +198,7 @@ During the building of the quiz, I changed my design layout slightly from my ini
 
 In relation to responsive design, in my initial planning stages I thought that a final responsive screen size of min-width 992px would be sufficient, however the layout did not suit extra large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
 
-
+Occasionally, with using the API to generate questions, a long answer was generated. This caused the option boxes to have the text spill over and on some occasions loose the text outside of the 100vh that I had wanted to in order to hit the single page format goal. A change of stying of the options containers to auto solved this issue.
 
 \
 &nbsp;
