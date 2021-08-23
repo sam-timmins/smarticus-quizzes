@@ -210,6 +210,8 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 ```
 
+The third recomendation was that there should be a question counter added to the game screen. The testing team noted that they would like to know how many questions that they had answered throughout the game. As this information was already being captured as the questionCounter, this was a simple addition to the screen.
+
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidence I added it to the head section of the html and it worked perfectly.
 
 With this being my first project using JavaScript, naturally I encountered some issues that I had to work through.
@@ -217,6 +219,8 @@ With this being my first project using JavaScript, naturally I encountered some 
 One of my major headaches was getting the initial array of data from the API out to use. I lost many hours attempting to work this out. Eventually, after a lot of commits when I thought I had it, then deleting when I really didn't and some help from my mentor, I worked it out. This was a huge moment for me as JavaScript then started to then make sense. 
 
 When I ran test on the quiz, I quickly realised that the initial itteration of the question answers into the option boxes alway left the correct answer as option D. This led to a very easy way to cheat if the user worked this out. I had carried out some research and came across the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle "Fisher-Yates shuffle"), although this was gaining the random number to slot the correct anser into, I felt that there was no need for a more complex, multy line code to be included as there was only four options. I added a random sort to the function where a new question is generated, and this simple method works well.
+
+
 
 \
 &nbsp;
