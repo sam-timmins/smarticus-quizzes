@@ -198,7 +198,9 @@ During the building of the quiz, I changed my design layout slightly from my ini
 
 In relation to responsive design, in my initial planning stages I thought that a final responsive screen size of min-width 992px would be sufficient, however the layout did not suit extra large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
 
-Occasionally, with using the API to generate questions, a long answer was generated. This caused the option boxes to have the text spill over and on some occasions loose the text outside of the 100vh that I had wanted to in order to hit the single page format goal. A change of stying of the options containers to auto solved this issue.
+Occasionally, with using the API to generate questions, a long answer was generated. This caused the option boxes to have the text spill over and on some occasions loose the text outside of the 100vh that I had wanted to in order to hit the single page format goal. A change of stying of the options container's heights to auto solved this issue, along with the use of display flex and justify-content, space-evenly on their parent. 
+
+As mentioned earlier in the [Colours](#colours) section, I had to add to add a green to my pallet. This came as a suggestion from people that I used for testing. They felt that they needed to have some sort of feedback when an answer was answered wrong, with the correct answer shown. An alert was recommended or some sort of pop-up screen with the correct answer included in it and the user then clicks through it to the next question. This idea however would have ment that the user would have had to carry out another action by clicking or tapping on a button to progress. I didn't feel that this was slick enough so decided to add a flash of green on the correct answer if the incorrect option was selected. Initially I had the timer set for 0.8 seconds but this wasn't just enough time to read the correct answer before the next question was loaded. I adjusted this to 1 second and I feel it works great now.
 
 \
 &nbsp;
