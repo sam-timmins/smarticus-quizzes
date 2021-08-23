@@ -212,6 +212,14 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 The third recomendation was that there should be a question counter added to the game screen. The testing team noted that they would like to know how many questions that they had answered throughout the game. As this information was already being captured as the questionCounter, this was a simple addition to the screen.
 
+The initial score layout I had was not clear either. I had the layout set up as "3 of 10". This really was not clear to the user. Instead of a simple glance and instantly see what it refered to, there was some working out to it. An addition of the word 'Score' and a more generic score layout solved this.
+
+\
+&nbsp;
+![Score layout](wireframes/score-layout.jpg)
+\
+&nbsp;
+
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidence I added it to the head section of the html and it worked perfectly.
 
 With this being my first project using JavaScript, naturally I encountered some issues that I had to work through.

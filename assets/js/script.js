@@ -35,7 +35,7 @@ const resultsUserRef = document.querySelector('#results-user');
 const resultsScoreRef = document.querySelector('#results-score');
 
 // Game variables
-const maxQuestions = 20;
+const maxQuestions = 10;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
