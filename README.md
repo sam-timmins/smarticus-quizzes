@@ -182,9 +182,21 @@ The wireframes can be viewed below.
 ## Libraries & Framework
 * [Google Fonts](https://fonts.google.com/ "Google Fonts")
 * [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+
 ## Tools
-* For the loading spinner I used [loading.io](https://loading.io/)
-* For the box shadows I used [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/)
+* For construction and deployment [Gitpod](https://www.gitpod.io/ "Gitpod")
+* For wireframes [Balsamic](https://balsamiq.com/wireframes/ "Balsamic")
+* For HTML validation [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+* For CSS validation [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+* For JS syntax validator [Esprima](https://esprima.org/demo/validate.html "Esprima")
+* For the loading spinner [loading.io](https://loading.io/ "loading.io")
+* For the box shadows [html-css-js.com](https://html-css-js.com/css/generator/box-shadow/ "html-css-js.com")
+* For information on favicons [W3C](https://www.w3.org/2005/10/howto-favicon "W3C")
+* For general code queries [W3Schools](https://www.w3schools.com/ "W3Schools")
+* For quiz code help [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw "James Q Quick")
+* For the colour pallet [Colourmind](https://colormind.io/ "colourmind")
+
+
 
 \
 &nbsp;
