@@ -46,7 +46,7 @@ let availableQuestions = [];
  * Shows spin loader until DOM is loaded then displays the user form
  */
 document.addEventListener('DOMContentLoaded', function() {
-    spinLoadersRef.classList.add('spin-loader-vanish');
+    spinLoaderRef.classList.add('spin-loader-vanish');
     handleScreenDisplay('flex', userSectionRef);
     userNameRef.focus();
 })

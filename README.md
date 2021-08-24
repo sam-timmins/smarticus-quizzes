@@ -204,6 +204,7 @@ The spin loader is, regardles of the screen size always located in the middle of
 * For general code queries [W3Schools](https://www.w3schools.com/ "W3Schools")
 * For quiz code help [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw "James Q Quick")
 * For the colour pallet [Colourmind](https://colormind.io/ "colourmind")
+* For the loading spinner gif in the readme file [Capture to a Gif](https://chrome.google.com/webstore/detail/capture-to-a-gif/eapecadlmfblmnfnojebefkbginhggeh/related?hl=en "Chrome Web Store") 
 
 
 
