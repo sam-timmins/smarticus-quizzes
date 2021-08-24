@@ -124,9 +124,6 @@ const sportsQuestions = () => {
     checkAnswer();
 }
 
-
-addCatagoryToQuestionPage(currentQuestion.category);
-
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title for science.
