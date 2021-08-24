@@ -144,12 +144,7 @@ const scienceQuestions = () => {
  */
  const filmQuestions = () => {
     handleQuestionScreen();
-    handleScreenDisplay('none', headerRef);
-    handleScreenDisplay('flex', questionsScreenRef);
-    handleScreenDisplay('none', catagoryGridRef);
-    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(11);
-    checkAnswer();
 }
 
 /**
