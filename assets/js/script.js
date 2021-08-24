@@ -118,12 +118,14 @@ const handleUserFormSubmit = event => {
 const sportsQuestions = () => {
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
-    handleScreenDisplay('none', catagoryGridRef)
-    insertCatagoryNameRef.innerHTML = 'Smarticus:  Sport';
+    handleScreenDisplay('none', catagoryGridRef);
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(21);
     checkAnswer();
 }
+
+
+addCatagoryToQuestionPage(currentQuestion.category);
 
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
@@ -151,6 +153,14 @@ const scienceQuestions = () => {
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(11);
     checkAnswer();
+}
+
+/**
+ * Add the catagory name to the question screen
+ * @param string this is dictated from the currentQuestion.catagory in getNewQuestion() 
+ */
+const addCatagoryToQuestionPage = (cat) => {  
+    insertCatagoryNameRef.innerHTML = `Smarticus:  ${cat}`;
 }
 
 /**
@@ -202,6 +212,7 @@ const getNewQuestion = () => {
         handleScreenDisplay('none', questionsScreenRef);
         displayResults();
     } else {
+        
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
             questionRef.innerHTML = currentQuestion.question;
