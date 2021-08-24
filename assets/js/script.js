@@ -153,6 +153,15 @@ const scienceQuestions = () => {
 }
 
 /**
+ * Opens question and answer screen, closes the catagories grid, adds the catagory name 
+ * into the title and inserts the history questions.
+ */
+ const historyQuestions = () => {
+    handleQuestionScreen();
+    getQuestions(23);
+}
+
+/**
  * Add the catagory name to the question screen
  * @param string this is dictated from the currentQuestion.catagory in getNewQuestion() 
  */
