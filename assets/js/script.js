@@ -121,11 +121,15 @@ const handleUserFormSubmit = event => {
  * into the title. Displays the initial score until over written by increaseScore(). 
  */
 const handleQuestionScreen = () => {
-    handleScreenDisplay('none', headerRef);
-    handleScreenDisplay('flex', questionsScreenRef);
-    handleScreenDisplay('none', catagoryGridRef);
-    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-    checkAnswer();
+    handleScreenDisplay('flex', spinLoaderRef);
+    setTimeout(function(){
+        handleScreenDisplay('none', headerRef);
+        handleScreenDisplay('flex', questionsScreenRef);
+        handleScreenDisplay('none', catagoryGridRef);
+        scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+        checkAnswer();
+        handleScreenDisplay('none', spinLoaderRef)
+    }, 1000)
 }
 
 /**
