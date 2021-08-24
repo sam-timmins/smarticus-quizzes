@@ -112,6 +112,11 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('flex', headerRef);
 }
 
+
+/**
+ * Opens question and answer box, closes the catagories grid, adds the catagory name 
+ * into the title. Displays the initial score until over written by increaseScore(). 
+ */
 const handleQuestionScreen = () => {
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
