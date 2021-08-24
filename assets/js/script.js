@@ -17,6 +17,7 @@ const scienceQuestionsRef = document.querySelector('#catagoryScience');
 const filmQuestionsRef = document.querySelector('#catagoryFilm');
 const historyQuestionsRef = document.querySelector('#catagoryHistory');
 const animalsQuestionsRef = document.querySelector('#catagoryAnimals');
+const geographyQuestionsRef = document.querySelector('#catagoryGeography');
 
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
