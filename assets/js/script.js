@@ -95,6 +95,7 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
     }
 }
 
+
 /**
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
@@ -197,7 +198,8 @@ const runQuiz = (questions) => {
 
 /**
  * Increases the questionCounter by one. Gets the new question from the availableQuestions array
- * via a random number selection and add the question text to the html
+ * via a random number selection and add the question text to the html. Also add the catagory to 
+ * the question page using the catagory of the current question.
  */
 const getNewQuestion = () => {
     questionCounter++;
