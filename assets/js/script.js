@@ -222,6 +222,7 @@ const getNewQuestion = () => {
                 }          
             availableQuestions.splice(questionNumber, 1);
             }
+    addCatagoryToQuestionPage(currentQuestion.category);
 }
 
 /**
