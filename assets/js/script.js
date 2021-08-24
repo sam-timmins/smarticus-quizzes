@@ -135,12 +135,7 @@ const sportsQuestions = () => {
  */
 const scienceQuestions = () => {
     handleQuestionScreen();
-    handleScreenDisplay('none', headerRef);
-    handleScreenDisplay('flex', questionsScreenRef);
-    handleScreenDisplay('none', catagoryGridRef);
-    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(17);
-    checkAnswer();
 }
 
 /**
