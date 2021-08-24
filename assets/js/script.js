@@ -112,15 +112,25 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('flex', headerRef);
 }
 
+const handleQuestionScreen = () => {
+    handleScreenDisplay('none', headerRef);
+    handleScreenDisplay('flex', questionsScreenRef);
+    handleScreenDisplay('none', catagoryGridRef);
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+    checkAnswer();
+}
+
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 
  * into the title.
  */
 const sportsQuestions = () => {
     handleScreenDisplay('none', headerRef);
-    setTimeout(function() {
-        spinLoaderRef.style.display = 'inline';
-    }, 1000)
+    handleScreenDisplay('flex', questionsScreenRef);
+    handleScreenDisplay('none', catagoryGridRef);
+    scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+    getQuestions(21);
+    checkAnswer();
 }
 
 /**
