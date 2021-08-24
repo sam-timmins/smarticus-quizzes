@@ -135,8 +135,8 @@ const sportsQuestions = () => {
 }
 
 /**
- * Opens question and answer box, closes the catagories grid, adds the catagory name 
- * into the title for science.
+ * Opens question and answer screen, closes the catagories grid, adds the catagory name 
+ * into the title and inserts the science questions.
  */
 const scienceQuestions = () => {
     handleQuestionScreen();
