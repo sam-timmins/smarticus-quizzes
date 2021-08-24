@@ -122,10 +122,10 @@ const handleUserFormSubmit = event => {
  */
 const handleQuestionScreen = () => {
     handleScreenDisplay('flex', spinLoaderRef);
+    handleScreenDisplay('none', catagoryGridRef);
+    handleScreenDisplay('none', headerRef);
     setTimeout(function(){
-        handleScreenDisplay('none', headerRef);
         handleScreenDisplay('flex', questionsScreenRef);
-        handleScreenDisplay('none', catagoryGridRef);
         scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
         checkAnswer();
         handleScreenDisplay('none', spinLoaderRef)
