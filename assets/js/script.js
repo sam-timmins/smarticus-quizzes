@@ -132,7 +132,6 @@ const scienceQuestions = () => {
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
-    insertCatagoryNameRef.innerHTML = 'Smarticus:  Science';
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
     getQuestions(17);
     checkAnswer();
