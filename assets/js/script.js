@@ -126,8 +126,8 @@ const handleQuestionScreen = () => {
 }
 
 /**
- * Opens question and answer box, closes the catagories grid, adds the catagory name 
- * into the title.
+ * Opens question and answer screen, closes the catagories grid, adds the catagory name 
+ * into the title and inserts the sports questions.
  */
 const sportsQuestions = () => {
     handleQuestionScreen();
