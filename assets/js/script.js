@@ -134,6 +134,7 @@ const sportsQuestions = () => {
  * into the title for science.
  */
 const scienceQuestions = () => {
+    handleQuestionScreen();
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
