@@ -144,8 +144,8 @@ const scienceQuestions = () => {
 }
 
 /**
- * Opens question and answer box, closes the catagories grid, adds the catagory name 
- * into the title for film.
+ * Opens question and answer screen, closes the catagories grid, adds the catagory name 
+ * into the title and inserts the film questions.
  */
  const filmQuestions = () => {
     handleQuestionScreen();
