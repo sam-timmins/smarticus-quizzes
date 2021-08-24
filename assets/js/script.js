@@ -315,6 +315,7 @@ userFormRef.addEventListener('submit', handleUserFormSubmit);
 sportsQuestionsRef.addEventListener('click', sportsQuestions);
 scienceQuestionsRef.addEventListener('click', scienceQuestions);
 filmQuestionsRef.addEventListener('click', filmQuestions);
+historyQuestionsRef.addEventListener('click', historyQuestions)
 
 // Question Screen
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
