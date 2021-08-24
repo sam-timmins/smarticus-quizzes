@@ -143,6 +143,7 @@ const scienceQuestions = () => {
  * into the title for film.
  */
  const filmQuestions = () => {
+    handleQuestionScreen();
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('flex', questionsScreenRef);
     handleScreenDisplay('none', catagoryGridRef);
