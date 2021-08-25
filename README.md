@@ -504,7 +504,12 @@ Following writing the code then commiting and pushing to GitHub, this project wa
 
 # Credits
 
+For code insperation, help and advice.
 
+* [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
+* [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw "James Q Quick")
+
+For testing and feedback, my 'testing focus group' (they know who they are!)
 
 \
 &nbsp;
