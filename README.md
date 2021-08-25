@@ -424,6 +424,7 @@ Also, a countdown timer could be included. The only drawback to this would be li
 * For the colour pallet [Colourmind](https://colormind.io/ "colourmind")
 * For the loading spinner gif in the readme file [Capture to a Gif](https://chrome.google.com/webstore/detail/capture-to-a-gif/eapecadlmfblmnfnojebefkbginhggeh/related?hl=en "Chrome Web Store")
 * For the quiz questions via API [Open Trivia Database](https://opentdb.com/api_config.php "Open Trivia Database")
+* For spell checking [Grammarly](https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen/related?hl=en "Grammarly")
 
 
 
