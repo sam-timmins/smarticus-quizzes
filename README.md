@@ -389,7 +389,9 @@ The return button is the same in design with the welcome screen button to keep c
 
 ## Features to be Implemented
 
+Because there is such a wide variety of questions in the [Open Trivia Database](https://opentdb.com/api_config.php "Open Trivia Database"), the layout could change and instead of a catagories screen, two dropdowns could be shown instead. The user then could select the catagory and the dificulty that they prefered.
 
+Also a countdown timer could be included. The only draw back on this would be limited available room on a small device. For example an iPhone 5/SE, leaves little or no room for any extra features to what is already there.
 
 \
 &nbsp;
