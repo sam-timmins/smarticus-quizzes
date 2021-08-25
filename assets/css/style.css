@@ -164,7 +164,7 @@ body {
     letter-spacing: 2px;
 }
 
-#user-submit:hover {
+#user-submit:hover, #results-button:hover {
     animation: 1s bounce forwards;
 }
 
