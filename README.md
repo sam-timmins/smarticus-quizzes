@@ -350,6 +350,30 @@ If the answwer is incorrect, the selected option flashes red and also the correc
 \
 &nbsp;
 
+### Results Screen
+
+The results screen has very little content, except the essesntials. 
+* The site owner's name and logo
+* Feedback text
+* Final score
+* Return button
+
+![Results Screen, low score](wireframes/results-screen-low-score.jpg)
+\
+&nbsp;
+
+![Results Screen, medium score](wireframes/results-screen-medium-score.jpg)
+\
+&nbsp;
+
+![Results Screen, high score](wireframes/results-screen-high-score.jpg)
+\
+&nbsp;
+
+
+
+
+
 
 \
 &nbsp;
