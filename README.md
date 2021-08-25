@@ -301,6 +301,59 @@ To increase user experience, rather than just the text having to be clicked inor
 \
 &nbsp;
 
+
+### Question Screen 
+
+As mentioned earlier, the spin loader screen initally apears everytime the user opens up the question screen while the questions are loading, details on this are in the [spin loader](#spin-loader) section of existing features.
+
+This screen is the main game screen. It is sectioned into 3 areas:
+* Quiz progress details 
+* The question
+* The answers
+
+![Catagories Screen](wireframes/quiz-screen.jpg)
+\
+&nbsp;
+
+The quiz progress details again can be split up into four parts:
+* The catagory
+* The score
+* The question
+* Close screen icon
+
+![Catagories Screen](wireframes/quiz-screen-details.jpg)
+\
+&nbsp;
+
+The catagory, in keeping with the rest of the screens, has **Smarticus** included in it to keep the user in touch with the site owner's name. It also then displays the catagory of the question asked, this is pulled from the API.
+
+The score is then displayed beneath the catagory. The format is 'correct answers / number of questions asked'. The correct answers increments for each correct answer that is answered by the user and the number of question's is dictated by the developer within the code so stays static on the display itself. 
+
+The close button is located in the top right corner of the screen. This exits out of the current set of quiz questions and returns back to the personalised catagories screen. It also resets the users score and the question number.
+
+Finally the question number displays to the user how many questions have been asked. This increments for every time that the user get presented with a new question.
+
+
+The question is populated using the API, and is set to a larger font that the rest of the screen, for clarity to the user.
+
+The answers are designed to be as simple to look at as possible, but also pack in enough information as needed. There is an option identification, A, B, C and D and these are in contrast colours to the actual answer itself.
+
+If the answer selected is correct, the option selected flashes green before moving to the next question in the catagory.
+
+![Correct Answer](wireframes/quiz-screen-correct-answer.gif)
+\
+&nbsp;
+
+If the answwer is incorrect, the selected option flashes red and also the correct answer flashes green so the user can learn form their mistake.
+
+![Incorrect Answer](wireframes/quiz-screen-incorrect-answer.gif)
+\
+&nbsp;
+
+
+\
+&nbsp;
+
 ## Features to be Implemented
 
 
