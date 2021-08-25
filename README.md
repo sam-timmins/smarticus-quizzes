@@ -358,19 +358,31 @@ The results screen has very little content, except the essesntials.
 * Final score
 * Return button
 
+The site owners name and logo continue with rest of the screens and is prenounced and clear at the top of the page.
+
+The text feedback uses the username to personalise the final message and also adds in the catagory that was last attempted. There are three different messages to the user depending on the results, these are shown below.
+
+* Less than 4 out of 10
+
 ![Results Screen, low score](wireframes/results-screen-low-score.jpg)
 \
 &nbsp;
+
+* Greater than or equal to 4 out of 10
 
 ![Results Screen, medium score](wireframes/results-screen-medium-score.jpg)
 \
 &nbsp;
 
+* Greater than or equal to 7 out of 10
+
 ![Results Screen, high score](wireframes/results-screen-high-score.jpg)
 \
 &nbsp;
 
+The final score follows the feedback comment. This is simply just a copy of the score from the question screen and displayed clearly for the user to see.
 
+The return button is the same in design with the welcome screen button to keep consistancy across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user back to the personalised catagories screen and secondly it sets the score and question counter back to 0, ready for another round.
 
 
 
