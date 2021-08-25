@@ -384,9 +384,6 @@ The final score follows the feedback comment. This is simply just a copy of the 
 
 The return button is the same in design with the welcome screen button to keep consistancy across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user back to the personalised catagories screen and secondly it sets the score and question counter back to 0, ready for another round.
 
-
-
-
 \
 &nbsp;
 
@@ -423,7 +420,8 @@ The return button is the same in design with the welcome screen button to keep c
 * For general code queries [W3Schools](https://www.w3schools.com/ "W3Schools")
 * For quiz code help [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw "James Q Quick")
 * For the colour pallet [Colourmind](https://colormind.io/ "colourmind")
-* For the loading spinner gif in the readme file [Capture to a Gif](https://chrome.google.com/webstore/detail/capture-to-a-gif/eapecadlmfblmnfnojebefkbginhggeh/related?hl=en "Chrome Web Store") 
+* For the loading spinner gif in the readme file [Capture to a Gif](https://chrome.google.com/webstore/detail/capture-to-a-gif/eapecadlmfblmnfnojebefkbginhggeh/related?hl=en "Chrome Web Store")
+* For the quiz questions via API [Open Trivia Database](https://opentdb.com/api_config.php "Open Trivia Database")
 
 
 
