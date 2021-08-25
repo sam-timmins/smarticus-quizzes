@@ -308,13 +308,14 @@ const increaseScore = () => {
  */
 const displayResults = () => {
     if (score >= 7){
-        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus.`;
+        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}, try another!`;
     } else if (score >= 4) {
-        resultsUserRef.innerHTML = `${userNameRef.value}, that was not too bad...icus.`;
+        resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}, try another!`;
     } else {
-        resultsUserRef.innerHTML = `${userNameRef.value}, maybe try another catagory...`;
+        resultsUserRef.innerHTML = `${userNameRef.value}, ${currentQuestion.category} didn't suit you... try another!`;
     }
     
+
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
