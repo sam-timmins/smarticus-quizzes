@@ -243,6 +243,63 @@ Under the site owners name is a small amount of text giving simple instruction t
 \
 &nbsp;
 
+### Quiz Category Screen
+
+This screen is has the **Smarticus** logo fixed as a permenant header to the page. This being consistant with the site owner's name being present on every screen so the user doesn't loose contact with the owner. It is large enough to be easily read but not too big as to impeed the user's view of the catagories.
+
+* *Header view on initial load of the categories screen*
+\
+&nbsp;
+![Welcome Screen](wireframes/category-screen-header1.jpg)
+\
+&nbsp
+
+* *Header view when scrolled down the categories screen*
+\
+&nbsp;
+![Welcome Screen](wireframes/category-screen-header.jpg)
+\
+&nbsp;
+
+The personalisation of the game begins at this point. Whatever the user decided to enter on the welcome screen, is carried forwards to here and is used as part of a quick, to the point welcome message with instruction.
+
+*User name input on welcome screen*
+\
+&nbsp;
+![Welcome Screen User Name Input](wireframes/user-name-entered.jpg)
+\
+&nbsp;
+
+*Welcome message on categories screen*
+\
+&nbsp;
+![Welcome Message on Categories Screen](wireframes/user-name-entered-categories-screen.jpg)
+\
+&nbsp;
+
+The catagories are clean and clear with their description and are also helped visually with a font-awsome icon. The text and icon alternate from left to right, giving a more comfortable feel to the user's eye as the scan through the screen. The alternating colour scheme is a sharp design which encourages the user to scroll down on smaller devices to see all the catagories. On the desktop design, the categories are set to fill the screen height so there is no need for scrolling. They are also set to adjust the position of catagories, depending on how the checker pattern changes with the screen size. 
+
+To increase user experience, rather than just the text having to be clicked inorder for the user to progress to the chosen catagory, the whole colour block it sits in carries out this function. This allows the user not to have to be as precise with their actions.
+\
+&nbsp;
+
+* *Phone and tablet*
+
+![Catagories Screen](wireframes/category-screen.jpg)
+\
+&nbsp;
+
+* *Desktop*
+
+![Catagories Screen](wireframes/catagory-screen-desktop.jpg)
+\
+&nbsp;
+
+* *XL - Desktop*
+
+![Catagories Screen](wireframes/catagory-screen-large-desktop.jpg)
+\
+&nbsp;
 
 ## Features to be Implemented
 
