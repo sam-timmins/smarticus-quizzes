@@ -156,7 +156,7 @@ The wireframes can be viewed below.
 
 ### Spin Loader
 
-The spin loader is, regardles of the screen size always located in the middle of the screen. The size is standard and the colours are consistant with the design. The spin loader only apears while the DOM content is loading. Usually it won't be seen, but is there as a fall back if something doesn't load correctly. 
+The spin loader is, regardles of the screen size always located in the middle of the screen. The size is standard and the colours are consistant with the design. The spin loader apears while the DOM content is loading. Usually it won't be seen at this point, but is there as a fall back if something doesn't load correctly. It also appears on when the catagory is selected by the user for one second for a cleaner user experience while the questions are being fetched from the API.
 
 \
 &nbsp;
