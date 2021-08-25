@@ -164,7 +164,80 @@ The spin loader is, regardles of the screen size always located in the middle of
 \
 &nbsp;
 
+### Welcome Screen
 
+The welcome screen, as the name suggests, is where the user will be immediatly directed to. The content of the screen, regardles of screen size, is positioned in the middle. On smaller screen sizes where there is a pop-up keyboard, the design is responsicve to that so all aspects can always be seen.
+
+\
+&nbsp;
+![Textbox](wireframes/user-form-with-keypad.jpg)
+
+\
+&nbsp;
+
+On loading, to reduce user clicks, the textbox is set to focus, the colour also changes to grey when it is in this state. 
+
+* *active textbox*
+\
+&nbsp;
+![Textbox in focus](wireframes/user-form-text-focus.jpg)
+
+When out of focus, the textbox is white. 
+
+* *idle textbox*
+\
+&nbsp;
+![Textbox in idle](wireframes/user-form-text.jpg)
+
+One of the site owners goals was to ensure that a user name was entered to personalise the game, this is done with html validation.
+\
+&nbsp;
+
+* *textbox validation*
+\
+&nbsp;
+![Textbox validation](wireframes/user-form-validation.jpg)
+\
+&nbsp;
+
+The button, which is consistant with the design of buttons across the game, uses a font-awsome icon to give the user simple instruction of what to do next. There are a number of indications to the user that it is to be used to progress through the game.
+
+* A box-shadow highlights it.
+* A simple animation if the user was to hover over it.
+* A curser set to pointer.
+
+\
+&nbsp;
+![Spin Loader](wireframes/button-animation.gif)
+\
+&nbsp;
+
+Very importantly, the site owners name is shown on the welcome screen. The font size and logo are clearly larger than the text, however not to overpowering that they take up all the screen.
+
+Under the site owners name is a small amount of text giving simple instruction to the user of the first step to take.
+
+* *Phone*
+\
+&nbsp;
+![Welcome Screen](wireframes/user-form-screen-phone.jpg)
+\
+&nbsp;
+
+* *Tablet*
+\
+&nbsp;
+![Welcome Screen](wireframes/user-form-screen-tablet.jpg)
+\
+&nbsp;
+
+* *Desktop*
+\
+&nbsp;
+![Welcome Screen](wireframes/user-form-screen-desktop.jpg)
+\
+&nbsp;
+
+\
 &nbsp;
 [Back to Top](#table-of-contents)
 \
