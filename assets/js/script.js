@@ -331,8 +331,6 @@ const resetCounters = () => {
 
 
 
-
-
 // User Form
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 
