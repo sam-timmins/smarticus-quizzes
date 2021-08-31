@@ -304,6 +304,15 @@ const increaseScore = () => {
 }
 
 /**
+ * Increases the question counter by one
+ */
+const increaseQuestionCounter = () => {
+    questionCounter++;
+    questionNumberRef.innerHTML = `Question: ${questionCounter}`;
+}
+
+
+/**
  * Adds the username and score to the results screen
  */
 const displayResults = () => {
