@@ -237,13 +237,12 @@ const runQuiz = (questions) => {
  * the question page using the catagory of the current question.
  */
 const getNewQuestion = () => {
-    increaseQuestionCounter();
     if (questionCounter > maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
         displayResults();
     } else {
-        
+        increaseQuestionCounter();
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionNumber];
             questionRef.innerHTML = currentQuestion.question;
