@@ -10,24 +10,24 @@ const userFormRef = document.querySelector('#user-form');
 const userNameRef = document.querySelector('#user-name');
 
 // Main catagory grid
-const catagoryGridRef = document.querySelector('#main-catagory-grid');
-const welcomeCatagoryGridRef = document.querySelector('#welcome-person');
-const sportsQuestionsRef = document.querySelector('#catagorySports');
-const scienceQuestionsRef = document.querySelector('#catagoryScience');
-const filmQuestionsRef = document.querySelector('#catagoryFilm');
-const historyQuestionsRef = document.querySelector('#catagoryHistory');
-const animalsQuestionsRef = document.querySelector('#catagoryAnimals');
-const geographyQuestionsRef = document.querySelector('#catagoryGeography');
+const categoryGridRef = document.querySelector('#main-category-grid');
+const welcomeCategoryGridRef = document.querySelector('#welcome-person');
+const sportsQuestionsRef = document.querySelector('#categorySports');
+const scienceQuestionsRef = document.querySelector('#categoryScience');
+const filmQuestionsRef = document.querySelector('#categoryFilm');
+const historyQuestionsRef = document.querySelector('#categoryHistory');
+const animalsQuestionsRef = document.querySelector('#categoryAnimals');
+const geographyQuestionsRef = document.querySelector('#categoryGeography');
 
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
-const insertCatagoryNameRef = document.querySelector('#quiz-catagory');
+const insertCategoryNameRef = document.querySelector('#quiz-category');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const questionRef = document.querySelector('#question');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 const optionLetterRef = document.querySelector('.option');
-const catagorySelectionRef = document.querySelectorAll('.catagory');
+const categorySelectionRef = document.querySelectorAll('.category');
 const scoreRef = document.querySelector('#score');
 const questionNumberRef = document.querySelector('#question-number');
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 const closeQuestionSection = () => {
     handleScreenDisplay('flex', headerRef);
-    handleScreenDisplay('grid', catagoryGridRef);
+    handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('none', questionsScreenRef);
     resetCounters();
 }
@@ -70,7 +70,7 @@ const closeQuestionSection = () => {
  * also resets score and questionCounters
  */
 const closeResultsScreen = () => {
-    handleScreenDisplay('grid', catagoryGridRef);
+    handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('none', resultsScreenRef);
     handleScreenDisplay('flex', headerRef);
     resetCounters();
@@ -108,10 +108,10 @@ const handleUserFormSubmit = event => {
     
     let welcomeMesage = document.createElement('p');
     welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
-    welcomeCatagoryGridRef.insertBefore(welcomeMesage, welcomeCatagoryGridRef.childNodes[0]);
+    welcomeCategoryGridRef.insertBefore(welcomeMesage, welcomeCategoryGridRef.childNodes[0]);
     
     handleScreenDisplay('none', userSectionRef);
-    handleScreenDisplay('grid', catagoryGridRef);
+    handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('flex', headerRef);
 }
 
@@ -122,7 +122,7 @@ const handleUserFormSubmit = event => {
  */
 const handleQuestionScreen = () => {
     handleScreenDisplay('flex', spinLoaderRef);
-    handleScreenDisplay('none', catagoryGridRef);
+    handleScreenDisplay('none', categoryGridRef);
     handleScreenDisplay('none', headerRef);
     setTimeout(function(){
         handleScreenDisplay('flex', questionsScreenRef);
@@ -191,7 +191,7 @@ const scienceQuestions = () => {
  * @param string this is dictated from the currentQuestion.catagory in getNewQuestion() 
  */
 const addCatagoryToQuestionPage = (cat) => {  
-    insertCatagoryNameRef.innerHTML = `Smarticus:  ${cat}`;
+    insertCategoryNameRef.innerHTML = `Smarticus:  ${cat}`;
 }
 
 /**
