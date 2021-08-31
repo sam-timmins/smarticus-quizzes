@@ -237,7 +237,7 @@ const runQuiz = (questions) => {
  * the question page using the catagory of the current question.
  */
 const getNewQuestion = () => {
-    if (questionCounter > maxQuestions){
+    if (questionCounter >= maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
         displayResults();
