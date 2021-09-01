@@ -98,7 +98,6 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
     }
 }
 
-
 /**
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
@@ -114,7 +113,6 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('flex', headerRef);
 }
-
 
 /**
  * Opens question and answer box, closes the catagories grid, adds the catagory name 

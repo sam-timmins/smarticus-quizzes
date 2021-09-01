@@ -354,7 +354,7 @@ body {
 /* >=992px (Desktop) */
 
 @media (min-width: 992px) {
-    #main-catagory-grid {
+    #main-category-grid {
         grid-template-columns: 1fr 1fr 1fr;
     } 
     
@@ -391,7 +391,7 @@ body {
 /* >=1200px (xl - Desktop) */
 
 @media (min-width: 1200px) {
-    #quiz-catagory, #score {
+    #quiz-category, #score {
         font-size: 2.5rem;
         left: 4rem;
     }
