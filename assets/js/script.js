@@ -127,7 +127,7 @@ const handleQuestionScreen = () => {
         scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
         checkAnswer();
         handleScreenDisplay('none', spinLoaderRef)
-    }, 1000)
+    }, 3000)
 }
 
 /**
@@ -319,7 +319,6 @@ const displayResults = () => {
     } else {
         resultsUserRef.innerHTML = `${userNameRef.value}, ${currentQuestion.category} didn't suit you... try another!`;
     }
-    
 
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
@@ -347,3 +346,4 @@ geographyQuestionsRef.addEventListener('click', geographyQuestions);
 // Question Screen
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
+
