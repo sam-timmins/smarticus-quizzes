@@ -333,9 +333,6 @@ const resetCounters = () => {
     questionCounter = 0;
 }
 
-
-
-
 // User Form
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 
