@@ -351,6 +351,11 @@ body {
     .category-grid-item4 {
         grid-area: 3 / 2 / 4 / 3;
     }
+
+    #question {
+        line-height: 4rem;
+        padding: 1rem 6rem;
+    }
 }
 
 /* >=992px (Desktop) */
