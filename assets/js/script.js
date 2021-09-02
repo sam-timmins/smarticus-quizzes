@@ -161,7 +161,7 @@ const handleQuestionScreen = () => {
  */
 const sportsQuestions = () => {
     handleQuestionScreen();
-    getQuestions(21);
+    getQuestions(21, diff);
 
 }
 
@@ -171,7 +171,7 @@ const sportsQuestions = () => {
  */
 const scienceQuestions = () => {
     handleQuestionScreen();
-    getQuestions(17);
+    getQuestions(17, diff);
 }
 
 /**
@@ -180,7 +180,7 @@ const scienceQuestions = () => {
  */
  const filmQuestions = () => {
     handleQuestionScreen();
-    getQuestions(11);
+    getQuestions(11, diff);
 }
 
 /**
@@ -189,7 +189,7 @@ const scienceQuestions = () => {
  */
  const historyQuestions = () => {
     handleQuestionScreen();
-    getQuestions(23);
+    getQuestions(23, diff);
 }
 
 /**
@@ -198,7 +198,7 @@ const scienceQuestions = () => {
  */
  const animalsQuestions = () => {
     handleQuestionScreen();
-    getQuestions(27);
+    getQuestions(27, diff);
 }
 
 /**
@@ -207,7 +207,7 @@ const scienceQuestions = () => {
  */
  const geographyQuestions = () => {
     handleQuestionScreen();
-    getQuestions(22);
+    getQuestions(22, diff);
 }
 
 /**
