@@ -197,8 +197,8 @@ const addCatagoryToQuestionPage = (cat) => {
  * @param number based on the catagory ID number provided by opentdb.com. Changes depending on the
  * catagory.
  */
-const getQuestions = (questionId) => {
-    fetch(`https://opentdb.com/api.php?amount=15&category=${questionId}&difficulty=medium&type=multiple`)
+const getQuestions = (questionId, difficulty) => {
+    fetch(`https://opentdb.com/api.php?amount=15&category=${questionId}&difficulty=${difficulty}&type=multiple`)
     .then(res => res.json())
     .then(jsonData => extractData(jsonData.results))
     .then(newData =>  runQuiz(newData))
