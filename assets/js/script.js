@@ -49,7 +49,7 @@ let score = 0;
 let questionCounter = 0;
 let questions = [];
 let availableQuestions = [];
-let diff = '';
+let difficultyLevel = '';
 
 
 /**
@@ -112,13 +112,13 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
 const difficulty = () => {
 
     if (easyRef.checked){
-        diff = 'easy';
+        difficultyLevel = 'easy';
     } else if (mediumRef.checked) {
-        diff = 'medium';
+        difficultyLevel = 'medium';
     } else if (hardRef.checked) {
-        diff = 'hard';
+        difficultyLevel = 'hard';
     } else {
-        alert('Pleaee select a difficulty')
+        difficultyLevel = 'easy';
     }
 }
 
@@ -160,8 +160,7 @@ const handleQuestionScreen = () => {
  */
 const sportsQuestions = () => {
     handleQuestionScreen();
-    getQuestions(21, diff);
-
+    getQuestions(21, difficultyLevel);
 }
 
 /**
