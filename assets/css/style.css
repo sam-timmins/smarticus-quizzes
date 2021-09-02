@@ -235,6 +235,7 @@ body {
     color: var(--white);
     font-size: 2.5rem;
     padding: 1rem;
+    text-align: center;
 }
 
 #question-number {

@@ -346,4 +346,3 @@ geographyQuestionsRef.addEventListener('click', geographyQuestions);
 // Question Screen
 closeQuestionsRef.addEventListener('click', closeQuestionSection);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
-
