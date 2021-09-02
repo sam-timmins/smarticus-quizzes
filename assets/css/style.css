@@ -107,6 +107,11 @@ body {
     flex-direction: column;
 }
 
+.diff-label {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
 /* 5. User Form */ 
 
 #user {
