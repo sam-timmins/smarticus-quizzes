@@ -49,6 +49,7 @@ let score = 0;
 let questionCounter = 0;
 let questions = [];
 let availableQuestions = [];
+let diff = '';
 
 
 /**
@@ -109,8 +110,6 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
  * by the user
  */
 const difficulty = () => {
-    
-    let diff = '';
 
     if (easyRef.checked){
         diff = 'easy';
