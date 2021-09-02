@@ -392,6 +392,10 @@ body {
     #welcome-person p {
         font-size: 4rem;
     }
+
+    #question {
+        padding: 5rem 6rem;
+    }
 }
 
 
