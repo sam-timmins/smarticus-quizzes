@@ -19,6 +19,11 @@ const historyQuestionsRef = document.querySelector('#categoryHistory');
 const animalsQuestionsRef = document.querySelector('#categoryAnimals');
 const geographyQuestionsRef = document.querySelector('#categoryGeography');
 
+//Difficulty radios
+const easyRef = document.querySelector('#easy-diff');
+const mediumRef = document.querySelector('#medium-diff');
+const hardRef = document.querySelector('#hard-diff');
+
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
 const insertCategoryNameRef = document.querySelector('#quiz-category');
@@ -44,6 +49,7 @@ let score = 0;
 let questionCounter = 0;
 let questions = [];
 let availableQuestions = [];
+
 
 /**
  * Shows spin loader until DOM is loaded then displays the user form
@@ -99,6 +105,25 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
 }
 
 /**
+ * Create the difficulty of the game depending on a selected radio button
+ * by the user
+ */
+const difficulty = () => {
+    
+    let diff = '';
+
+    if (easyRef.checked){
+        diff = 'easy';
+    } else if (mediumRef.checked) {
+        diff = 'medium';
+    } else if (hardRef.checked) {
+        diff = 'hard';
+    } else {
+        alert('Pleaee select a difficulty')
+    }
+}
+
+/**
  * Logs the name of the user from user-form and then closes the user-form, 
  * adds name to the welcome box and opens catagory grid.
  */
@@ -137,6 +162,7 @@ const handleQuestionScreen = () => {
 const sportsQuestions = () => {
     handleQuestionScreen();
     getQuestions(21);
+
 }
 
 /**
