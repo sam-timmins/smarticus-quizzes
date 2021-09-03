@@ -18,6 +18,7 @@ const filmQuestionsRef = document.querySelector('#categoryFilm');
 const historyQuestionsRef = document.querySelector('#categoryHistory');
 const animalsQuestionsRef = document.querySelector('#categoryAnimals');
 const geographyQuestionsRef = document.querySelector('#categoryGeography');
+const difficultyButtonsRef = document.querySelector('#difficulty-buttons');
 
 //Difficulty radios
 const easyRef = document.querySelector('#easy-diff');
