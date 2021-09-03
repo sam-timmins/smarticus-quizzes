@@ -14,16 +14,19 @@
 <title>Smarticus</title>
 </head>
 <body>
-
+    
+    <!-- Spin loader -->
     <div id="spin-loader" class="spin-loader center-all">
         <img src="assets/images/loading.gif" alt="Spinnig loading wheel">
     </div>
 
+    <!--Header section -->
     <header id="header">
         <i class="fab fa-think-peaks" id="logo"></i>
         <p class="header-text">Smarticus</p>
     </header>
 
+    <!-- User form section -->
     <section id="user" class="center-all">
         <h2><i class="fab fa-think-peaks"></i> Smarticus Quizzes</h2>
         <form class="center-all" id="user-form" autocomplete="off">
@@ -33,44 +36,58 @@
         </form>
     </section>
 
+    <!-- Main grid catagory section-->
     <section id="main-category-grid">
+        <!-- Welcome note to the user, name inserted to <p> in script.js handleUserFormSubmit()-->
         <div id="welcome-person" class="center-all category-grid-item1">
             <p>Pick a category</p>
         </div>
+        <!-- Chooses the quiz catagories -->
+        <!-- Sport -->
         <div id="categorySports" class="center-all grid-even category-grid-item2" aria-label="Link to sports questions (opens in the same tab)">
             <i class="fas fa-dumbbell"></i>
             <p>Sports</p>
         </div>
+        <!-- Science -->
         <div id="categoryScience" class="center-all grid-odd category-grid-item3" aria-label="Link to science questions (opens in the same tab)">
             <i class="fas fa-atom"></i>
             <p>Science</p>
         </div>
+        <!-- Film -->
         <div id="categoryFilm" class="center-all grid-even category-grid-item4" aria-label="Link to film questions (opens in the same tab)">
             <i class="fas fa-video"></i>
             <p>Film</p>
         </div>
+        <!-- History -->
         <div id="categoryHistory" class="center-all grid-odd category-grid-item5" aria-label="Link to history questions (opens in the same tab)">
             <i class="fab fa-fort-awesome"></i>
             <p>History</p>
         </div>
+        <!-- Animals -->
         <div id="categoryAnimals" class="center-all grid-even category-grid-item6" aria-label="Link to animals questions (opens in the same tab)">
             <i class="fas fa-spider"></i>
             <p>Animals</p>
         </div>
+        <!-- Grography -->
         <div id="categoryGeography" class="center-all grid-odd category-grid-item7" aria-label="Link to geography questions (opens in the same tab)">
             <i class="fas fa-globe-europe"></i>
             <p>Geography</p>
         </div>
-    
-    
     </section>
 
+    <!-- Question Section -->
     <section id="questions" class="center-all">
+        <!-- Closes the question screen -->
         <p id="close-questions">&#10005</p>
+        <!-- Quiz catagory populated in script.js addCatagoryToQuestionPage() -->
         <h3 id="quiz-category"></h3>
+        <!-- User score populated in script.js increaseScore() -->
         <p id="score"></p>
+        <!-- Question number populated in script.js increaseQuestionCounter() -->
         <p id="question-number"></p>
+        <!-- Question populated in script.js getNewQuestion() -->
         <h2 id="question"></h2>
+        <!-- Options for user to select -->
         <div class="options-container">
             <p class="option">A</p>
             <p class="option-text"></p>
@@ -89,29 +106,35 @@
         </div>
     </section>
 
+    <!-- Results screen section -->
     <section id="results-screen" class="center-all">
         <h2><i class="fab fa-think-peaks"></i> Smarticus Quizzes</h2>
+        <!-- User's results from the game populated in script.js displayResults() -->
         <p id="results-user"></p>
+        <!-- User's results from the game populated in script.js increaseScore() -->
         <p id="results-score"></p>
         <button id="results-button" class="round-button"><i class="fas fa-arrow-right"></i></button>
     </section>
 
+    <!-- Difficulty buttons section -->
     <section  id="difficulty-buttons">
         <div id="difficulty" class="center-all">
+            <!-- Easy button -->
             <div>
                 <input type="radio" name="difficulty" id="easy-diff" value="easy" checked>
                 <label for="easy-diff" class="diff-label">Easy</label>
             </div>
+            <!-- So-so button -->
             <div>
                 <input type="radio" name="difficulty" id="medium-diff" value="medium">
                 <label for="medium-diff" class="diff-label">So-so</label>
             </div>
+            <!-- Hard button -->
             <div>
                 <input type="radio" name="difficulty" id="hard-diff" value="hard">
                 <label for="hard-diff" class="diff-label">Hard</label>
             </div>
         </div>
-
     </section>
 
 
