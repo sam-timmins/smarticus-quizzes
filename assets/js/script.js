@@ -123,8 +123,6 @@ const difficulty = () => {
         difficultyLevel = 'medium';
     } else if (hardRef.checked) {
         difficultyLevel = 'hard';
-    } else {
-        difficultyLevel = 'easy';
     }
 }
 
@@ -260,6 +258,7 @@ const extractData = listOfQuestions => {
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
     getNewQuestion();
+    console.log(availableQuestions)
 }
 
 /**
