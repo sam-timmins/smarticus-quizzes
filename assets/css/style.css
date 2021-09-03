@@ -109,7 +109,7 @@ body {
 }
 
 #difficulty-buttons {
-    display: inline;
+    display: none;
 }
 
 #difficulty {
