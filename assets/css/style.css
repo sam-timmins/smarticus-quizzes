@@ -401,7 +401,7 @@ body {
 @media (min-width: 992px) {
     #main-category-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        height: 88vh;
+        height: 83vh;
     } 
     
     .category-grid-item1 {
