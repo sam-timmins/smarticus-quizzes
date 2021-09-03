@@ -100,6 +100,9 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
         case 'grid':
             htmlRef.style.display = 'grid';
             break;
+        case 'inline':
+            htmlRef.style.display = 'inline';
+            break;
         default: 
             console.log('Display not recognised');
         break
