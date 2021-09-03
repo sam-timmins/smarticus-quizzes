@@ -116,10 +116,11 @@ body {
     justify-content: space-evenly;
     width: 100%;
     background-color: var(--red);
-    height: 8rem;
+    height: 10rem;
     position: fixed;
-    bottom: 0;
+    top: 7rem;
     left: 0;
+
 }
 
 #difficulty input {
