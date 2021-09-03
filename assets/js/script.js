@@ -146,6 +146,7 @@ const handleQuestionScreen = () => {
     handleScreenDisplay('flex', spinLoaderRef);
     handleScreenDisplay('none', categoryGridRef);
     handleScreenDisplay('none', headerRef);
+    difficulty();
     setTimeout(function(){
         handleScreenDisplay('flex', questionsScreenRef);
         scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
