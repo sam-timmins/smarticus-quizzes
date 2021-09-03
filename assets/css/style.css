@@ -108,6 +108,10 @@ body {
     justify-content: space-evenly;
 }
 
+#difficulty-buttons {
+    display: inline;
+}
+
 #difficulty {
     justify-content: space-evenly;
     width: 100%;
