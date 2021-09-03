@@ -30,12 +30,12 @@ const questionsScreenRef = document.querySelector('#questions');
 const insertCategoryNameRef = document.querySelector('#quiz-category');
 const closeQuestionsRef = document.querySelector('#close-questions');
 const questionRef = document.querySelector('#question');
-const optionsRef = Array.from(document.querySelectorAll('.option-text'));
-const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 const optionLetterRef = document.querySelector('.option');
 const categorySelectionRef = document.querySelectorAll('.category');
 const scoreRef = document.querySelector('#score');
 const questionNumberRef = document.querySelector('#question-number');
+const optionsRef = Array.from(document.querySelectorAll('.option-text'));
+const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
