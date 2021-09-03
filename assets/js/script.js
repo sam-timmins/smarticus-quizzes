@@ -140,6 +140,7 @@ const handleUserFormSubmit = event => {
     handleScreenDisplay('none', userSectionRef);
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('flex', headerRef);
+    handleScreenDisplay('inline', difficultyButtonsRef);
 }
 
 /**
