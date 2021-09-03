@@ -169,7 +169,7 @@ const sportsQuestions = () => {
  */
 const scienceQuestions = () => {
     handleQuestionScreen();
-    getQuestions(17, diff);
+    getQuestions(17, difficultyLevel);
 }
 
 /**
@@ -178,7 +178,7 @@ const scienceQuestions = () => {
  */
  const filmQuestions = () => {
     handleQuestionScreen();
-    getQuestions(11, diff);
+    getQuestions(11, difficultyLevel);
 }
 
 /**
@@ -187,7 +187,7 @@ const scienceQuestions = () => {
  */
  const historyQuestions = () => {
     handleQuestionScreen();
-    getQuestions(23, diff);
+    getQuestions(23, difficultyLevel);
 }
 
 /**
@@ -196,7 +196,7 @@ const scienceQuestions = () => {
  */
  const animalsQuestions = () => {
     handleQuestionScreen();
-    getQuestions(27, diff);
+    getQuestions(27, difficultyLevel);
 }
 
 /**
@@ -205,7 +205,7 @@ const scienceQuestions = () => {
  */
  const geographyQuestions = () => {
     handleQuestionScreen();
-    getQuestions(22, diff);
+    getQuestions(22, difficultyLevel);
 }
 
 /**
