@@ -70,6 +70,7 @@ const closeQuestionSection = () => {
     handleScreenDisplay('flex', headerRef);
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('none', questionsScreenRef);
+    handleScreenDisplay('inline', difficultyButtonsRef);
     resetCounters();
 }
 
