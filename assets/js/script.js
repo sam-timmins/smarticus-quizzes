@@ -151,6 +151,7 @@ const handleQuestionScreen = () => {
     handleScreenDisplay('flex', spinLoaderRef);
     handleScreenDisplay('none', categoryGridRef);
     handleScreenDisplay('none', headerRef);
+    handleScreenDisplay('none', difficultyButtonsRef);
     difficulty();
     setTimeout(function(){
         handleScreenDisplay('flex', questionsScreenRef);
