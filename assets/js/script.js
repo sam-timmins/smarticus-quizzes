@@ -52,7 +52,6 @@ let questions = [];
 let availableQuestions = [];
 let difficultyLevel = '';
 
-
 /**
  * Shows spin loader until DOM is loaded then displays the user form
  */
@@ -258,7 +257,6 @@ const extractData = listOfQuestions => {
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
     getNewQuestion();
-    console.log(availableQuestions)
 }
 
 /**
@@ -266,6 +264,7 @@ const runQuiz = (questions) => {
  * via a random number selection and add the question text to the html. Also add the catagory to 
  * the question page using the catagory of the current question.
  */
+
 const getNewQuestion = () => {
     if (questionCounter >= maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
@@ -285,41 +284,42 @@ const getNewQuestion = () => {
     addCatagoryToQuestionPage(currentQuestion.category);
 }
 
+
+
 /**
  * Checks answers when they are clicked on. Adds to the score for a correct answer, 
  * adds correct or incorrect class to the selected option. If the answer is wrong, 
  * adds correct class to the correct answer then creates a small delay 
  * before getting a new question.
  */
-const checkAnswer = () => {
-        optionsRef.forEach(option => {
-        option.addEventListener('click', event => {
-            const selectedOption = event.target;
-            const selectedAnswer = selectedOption.textContent;
-            if (selectedAnswer == currentQuestion.correctAnswer){
-                increaseScore();
-                selectedOption.classList.add('option-correct')
-                setTimeout(function(){
-                    selectedOption.classList.remove('option-correct')
-                    getNewQuestion()
-                }, 1000)     
-            } else {
-                for (let i = 0; i < optionsRef.length; i++) {
-                    if (optionsRef[i].innerHTML == currentQuestion.correctAnswer){ 
-                        optionsRef[i].classList.add('option-correct');
-                        setTimeout(function(){
-                            optionsRef[i].classList.remove('option-correct')
-                        }, 1000)
-                    }
-                }
-                selectedOption.classList.add('option-incorrect')
-                setTimeout(function(){
-                    selectedOption.classList.remove('option-incorrect')
 
-                    getNewQuestion()
-                }, 1000)
+ optionsRef.forEach(option => {
+    option.addEventListener('click', event => {
+        const selectedOption = event.target;
+        const selectedAnswer = selectedOption.textContent;
+        if (selectedAnswer == currentQuestion.correctAnswer){
+            increaseScore();
+            selectedOption.classList.add('option-correct')
+            setTimeout(function(){
+                selectedOption.classList.remove('option-correct')
+
+                getNewQuestion()
+            }, 1000)     
+        } else {
+            for (let i = 0; i < optionsRef.length; i++) {
+                if (optionsRef[i].innerHTML == currentQuestion.correctAnswer){ 
+                    optionsRef[i].classList.add('option-correct');
+                    setTimeout(function(){
+                        optionsRef[i].classList.remove('option-correct')
+                    }, 1000)
+                }
             }
-        });
+            selectedOption.classList.add('option-incorrect')
+            setTimeout(function(){
+                selectedOption.classList.remove('option-incorrect')
+                getNewQuestion()
+            }, 1000)
+        }
     });
 }
 
@@ -327,7 +327,7 @@ const checkAnswer = () => {
  * Increases the score by one
  */
 const increaseScore = () => {
-    score ++;
+    score++;
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
@@ -362,6 +362,7 @@ const displayResults = () => {
 const resetCounters = () => {
     score = 0;
     questionCounter = 0;
+    questions = [];
 }
 
 // User Form
