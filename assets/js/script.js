@@ -292,7 +292,7 @@ const getNewQuestion = () => {
  * before getting a new question.
  */
 
- optionsRef.forEach(option => {
+optionsRef.forEach(option => {
     option.addEventListener('click', event => {
         const selectedOption = event.target;
         const selectedAnswer = selectedOption.textContent;
@@ -320,7 +320,7 @@ const getNewQuestion = () => {
             }, 1000)
         }
     });
-}
+});
 
 /**
  * Increases the score by one
