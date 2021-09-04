@@ -155,7 +155,6 @@ const handleQuestionScreen = () => {
     setTimeout(function(){
         handleScreenDisplay('flex', questionsScreenRef);
         scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-        checkAnswer();
         handleScreenDisplay('none', spinLoaderRef);
     }, 3000)
 }
