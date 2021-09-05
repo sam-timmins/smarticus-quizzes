@@ -72,6 +72,7 @@ const closeQuestionSection = () => {
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('none', questionsScreenRef);
     handleScreenDisplay('inline', difficultyButtonsRef);
+    handleScreenDisplay('flex', footerRef);
     resetCounters();
 }
 
