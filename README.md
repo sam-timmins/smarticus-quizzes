@@ -365,21 +365,21 @@ The results screen has very little content, except the essentials.
 
 The site owners name and logo continue with the rest of the screens and is pronounced and clear at the top of the page.
 
-The text feedback uses the username to personalise the final message and also adds in the category that was last attempted. There are three different messages to the user depending on the results, these are shown below.
+The text feedback uses the username to personalise the final message and also adds in the category that was last attempted. There are nine different messages to the user depending on the results and which difficulty level they  are playing under. Here are an example of some of the screns.
 
-* Less than 4 out of 10
+* Less than 5 out of 10
 
 ![Results Screen, low score](wireframes/results-screen-low-score.jpg)
 \
 &nbsp;
 
-* Greater than or equal to 4 out of 10
+* Greater than or equal to 5 out of 10
 
 ![Results Screen, medium score](wireframes/results-screen-medium-score.jpg)
 \
 &nbsp;
 
-* Greater than or equal to 7 out of 10
+* Greater than or equal to 8 out of 10
 
 ![Results Screen, high score](wireframes/results-screen-high-score.jpg)
 \
@@ -387,7 +387,7 @@ The text feedback uses the username to personalise the final message and also ad
 
 The final score follows the feedback comment. This is simply just a copy of the score from the question screen and displayed clearly for the user to see.
 
-The return button is the same in design as the welcome screen button to keep consistency across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user to the personalised categories screen and secondly it sets the score and question counter back to 0, ready for another round.
+The return button is the same in design as the welcome screen button to keep consistency across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user to the personalised categories screen and secondly it resets the game ready for another round.
 
 \
 &nbsp;
