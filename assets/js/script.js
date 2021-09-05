@@ -362,6 +362,8 @@ const resetCounters = () => {
     score = 0;
     questionCounter = 0;
     questions = [];
+    availableQuestions = [];
+    currentQuestion = {};
 }
 
 // User Form
