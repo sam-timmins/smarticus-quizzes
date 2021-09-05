@@ -255,7 +255,7 @@ The difficulty levels are also placed here, and along with the **Smarticus** log
 ![Welcome Screen](wireframes/category-screen-header1.jpg)
 ![Welcome Screen](wireframes/category-screen-header2.jpg)
 \
-&nbsp
+&nbsp;
 
 * *Header view when scrolled down the categories screen*
 \
@@ -341,7 +341,7 @@ Finally, the question number displays to the user how many questions have been a
 
 The question is populated using the API and is set to a larger font than the rest of the screen, for clarity to the user.
 
-The answers are designed to be as simple to look at as possible, but also pack in enough information as needed. There is an option identification, A, B, C and D and these are in contrast colours to the actual answer itself.
+The answers are designed to be as simple to look at as possible, but also pack in enough information as needed. There is an option identification, A, B, C and D and these are in contrast colours to the actual answer itself. The curser is also set to a pointer for user experience of larger screen sizes.
 
 If the answer selected is correct, the option selected flashes green before moving to the next question in the category.
 
