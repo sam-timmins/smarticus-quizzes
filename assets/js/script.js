@@ -346,6 +346,7 @@ const increaseQuestionCounter = () => {
  * Adds the username and score to the results screen
  */
 const displayResults = () => {
+    handleScreenDisplay('flex', footerRef);
     if (score >= 8 && difficultyLevel == 'hard'){
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Especially on the hard ones!`;
     } else if (score >= 8 && difficultyLevel == 'medium') {
