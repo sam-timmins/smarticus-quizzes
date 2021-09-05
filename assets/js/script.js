@@ -117,7 +117,6 @@ const handleScreenDisplay = (displayProperty, htmlRef) => {
  * by the user
  */
 const difficulty = () => {
-
     if (easyRef.checked){
         difficultyLevel = 'easy';
     } else if (mediumRef.checked) {
@@ -348,7 +347,6 @@ const increaseQuestionCounter = () => {
  */
 const displayResults = () => {
     handleScreenDisplay('flex', footerRef);
-    
     // Score above or equal to 8
     // Hard
     if (score >= 8 && difficultyLevel == 'hard'){
@@ -385,11 +383,9 @@ const displayResults = () => {
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
-
 /**
  * Resets the score and the question counter
  */
-
 const resetCounters = () => {
     score = 0;
     questionCounter = 0;

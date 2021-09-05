@@ -245,7 +245,7 @@ Under the site owners name is a small amount of text giving simple instruction t
 
 ### Quiz Category Screen
 
-This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories.
+This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories. The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level.
 
 * *Header view on initial load of the categories screen*
 \
@@ -280,24 +280,26 @@ The personalisation of the game begins at this point. Whatever the user decided 
 The categories are clean and clear with their description and are also helped visually with a font-awsome icon. The text and icon alternate from left to right, giving a more comfortable feel to the user's eye as they scan through the screen. The alternating colour scheme is a sharp design that encourages the user to scroll down on smaller devices to see all the categories. On the desktop design, the categories are set to fill the screen height so there is no need for scrolling. They are also set to adjust the position of categories, depending on how the checker pattern changes with the screen size. 
 
 To increase user experience, rather than just the text having to be clicked for the user to progress to the chosen category, the whole colour block it sits in carries out this function. This allows the user not to have to be as precise with their actions.
+
+Also situated at the very bottom of the screen in the form of a footer, is the developers name.  
 \
 &nbsp;
 
-* *Phone and tablet*
+* *Phone*
 
 ![Catagories Screen](wireframes/category-screen.jpg)
 \
 &nbsp;
 
-* *Desktop*
+* *Tablet*
 
-![Catagories Screen](wireframes/catagory-screen-desktop.jpg)
+![Catagories Screen](wireframes/category-screen-tablet.jpg)
 \
 &nbsp;
 
-* *XL - Desktop*
+* *Desktop*
 
-![Catagories Screen](wireframes/catagory-screen-large-desktop.jpg)
+![Catagories Screen](wireframes/category-screen-large-desktop.jpg)
 \
 &nbsp;
 
