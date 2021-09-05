@@ -85,6 +85,7 @@ const closeResultsScreen = () => {
     handleScreenDisplay('none', resultsScreenRef);
     handleScreenDisplay('flex', headerRef);
     handleScreenDisplay('inline', difficultyButtonsRef);
+    handleScreenDisplay('flex', footerRef);
     resetCounters();
 }
 
