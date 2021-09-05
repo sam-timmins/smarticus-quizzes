@@ -42,6 +42,9 @@ const resultsButtonRef = document.querySelector('#results-button');
 const resultsUserRef = document.querySelector('#results-user');
 const resultsScoreRef = document.querySelector('#results-score');
 
+// Footer
+const footerRef = document.querySelector('#developer-name');
+
 // Game variables
 const maxQuestions = 10;
 let currentQuestion = {};
