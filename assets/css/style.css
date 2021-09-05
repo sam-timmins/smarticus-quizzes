@@ -336,10 +336,6 @@ body {
     background-color: var(--grey);
 }
 
-#spin-loader i {
-    font-weight: 100;
-}
-
 .developer-name {
     color: var(--white);
     font-size: 2rem;
