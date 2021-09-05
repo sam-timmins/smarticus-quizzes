@@ -348,22 +348,37 @@ const increaseQuestionCounter = () => {
  */
 const displayResults = () => {
     handleScreenDisplay('flex', footerRef);
+    
+    // Score above or equal to 8
+    // Hard
     if (score >= 8 && difficultyLevel == 'hard'){
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Especially on the hard ones!`;
+    // Medium
     } else if (score >= 8 && difficultyLevel == 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Go on, now try the hard ones!`;
+    // Easy
     } else if (score >= 8 && difficultyLevel == 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. But they were only the easy ones!`;
+    
+    // Score above or equal to 5
+    // Hard
     } else if (score >= 5 && difficultyLevel == 'hard') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Especially on the hard ones!`;
+    // Medium
     } else if (score >= 5 && difficultyLevel == 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Nearly fit for the hard ones!`;
+    // Easy
     } else if (score >= 5 && difficultyLevel == 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Bit more practice maybe!`;
+    
+    // Score below 5
+    // Hard
     } else if (score < 5 && difficultyLevel == 'hard') {
         resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} is tough, maybe drop it down a notch!`;
+    // Medium
     } else if (score < 5 && difficultyLevel == 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}.  ${currentQuestion.category} maybe isn't your best topic but don't give up!`;
+    // Easy
     } else if (score < 5 && difficultyLevel == 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} just didn't suit you. Maybe try another topic!`;
     }
