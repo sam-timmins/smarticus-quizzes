@@ -343,16 +343,28 @@ const increaseQuestionCounter = () => {
  * Adds the username and score to the results screen
  */
 const displayResults = () => {
-    if (score >= 7){
-        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}, try another!`;
-    } else if (score >= 4) {
-        resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}, try another!`;
-    } else {
-        resultsUserRef.innerHTML = `${userNameRef.value}, ${currentQuestion.category} didn't suit you... try another!`;
+    if (score >= 8 && difficultyLevel == 'hard'){
+        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Especially on the hard ones!`;
+    } else if (score >= 8 && difficultyLevel == 'medium') {
+        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Go on, now try the hard ones!`;
+    } else if (score >= 8 && difficultyLevel == 'easy') {
+        resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. But they were only the easy ones!`;
+    } else if (score >= 5 && difficultyLevel == 'hard') {
+        resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Especially on the hard ones!`;
+    } else if (score >= 5 && difficultyLevel == 'medium') {
+        resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Nearly fit for the hard ones!`;
+    } else if (score >= 5 && difficultyLevel == 'easy') {
+        resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Bit more practice maybe!`;
+    } else if (score < 5 && difficultyLevel == 'hard') {
+        resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} is tough, maybe drop it down a notch!`;
+    } else if (score < 5 && difficultyLevel == 'medium') {
+        resultsUserRef.innerHTML = `${userNameRef.value}.  ${currentQuestion.category} maybe isn't your best topic but don't give up!`;
+    } else if (score < 5 && difficultyLevel == 'easy') {
+        resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} just didn't suit you. Maybe try another topic!`;
     }
-
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
+
 
 /**
  * Resets the score and the question counter
