@@ -468,6 +468,9 @@ The initial score layout I had was not clear either. I had the layout set up as 
 &nbsp;
 
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially, I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however, it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidance I added it to the head section of the Html and it worked perfectly.
+\
+&nbsp;
+## JavaScript
 
 With this being my first project using JavaScript, naturally, I encountered some issues that I had to work through.
 
@@ -475,7 +478,9 @@ One of my major headaches was getting the initial array of data from the API out
 
 When I ran a test on the quiz, I quickly realised that the initial iteration of the question answers into the option boxes always left the correct answer as option D. This led to a very easy way to cheat if the user worked this out. I had carried out some research and came across the [Fisher-Yates shuffle](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle "Fisher-Yates shuffle"), although this was gaining the random number to slot the correct answer into, I felt that there was no need for a more complex, multi-line code to be included as there were only four options. I added a random sort to the function where a new question is generated, and this simple method works well.
 
+The biggest bug that I faced in the development of this game, and the issue that took by far the longest amount of time to rectify, was that when the user played round 2, the counters (score and question counter) all incremented by 2. In the third round, they incremented by 3 and so on. This meant that by round 5, the user was only getting 1 question and the game was ending. 
 
+The problem stemmed from my click event listener within my checkAnswer function. It was looping the extra times as it was called, depending on how many times the handleQuestionScreen function was called. After lots of time, I simply took the forEach click eventListener out of a function and then took that out of the handleQuestionScreen function so it just ran the once as it was needed instead of being forced. 
 
 \
 &nbsp;
