@@ -27,6 +27,8 @@ Smarticus is an online quiz that allows the user to select from several categori
         * [Languages](#languages)
         * [Tools and Libraries](#tools-and-libraries)
     * [Testing](#testing)
+        * [Layout](#layout)
+        * [JavaScript](#javascript)
         * [Unfixed Bugs](#unfixed-bugs)
     * [Deployment](#deployment)
     * [Credits](#credits)
