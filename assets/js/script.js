@@ -16,7 +16,7 @@ const sportsQuestionsRef = document.querySelector('#categorySports');
 const scienceQuestionsRef = document.querySelector('#categoryScience');
 const filmQuestionsRef = document.querySelector('#categoryFilm');
 const historyQuestionsRef = document.querySelector('#categoryHistory');
-const musicQuestionsRef = document.querySelector('#categoryAnimals');
+const musicQuestionsRef = document.querySelector('#categoryMusic');
 const geographyQuestionsRef = document.querySelector('#categoryGeography');
 const difficultyButtonsRef = document.querySelector('#difficulty-buttons');
 
