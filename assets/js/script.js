@@ -134,11 +134,9 @@ const difficulty = () => {
  */
 const handleUserFormSubmit = event => {
     event.preventDefault();
-    
     let welcomeMesage = document.createElement('p');
     welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
-    welcomeCategoryGridRef.insertBefore(welcomeMesage, welcomeCategoryGridRef.childNodes[0]);
-    
+    welcomeCategoryGridRef.insertBefore(welcomeMesage, welcomeCategoryGridRef.childNodes[0]);    
     handleScreenDisplay('none', userSectionRef);
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('flex', headerRef);
@@ -268,7 +266,6 @@ const runQuiz = (questions) => {
  * via a random number selection and add the question text to the html. Also add the catagory to 
  * the question page using the catagory of the current question.
  */
-
 const getNewQuestion = () => {
     if (questionCounter >= maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
@@ -287,8 +284,6 @@ const getNewQuestion = () => {
             }
     addCatagoryToQuestionPage(currentQuestion.category);
 }
-
-
 
 /**
  * Checks answers when they are clicked on. Adds to the score for a correct answer, 
@@ -343,7 +338,6 @@ const increaseQuestionCounter = () => {
     questionNumberRef.innerHTML = `Question: ${questionCounter}`;
 }
 
-
 /**
  * Adds the username and score to the results screen
  */
@@ -386,7 +380,7 @@ const displayResults = () => {
 }
 
 /**
- * Resets the score and the question counter
+ * Resets the score, the question counter and all question arrays and objects
  */
 const resetCounters = () => {
     score = 0;
