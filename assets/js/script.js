@@ -404,7 +404,7 @@ sportsQuestionsRef.addEventListener('click', sportsQuestions);
 scienceQuestionsRef.addEventListener('click', scienceQuestions);
 filmQuestionsRef.addEventListener('click', filmQuestions);
 historyQuestionsRef.addEventListener('click', historyQuestions);
-animalsQuestionsRef.addEventListener('click', animalsQuestions);
+musicQuestionsRef.addEventListener('click', musicQuestions);
 geographyQuestionsRef.addEventListener('click', geographyQuestions);
 
 // Question Screen
