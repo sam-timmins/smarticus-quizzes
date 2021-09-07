@@ -306,6 +306,11 @@ Also situated at the very bottom of the screen in the form of a footer, is the d
 \
 &nbsp;
 
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
 ### Question Screen 
 
@@ -352,6 +357,12 @@ If the answer selected is correct, the option selected flashes green before movi
 If the answer is incorrect, the selected option flashes red and also the correct answer flashes green so the user can learn from their mistake.
 
 ![Incorrect Answer](wireframes/quiz-screen-incorrect-answer.gif)
+\
+&nbsp;
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
 \
 &nbsp;
 
@@ -468,8 +479,13 @@ The initial score layout I had was not clear either. I had the layout set up as 
 &nbsp;
 
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially, I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however, it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidance I added it to the head section of the Html and it worked perfectly.
+
 \
 &nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+
 ## JavaScript
 
 With this being my first project using JavaScript, naturally, I encountered some issues that I had to work through.
