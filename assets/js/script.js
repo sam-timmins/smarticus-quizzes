@@ -206,7 +206,7 @@ const scienceQuestions = () => {
  */
  const musicQuestions = () => {
     handleQuestionScreen();
-    getQuestions(27, difficultyLevel);
+    getQuestions(12, difficultyLevel);
 }
 
 /**
