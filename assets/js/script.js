@@ -204,7 +204,7 @@ const scienceQuestions = () => {
  * Opens question and answer screen, closes the catagories grid, adds the catagory name 
  * into the title and inserts the animals questions.
  */
- const animalsQuestions = () => {
+ const musicQuestions = () => {
     handleQuestionScreen();
     getQuestions(27, difficultyLevel);
 }
