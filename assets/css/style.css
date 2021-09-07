@@ -2,12 +2,27 @@
 /*
     1. Global Styles
     2. Center All
-    3. Header
-    4. Main Catagories Grid
-    5. User Form
-    6. Questions
-    7. Page Loader
-    8. Results Screen
+    3. Buttons
+    4. Header
+    5. Main Categories Grid
+    6. Difficulty buttons
+    7. User Form
+    8. Questions Screen
+        8.1 Answer Options
+    9. Page Loader
+    10. Footer 
+    11. Results Screen
+    12. >=768px (Tablet)
+        12.1 Main Category Grid
+    13. >=992px (Desktop) 
+        13.1 Main Category Grid
+        13.2 User Form
+        13.3 Questions Screen
+        13.4 Difficulty buttons
+    14. >=1200px (xl - Desktop)
+        14.1 Questions Screen
+        14.2 Results Screen
+        14.3 Main Category Grid
 */
 
 
@@ -49,7 +64,23 @@ body {
     align-items: center;
 }
 
-/* 3. Header */
+/* 3. Buttons */
+
+.round-button {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--grey);
+    box-shadow: 0px 0px 20px 4px rgba(245, 246, 244, 0.63);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* 4. Header */
 
 #header {
     position: fixed;
@@ -77,7 +108,7 @@ body {
     margin: 0;
 }
 
-/* 4. Main Catagories Grid */
+/* 5. Main Catagories Grid */
 
 #main-category-grid {
     display: none;
@@ -107,6 +138,8 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+/* 6. Difficulty buttons */ 
 
 #difficulty-buttons {
     display: none;
@@ -145,7 +178,7 @@ body {
     box-shadow: 0px 0px 20px 4px rgba(245, 246, 244, 0.63);
 }
 
-/* 5. User Form */ 
+/* 7. User Form */ 
 
 #user {
     flex-direction: column;
@@ -188,20 +221,6 @@ body {
     color: var(--white);
 }
 
-.round-button {
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    color: var(--white);
-    background-color: var(--grey);
-    box-shadow: 0px 0px 20px 4px rgba(245, 246, 244, 0.63);
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 3rem;
-    letter-spacing: 2px;
-}
-
 #user-submit:hover, #results-button:hover {
     animation: 1s bounce forwards;
 }
@@ -228,7 +247,7 @@ body {
 }
 
 
-/* 6. Questions */ 
+/* 8. Questions Screen */ 
 
 #questions {
     display: none;
@@ -283,6 +302,8 @@ body {
     right: 2rem;
 }
 
+/* 8.1 Answer Options */
+
 .options-container {
     display: flex;
     flex-direction: row;
@@ -322,7 +343,7 @@ body {
 }
 
 
-/* 7. Page Loader */
+/* 9. Page Loader */
 
 .spin-loader {
     display: flex;
@@ -335,6 +356,19 @@ body {
     width: 100%;
     background-color: var(--grey);
 }
+
+.spin-loader-vanish{
+    animation: vanish 1s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* 10. Footer */
 
 #developer-name {
     position: fixed;
@@ -357,18 +391,7 @@ body {
     text-transform: uppercase;
 }
 
-.spin-loader-vanish{
-    animation: vanish 1s forwards;
-}
-
-@keyframes vanish {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-/* 8. Results Screen */
+/* 11. Results Screen */
 
 #results-screen {
     width: 100%;
@@ -389,10 +412,11 @@ body {
     text-align: center;
 }
 
-
-/*  >=768px (Tablet) */
+/*  12. >=768px (Tablet) */
 
 @media (min-width: 768px) {
+    
+/* 12.1 Main Category Grid */
     #main-category-grid {
         position: absolute;
         top: 0;
@@ -417,9 +441,11 @@ body {
     }
 }
 
-/* >=992px (Desktop) */
+/* 13. >=992px (Desktop) */
 
 @media (min-width: 992px) {
+    
+/* 13.1 Main Category Grid */   
     #main-category-grid {
         grid-template-columns: 1fr 1fr 1fr;
         height: 83vh;
@@ -433,14 +459,7 @@ body {
         grid-area: 2 / 3 / 3 / 4;
     }
 
-    .options-container {
-        width: 60%;
-    }
-
-    .options-container:hover {
-    box-shadow: 0px 0px 15px 5px rgba(159, 35, 35, 0.5);
-    }
-
+/* 13.2 User Form */
     #user-form label {
         font-size: 2.5rem;;
     }
@@ -453,10 +472,20 @@ body {
         font-size: 4rem;
     }
 
+/* 13.3 Questions Screen */
     #question {
         padding: 5rem 6rem;
     }
 
+    .options-container {
+        width: 60%;
+    }
+
+    .options-container:hover {
+    box-shadow: 0px 0px 15px 5px rgba(159, 35, 35, 0.5);
+    }
+
+/* 13.4 Difficulty buttons */
     .diff-label {
         display: flex;
         justify-content: center;
@@ -467,9 +496,11 @@ body {
 }
 
 
-/* >=1200px (xl - Desktop) */
+/* 14. >=1200px (xl - Desktop) */
 
 @media (min-width: 1200px) {
+
+/* 14.1 Questions Screen */
     #quiz-category, #score {
         font-size: 2.5rem;
         left: 4rem;
@@ -498,6 +529,7 @@ body {
         top: 2rem;
     }
 
+/* 14.2 Results Screen */
     #results-screen h2 {
         font-size: 8rem;
     }
@@ -506,6 +538,7 @@ body {
         font-size: 3rem;
     }
 
+/* 14.3 Main Category Grid */
     #main-category-grid div p, #main-category-grid div i {
         font-size: 4rem;
     }
