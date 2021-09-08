@@ -294,6 +294,7 @@ const getNewQuestion = () => {
             }
     // Add the question catagory to the question screen
     addCatagoryToQuestionPage(currentQuestion.category);
+    // Allows the user to answer a question
     letUserAnswer = true;
 }
 
@@ -306,7 +307,9 @@ const getNewQuestion = () => {
 
 optionsRef.forEach(option => {
     option.addEventListener('click', event => {
+        // If the user is not alowed to answer, do nothing. 
         if(letUserAnswer == false) return;
+        // Prevents user from answering a question
         letUserAnswer = false;
         const selectedOption = event.target;
         const selectedAnswer = selectedOption.textContent;
