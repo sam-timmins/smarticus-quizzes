@@ -513,6 +513,8 @@ The biggest bug that I faced in the development of this game, and the issue that
 
 The problem stemmed from my click event listener within my checkAnswer function. It was looping the extra times as it was called, depending on how many times the handleQuestionScreen function was called. After lots of time, I simply took the forEach click eventListener out of a function and then took that out of the handleQuestionScreen function so it just ran the once as it was needed instead of being forced. 
 
+At the point that I felt that my game was ready, I put it put to the [Slack Community](https://slack.com/intl/en-ie/ "Slack"). I received a very valid piece of feedback that related to answering the questions. If the user accidentally double-clicked on an answer, it used that as the answer for the next question and it skipped through. This I solved by creating a boolean variable and then toggling it to stop the user from answering until the game was ready.
+
 \
 &nbsp;
 
