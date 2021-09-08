@@ -155,6 +155,7 @@ const handleQuestionScreen = () => {
     handleScreenDisplay('none', difficultyButtonsRef);
     handleScreenDisplay('none', footerRef);
     difficulty();
+    // Closes spin loader and opens question screen after 3 seconds
     setTimeout(function(){
         handleScreenDisplay('flex', questionsScreenRef);
         scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
@@ -267,21 +268,30 @@ const runQuiz = (questions) => {
  * the question page using the catagory of the current question.
  */
 const getNewQuestion = () => {
+    // If the question counter is greater than the max number of questions
     if (questionCounter >= maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
         displayResults();
+    // Creates a new question
     } else {
         increaseQuestionCounter();
+        // Chooses a ramdom question from the availabelQuestions array
         const questionNumber = Math.floor(Math.random() * availableQuestions.length);
+            // Assigns the random question to current question
             currentQuestion = availableQuestions[questionNumber];
+            // Adds the question to the html
             questionRef.innerHTML = currentQuestion.question;
+            // Creates a random sort of the current question answers
             currentQuestion.answer.sort(() => 0.5 - Math.random());
+            // Adds the answers to the html of the options
             for (let i = 0; i < currentQuestion.answer.length; i++){
                 optionsRef[i].innerHTML = currentQuestion.answer[i];
-                }          
+                }
+            // Removes the current question from the currentQuestions array          
             availableQuestions.splice(questionNumber, 1);
             }
+    // Add the question catagory to the question screen
     addCatagoryToQuestionPage(currentQuestion.category);
 }
 
@@ -296,24 +306,31 @@ optionsRef.forEach(option => {
     option.addEventListener('click', event => {
         const selectedOption = event.target;
         const selectedAnswer = selectedOption.textContent;
+        // If the answer is correct
         if (selectedAnswer == currentQuestion.correctAnswer){
             increaseScore();
+            // Add options-correct class to the selected option
             selectedOption.classList.add('option-correct')
+            // Remove options-correct after 1 second
             setTimeout(function(){
                 selectedOption.classList.remove('option-correct')
-
                 getNewQuestion()
             }, 1000)     
+        // If the answer is incorrect
         } else {
+            // Iterate through the answers and find the correct answer, then add options-correct class to it
             for (let i = 0; i < optionsRef.length; i++) {
                 if (optionsRef[i].innerHTML == currentQuestion.correctAnswer){ 
                     optionsRef[i].classList.add('option-correct');
+                    // Remove options-correct to the correct answer after 1 second
                     setTimeout(function(){
                         optionsRef[i].classList.remove('option-correct')
                     }, 1000)
                 }
             }
+            // Add options-incorrect class to the selected option
             selectedOption.classList.add('option-incorrect')
+            // Removes options-incorrect class to the selected option after 1 second
             setTimeout(function(){
                 selectedOption.classList.remove('option-incorrect')
                 getNewQuestion()
@@ -326,7 +343,9 @@ optionsRef.forEach(option => {
  * Increases the score by one
  */
 const increaseScore = () => {
+    // Increments the score by 1
     score++;
+    // Inserts the new score with the max number of questions
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
@@ -334,7 +353,9 @@ const increaseScore = () => {
  * Increases the question counter by one
  */
 const increaseQuestionCounter = () => {
+    // Increments the questionCounter by 1
     questionCounter++;
+    // Inserts the new questionCounter value
     questionNumberRef.innerHTML = `Question: ${questionCounter}`;
 }
 
