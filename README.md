@@ -11,6 +11,11 @@
 
 Smarticus is an online quiz that allows the user to select from several categories and prove that they are indeed a 'Smarticus' or just a big thumbs down. 
 
+\
+&nbsp;
+![Logo](wireframes/mixed-screen-sizes.jpg)
+\
+&nbsp;
 
 # Table of Contents
 * [UX](#ux "UX")
