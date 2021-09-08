@@ -294,6 +294,7 @@ const getNewQuestion = () => {
             }
     // Add the question catagory to the question screen
     addCatagoryToQuestionPage(currentQuestion.category);
+    letUserAnswer = true;
 }
 
 /**
