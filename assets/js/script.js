@@ -53,6 +53,7 @@ let questionCounter = 0;
 let questions = [];
 let availableQuestions = [];
 let difficultyLevel = '';
+let letUserAnswer = false;
 
 /**
  * Shows spin loader until DOM is loaded then displays the user form
