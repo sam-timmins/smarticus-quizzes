@@ -306,6 +306,8 @@ const getNewQuestion = () => {
 
 optionsRef.forEach(option => {
     option.addEventListener('click', event => {
+        if(letUserAnswer == false) return;
+        letUserAnswer = false;
         const selectedOption = event.target;
         const selectedAnswer = selectedOption.textContent;
         // If the answer is correct
