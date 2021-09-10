@@ -31,7 +31,7 @@ const hardRef = document.querySelector('#hard-diff');
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
 const insertCategoryNameRef = document.querySelector('#quiz-category');
-const questionsMenuRef = document.querySelector('#questionsMenu');
+const questionsMenuRef = document.querySelector('#questions-menu');
 const questionRef = document.querySelector('#question');
 const scoreRef = document.querySelector('#score');
 const questionNumberRef = document.querySelector('#question-number');
@@ -112,6 +112,13 @@ const userFormOpen = () => {
     userNameRef.focus();
 }
 
+/**
+ * 
+ */
+const openQuestionMenu = () => {
+    handleScreenDisplay('flex', questionsScreenMenuRef);
+    handleScreenDisplay('none', questionsScreenRef);
+}
 
 /**
  * Changes the css display property of the html property
