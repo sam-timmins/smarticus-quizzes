@@ -121,7 +121,7 @@ const openQuestionMenu = () => {
     handleScreenDisplay('flex', questionsScreenMenuRef);
     setTimeout(function(){
         handleScreenDisplay('none', questionsScreenRef);
-    },1000)
+    },300)
 }
 
 /**
