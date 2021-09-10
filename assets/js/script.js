@@ -220,10 +220,10 @@ const scienceQuestions = () => {
 
 /**
  * Add the catagory name to the question screen
- * @param {string} cat is dictated from the currentQuestion.catagory in getNewQuestion() 
+ * @param {string} catagory is dictated from the currentQuestion.catagory in getNewQuestion() 
  */
-const addCatagoryToQuestionPage = (cat) => {  
-    insertCategoryNameRef.innerHTML = `Smarticus:  ${cat}`;
+const addCatagoryToQuestionPage = (catagory) => {  
+    insertCategoryNameRef.innerHTML = `Smarticus:  ${catagory}`;
 }
 
 /**
