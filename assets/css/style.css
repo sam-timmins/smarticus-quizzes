@@ -86,7 +86,7 @@ body {
     letter-spacing: 2px;
 }
 
-.round-button:hover {
+.round-button:hover, .square-button:hover {
     animation: 1s bounce forwards;
 }
 
