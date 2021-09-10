@@ -163,7 +163,6 @@ body {
 
 .diff-label {
     font-size: 2rem;
-    font-weight: 100;
     margin: auto;
     cursor: pointer;
     background-color: var(--grey);
