@@ -122,6 +122,14 @@ const openQuestionMenu = () => {
 }
 
 /**
+ * 
+ */
+const closeQuestionScreenMenu = () => {
+    handleScreenDisplay('none', questionsScreenMenuRef);
+    handleScreenDisplay('flex', questionsScreenRef);
+}
+
+/**
  * Changes the css display property of the html property
  * @param {string} displayProperty refers to the display property of the specific html element 
  * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
