@@ -82,6 +82,10 @@ body {
     letter-spacing: 2px;
 }
 
+.round-button:hover {
+    animation: 1s bounce forwards;
+}
+
 /* 4. Header */
 
 #header {
@@ -221,10 +225,6 @@ body {
 #user-name:focus {
     background-color: var(--grey);
     color: var(--white);
-}
-
-#user-submit:hover, #results-button:hover {
-    animation: 1s bounce forwards;
 }
 
 /* 8. Questions Screen */ 
