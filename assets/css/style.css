@@ -393,6 +393,7 @@ body {
     background-color: var(--red);
     color: var(--white);
     justify-content: space-evenly;
+    animation: fade-in 1s ease-in;
 }
 
 /*  12. >=768px (Tablet) */
@@ -555,5 +556,15 @@ body {
     }
     100% {
         top: 0px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
