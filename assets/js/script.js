@@ -100,7 +100,8 @@ const closeResultsScreen = () => {
 }
 
 /**
- * 
+ * Opens the opening user form at the begining of the game. Resets the
+ * previous entries and focuses the text box
  */
 const userFormOpen = () => {
     handleScreenDisplay('none', categoryGridRef);
