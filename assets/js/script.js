@@ -31,7 +31,7 @@ const hardRef = document.querySelector('#hard-diff');
 // Question screen
 const questionsScreenRef = document.querySelector('#questions');
 const insertCategoryNameRef = document.querySelector('#quiz-category');
-const closeQuestionsRef = document.querySelector('#close-questions');
+const questionsMenuRef = document.querySelector('#questionsMenu');
 const questionRef = document.querySelector('#question');
 const scoreRef = document.querySelector('#score');
 const questionNumberRef = document.querySelector('#question-number');
