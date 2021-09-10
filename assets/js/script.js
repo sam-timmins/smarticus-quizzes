@@ -435,5 +435,5 @@ musicQuestionsRef.addEventListener('click', musicQuestions);
 geographyQuestionsRef.addEventListener('click', geographyQuestions);
 
 // Question Screen
-closeQuestionsRef.addEventListener('click', closeQuestionSection);
+questionsMenuRef.addEventListener('click', openQuestionMenu);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
