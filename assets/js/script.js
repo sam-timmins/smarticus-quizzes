@@ -92,8 +92,8 @@ const closeResultsScreen = () => {
 
 /**
  * Changes the css display property of the html property
- * @param {''} displayProperty refers to the display property of the specific html element 
- * @param {''} htmlRef refers to the const referance at the top of script.js
+ * @param {string} displayProperty refers to the display property of the specific html element 
+ * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
  */
 const handleScreenDisplay = (displayProperty, htmlRef) => {
     switch (displayProperty) {
