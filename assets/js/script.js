@@ -341,7 +341,6 @@ const extractData = listOfQuestions => {
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
     getNewQuestion();
-    console.log(availableQuestions);
 }
 
 /**
