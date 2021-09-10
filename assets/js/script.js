@@ -402,6 +402,7 @@ const resetCounters = () => {
 
 // Header
 logoRef.addEventListener('click', userFormOpen);
+headerTextRef.addEventListener('click', userFormOpen);
 
 // User Form
 userFormRef.addEventListener('submit', handleUserFormSubmit);
