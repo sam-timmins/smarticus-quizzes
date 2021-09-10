@@ -202,10 +202,6 @@ body {
     height: 60%;
 }
 
-#user-form label {
-    font-weight: 100;
-}
-
 #user-name {
     outline: none;
     background-color: var(--white);
