@@ -150,9 +150,7 @@ const difficulty = () => {
  */
 const handleUserFormSubmit = event => {
     event.preventDefault();
-    let welcomeMesage = document.createElement('p');
-    welcomeMesage.innerHTML = `Hi ${userNameRef.value}!`;
-    welcomeCategoryGridRef.insertBefore(welcomeMesage, welcomeCategoryGridRef.childNodes[0]);    
+    welcomeMessageRef.innerHTML = `Hi ${userNameRef.value}!`;   
     handleScreenDisplay('none', userSectionRef);
     handleScreenDisplay('grid', categoryGridRef);
     handleScreenDisplay('flex', headerRef);
