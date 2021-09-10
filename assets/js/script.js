@@ -102,6 +102,9 @@ const userFormOpen = () => {
     handleScreenDisplay('none', headerRef);
     handleScreenDisplay('none', footerRef);
     handleScreenDisplay('flex', userSectionRef);
+    welcomeMessageRef.innerHTML = '';
+    userNameRef.value = '';
+    userNameRef.focus();
 }
 
 
