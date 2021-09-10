@@ -42,6 +42,7 @@ const optionsContainerRef = Array.from(document.querySelectorAll('.options-conta
 // Question screen menu
 const questionsScreenMenuRef = document.querySelector('#questions-screen-menu');
 const resetGameRef = document.querySelector('#reset-game');
+const endGameRef = document.querySelector('#end-game');
 
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
