@@ -390,7 +390,7 @@ body {
     display: none;
     flex-direction: column;
     height: 100vh;
-    background-color: rgba(159, 35, 35, 0.8);
+    background-color: var(--red);
     color: var(--white);
     justify-content: space-evenly;
 }
