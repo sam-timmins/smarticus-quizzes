@@ -123,7 +123,7 @@ const openQuestionMenu = () => {
 }
 
 /**
- * 
+ * Closes the question screen menu and continues the users game
  */
 const closeQuestionScreenMenu = () => {
     handleScreenDisplay('none', questionsScreenMenuRef);
