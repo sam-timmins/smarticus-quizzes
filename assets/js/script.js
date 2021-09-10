@@ -400,6 +400,9 @@ const resetCounters = () => {
     currentQuestion = {};
 }
 
+// Header
+logoRef.addEventListener('click', userFormOpen);
+
 // User Form
 userFormRef.addEventListener('submit', handleUserFormSubmit);
 
