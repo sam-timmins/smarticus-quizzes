@@ -23,6 +23,7 @@
         14.1 Questions Screen
         14.2 Results Screen
         14.3 Main Category Grid
+    15. Keyframes
 */
 
 
@@ -221,28 +222,6 @@ body {
     animation: 1s bounce forwards;
 }
 
-@keyframes bounce {
-    0% {
-        top: 0px;
-    }
-    20% {
-        top: 4px;
-    }
-    40% {
-        top: -2px;
-    }
-    60% {
-        top: 4px;
-    }
-    80% {
-        top: -2px;
-    }
-    100% {
-        top: 0px;
-    }
-}
-
-
 /* 8. Questions Screen */ 
 
 #questions {
@@ -354,13 +333,6 @@ body {
 
 .spin-loader-vanish{
     animation: vanish 1s forwards;
-}
-
-@keyframes vanish {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
 }
 
 /* 10. Footer */
@@ -536,5 +508,36 @@ body {
 /* 14.3 Main Category Grid */
     #main-category-grid div p, #main-category-grid div i {
         font-size: 4rem;
+    }
+}
+
+/* 15. Keyframes */
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: 4px;
+    }
+    40% {
+        top: -2px;
+    }
+    60% {
+        top: 4px;
+    }
+    80% {
+        top: -2px;
+    }
+    100% {
+        top: 0px;
     }
 }
