@@ -384,6 +384,17 @@ body {
     text-align: center;
 }
 
+/* 12. Question Screen Menu */
+
+#questions-screen-menu {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(159, 35, 35, 0.8);
+    color: var(--white);
+    justify-content: space-evenly;
+}
+
 /*  12. >=768px (Tablet) */
 
 @media (min-width: 768px) {
