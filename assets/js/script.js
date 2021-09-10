@@ -134,14 +134,20 @@ const closeQuestionScreenMenu = () => {
 }
 
 /**
- * Resets the game using the same catagory
+ * Resets the game using the same catagory with a new set of questions.
+ * Resets the score and questionCounter
  */
 
 const resetGame = () => {
-    handleScreenDisplay('none', questionsScreenMenuRef);
+    resetGameCatagories();
+    handleScreenDisplay('flex', spinLoaderRef);
+    handleScreenDisplay('none', questionsScreenMenuRef); 
+    setTimeout(function(){
+        handleScreenDisplay('none', spinLoaderRef);
+        handleScreenDisplay('flex', questionsScreenRef);
+    },3000)
     score = 0;
     questionCounter = 0;
-
 
 }
 
