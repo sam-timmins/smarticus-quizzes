@@ -152,6 +152,26 @@ const resetGame = () => {
 }
 
 /**
+ * Checks the catagory of the current question and creates a new set of questions
+ * from that catagory
+ */
+const resetGameCatagories = () => {
+    if (currentQuestion.category === 'Sports') {
+        sportsQuestions();
+    } else if (currentQuestion.category === 'Science & Nature') {
+        scienceQuestions();
+    } else if (currentQuestion.category === 'Entertainment: Film') {
+        filmQuestions();
+    } else if (currentQuestion.category === 'History') {
+        historyQuestions();
+    } else if (currentQuestion.category === 'Entertainment: Music') {
+        musicQuestions();
+    } else if (currentQuestion.category === 'Geography') {
+        geographyQuestions();
+    }
+}
+
+/**
  * Changes the css display property of the html property
  * @param {string} displayProperty refers to the display property of the specific html element 
  * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
@@ -321,6 +341,7 @@ const extractData = listOfQuestions => {
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
     getNewQuestion();
+    console.log(availableQuestions);
 }
 
 /**
