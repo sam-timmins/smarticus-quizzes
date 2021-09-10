@@ -4,6 +4,7 @@ const spinLoaderRef = document.querySelector('#spin-loader');
 // Header
 const headerRef = document.querySelector('#header');
 const logoRef = document.querySelector('#logo');
+const headerTextRef = document.querySelector('#header-text');
 
 // User Form
 const userSectionRef = document.querySelector('#user');
