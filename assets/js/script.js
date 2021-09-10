@@ -39,6 +39,9 @@ const categorySelectionRef = document.querySelectorAll('.category');
 const optionsRef = Array.from(document.querySelectorAll('.option-text'));
 const optionsContainerRef = Array.from(document.querySelectorAll('.options-container'));
 
+// Question screen menu
+const questionsScreenMenuRef = document.querySelector('#questions-screen-menu');
+
 // Results screen
 const resultsScreenRef = document.querySelector('#results-screen');
 const resultsButtonRef = document.querySelector('#results-button');
