@@ -93,6 +93,18 @@ const closeResultsScreen = () => {
 }
 
 /**
+ * 
+ */
+const userFormOpen = () => {
+    handleScreenDisplay('none', categoryGridRef);
+    handleScreenDisplay('none', difficultyButtonsRef);
+    handleScreenDisplay('none', headerRef);
+    handleScreenDisplay('none', footerRef);
+    handleScreenDisplay('flex', userSectionRef);
+}
+
+
+/**
  * Changes the css display property of the html property
  * @param {string} displayProperty refers to the display property of the specific html element 
  * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
