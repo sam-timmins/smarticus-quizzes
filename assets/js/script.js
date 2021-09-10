@@ -78,13 +78,18 @@ document.addEventListener('DOMContentLoaded', function() {
  * also resets score and questionCounters
  */
 const closeQuestionSection = () => {
-    handleScreenDisplay('flex', headerRef);
-    handleScreenDisplay('grid', categoryGridRef);
-    handleScreenDisplay('none', questionsScreenRef);
-    handleScreenDisplay('inline', difficultyButtonsRef);
-    handleScreenDisplay('flex', footerRef);
+    handleScreenDisplay('flex', spinLoaderRef);
     handleScreenDisplay('none', questionsScreenMenuRef);
-    resetCounters();
+    setTimeout(function(){
+        handleScreenDisplay('flex', headerRef);
+        handleScreenDisplay('grid', categoryGridRef);
+        handleScreenDisplay('none', questionsScreenRef);
+        handleScreenDisplay('inline', difficultyButtonsRef);
+        handleScreenDisplay('flex', footerRef);
+        handleScreenDisplay('none', questionsScreenMenuRef);
+        handleScreenDisplay('none', spinLoaderRef);
+        resetCounters();
+    },1000)
 }
 
 /**
