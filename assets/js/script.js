@@ -228,8 +228,8 @@ const addCatagoryToQuestionPage = (catagory) => {
 
 /**
  * Using API to generate questions then returns formatted data into the runQuiz function
- * @param number based on the catagory ID number provided by opentdb.com. Changes depending on the
- * catagory.
+ * @param {number} questionId is based on the catagory ID number provided by opentdb.com. Changes depending on the catagory.
+ * @param {string} difficulty is based on the checkbox selected in difficulty()
  */
 const getQuestions = (questionId, difficulty) => {
     fetch(`https://opentdb.com/api.php?amount=15&category=${questionId}&difficulty=${difficulty}&type=multiple`)
