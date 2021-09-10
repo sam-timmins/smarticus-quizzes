@@ -95,12 +95,10 @@ body {
     background-color: var(--grey);
     color: var(--white);
     text-align: center;
-    width: 8rem;
     padding: 1rem;
     border-radius: 5px;
     position: relative;
     font-weight: 100;
-
 }
 
 /* 3.1 Difficulty buttons */ 
@@ -111,6 +109,7 @@ body {
 
 .diff-label {
     margin: auto;
+    width: 8rem;
 }
 
 #difficulty input[type='radio']:checked+label {
