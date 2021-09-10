@@ -443,4 +443,5 @@ geographyQuestionsRef.addEventListener('click', geographyQuestions);
 
 // Question Screen
 questionsMenuRef.addEventListener('click', openQuestionMenu);
+endGameRef.addEventListener('click', closeQuestionSection);
 resultsButtonRef.addEventListener('click', closeResultsScreen);
