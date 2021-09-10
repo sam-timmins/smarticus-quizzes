@@ -133,6 +133,18 @@ const closeQuestionScreenMenu = () => {
 }
 
 /**
+ * Resets the game using the same catagory
+ */
+
+const resetGame = () => {
+    handleScreenDisplay('none', questionsScreenMenuRef);
+    score = 0;
+    questionCounter = 0;
+
+
+}
+
+/**
  * Changes the css display property of the html property
  * @param {string} displayProperty refers to the display property of the specific html element 
  * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
