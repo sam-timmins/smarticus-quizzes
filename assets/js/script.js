@@ -257,6 +257,7 @@ const extractData = listOfQuestions => {
 /**
  * Create a copy of the questions array into availableQuestions and then call the
  * getNewQuestion function
+ * @param {Array} questions is an array populated from the API
  */
 const runQuiz = (questions) => {
     availableQuestions = [...questions];
