@@ -270,7 +270,6 @@ const runQuiz = (questions) => {
  * the question page using the catagory of the current question.
  */
 const getNewQuestion = () => {
-    // If the question counter is greater than the max number of questions
     if (questionCounter >= maxQuestions){
         handleScreenDisplay('flex', resultsScreenRef);
         handleScreenDisplay('none', questionsScreenRef);
@@ -289,11 +288,9 @@ const getNewQuestion = () => {
             // Adds the answers to the html of the options
             for (let i = 0; i < currentQuestion.answer.length; i++){
                 optionsRef[i].innerHTML = currentQuestion.answer[i];
-                }
-            // Removes the current question from the currentQuestions array          
+                }  
             availableQuestions.splice(questionNumber, 1);
             }
-    // Add the question catagory to the question screen
     addCatagoryToQuestionPage(currentQuestion.category);
     // Allows the user to answer a question
     letUserAnswer = true;
@@ -308,7 +305,6 @@ const getNewQuestion = () => {
 
 optionsRef.forEach(option => {
     option.addEventListener('click', event => {
-        // If the user is not alowed to answer, do nothing. 
         if(letUserAnswer === false) return;
         // Prevents user from answering a question
         letUserAnswer = false;
@@ -317,9 +313,7 @@ optionsRef.forEach(option => {
         // If the answer is correct
         if (selectedAnswer == currentQuestion.correctAnswer){
             increaseScore();
-            // Add options-correct class to the selected option
             selectedOption.classList.add('option-correct')
-            // Remove options-correct after 1 second
             setTimeout(function(){
                 selectedOption.classList.remove('option-correct')
                 getNewQuestion()
@@ -330,15 +324,12 @@ optionsRef.forEach(option => {
             for (let i = 0; i < optionsRef.length; i++) {
                 if (optionsRef[i].innerHTML == currentQuestion.correctAnswer){ 
                     optionsRef[i].classList.add('option-correct');
-                    // Remove options-correct to the correct answer after 1 second
                     setTimeout(function(){
                         optionsRef[i].classList.remove('option-correct')
                     }, 1000)
                 }
             }
-            // Add options-incorrect class to the selected option
             selectedOption.classList.add('option-incorrect')
-            // Removes options-incorrect class to the selected option after 1 second
             setTimeout(function(){
                 selectedOption.classList.remove('option-incorrect')
                 getNewQuestion()
@@ -351,9 +342,7 @@ optionsRef.forEach(option => {
  * Increases the score by one
  */
 const increaseScore = () => {
-    // Increments the score by 1
     score++;
-    // Inserts the new score with the max number of questions
     scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
@@ -361,9 +350,7 @@ const increaseScore = () => {
  * Increases the question counter by one
  */
 const increaseQuestionCounter = () => {
-    // Increments the questionCounter by 1
     questionCounter++;
-    // Inserts the new questionCounter value
     questionNumberRef.innerHTML = `Question: ${questionCounter}`;
 }
 
@@ -372,36 +359,28 @@ const increaseQuestionCounter = () => {
  */
 const displayResults = () => {
     handleScreenDisplay('flex', footerRef);
+    
     // Score above or equal to 8
-    // Hard
     if (score >= 8 && difficultyLevel === 'hard'){
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Especially on the hard ones!`;
-    // Medium
     } else if (score >= 8 && difficultyLevel === 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. Go on, now try the hard ones!`;
-    // Easy
     } else if (score >= 8 && difficultyLevel === 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}, you are indeed a Smarticus on ${currentQuestion.category}. But they were only the easy ones!`;
     
     // Score above or equal to 5
-    // Hard
     } else if (score >= 5 && difficultyLevel === 'hard') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Especially on the hard ones!`;
-    // Medium
     } else if (score >= 5 && difficultyLevel === 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Nearly fit for the hard ones!`;
-    // Easy
     } else if (score >= 5 && difficultyLevel === 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}, not bad...icus on ${currentQuestion.category}. Bit more practice maybe!`;
     
     // Score below 5
-    // Hard
     } else if (score < 5 && difficultyLevel === 'hard') {
         resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} is tough, maybe drop it down a notch!`;
-    // Medium
     } else if (score < 5 && difficultyLevel === 'medium') {
         resultsUserRef.innerHTML = `${userNameRef.value}.  ${currentQuestion.category} maybe isn't your best topic but don't give up!`;
-    // Easy
     } else if (score < 5 && difficultyLevel === 'easy') {
         resultsUserRef.innerHTML = `${userNameRef.value}. ${currentQuestion.category} just didn't suit you. Maybe try another topic!`;
     }
