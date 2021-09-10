@@ -84,7 +84,6 @@ body {
     font-weight: 700;
     font-size: 3rem;
     letter-spacing: 2px;
-    cursor: pointer;
 }
 
 .round-button:hover {
@@ -134,12 +133,10 @@ body {
     color: var(--white);
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    cursor: pointer;
 }
 
 .grid-odd {
     justify-content: space-evenly;
-    cursor: pointer;
 }
 
 #welcome-person {
