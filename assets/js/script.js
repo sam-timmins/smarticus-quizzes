@@ -119,7 +119,9 @@ const userFormOpen = () => {
  */
 const openQuestionMenu = () => {
     handleScreenDisplay('flex', questionsScreenMenuRef);
-    handleScreenDisplay('none', questionsScreenRef);
+    setTimeout(function(){
+        handleScreenDisplay('none', questionsScreenRef);
+    },1000)
 }
 
 /**
