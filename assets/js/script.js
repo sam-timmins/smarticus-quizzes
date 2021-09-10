@@ -309,7 +309,7 @@ const getNewQuestion = () => {
 optionsRef.forEach(option => {
     option.addEventListener('click', event => {
         // If the user is not alowed to answer, do nothing. 
-        if(letUserAnswer == false) return;
+        if(letUserAnswer === false) return;
         // Prevents user from answering a question
         letUserAnswer = false;
         const selectedOption = event.target;
