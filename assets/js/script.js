@@ -115,7 +115,7 @@ const userFormOpen = () => {
 }
 
 /**
- * 
+ * Opens the question menu and hides the current game
  */
 const openQuestionMenu = () => {
     handleScreenDisplay('flex', questionsScreenMenuRef);
