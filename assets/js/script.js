@@ -46,13 +46,13 @@ const resultsScoreRef = document.querySelector('#results-score');
 const footerRef = document.querySelector('#developer-name');
 
 // Game variables
-const maxQuestions = 10;
+let difficultyLevel = '';
+let questions = [];
+let availableQuestions = [];
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
-let questions = [];
-let availableQuestions = [];
-let difficultyLevel = '';
+const maxQuestions = 10;
 let letUserAnswer = false;
 
 /**
