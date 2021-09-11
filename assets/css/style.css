@@ -534,7 +534,6 @@ body {
 /* 14.1 Questions Screen */
     #quiz-category, #score {
         font-size: 2.5rem;
-        left: 4rem;
     }
 
     #score {
