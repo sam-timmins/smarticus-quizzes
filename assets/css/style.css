@@ -291,9 +291,9 @@ body {
 
 #question-number {
     position: absolute;
-    top: 4rem;
+    top: 7rem;
     font-size: 2rem;
-    right: 2rem;
+    left: 1.5rem;
 }
 
 /* 8.1 Answer Options */
