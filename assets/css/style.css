@@ -489,6 +489,12 @@ body {
         left: 17rem;
     }
 
+    #quiz-category {
+        font-size: 2rem;
+        top: 1rem;
+        left: auto;
+    }
+
     #score {
         top: 6rem;
         left: auto;
