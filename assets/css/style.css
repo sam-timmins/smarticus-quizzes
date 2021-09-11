@@ -516,6 +516,10 @@ body {
         font-size: 3rem;
     }
 
+    #close-questions-screen-menu {
+        right: 3rem;
+    }
+
 /* 13.4 Difficulty buttons */
     .diff-label {
         display: flex;
