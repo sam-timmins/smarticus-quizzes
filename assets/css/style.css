@@ -587,3 +587,17 @@ body {
         right: 0;
     }
 }
+
+.fade-out {
+    animation: fade-out 0.3s ease-in forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -100vw;
+    }
+}
