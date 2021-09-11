@@ -345,6 +345,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: var(--grey);
+    z-index: 1000;
 }
 
 .spin-loader-vanish{
