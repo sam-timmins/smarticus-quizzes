@@ -23,8 +23,8 @@
 
     <!--Header section -->
     <header id="header">
-        <i class="fab fa-think-peaks pointer" id="logo"></i>
-        <p class="header-text pointer" id="header-text">Smarticus</p>
+        <i class="fab fa-think-peaks pointer" id="logo" aria-label="Returns to the opening screen"></i>
+        <p class="header-text pointer" id="header-text" aria-label="Returns to the opening screen">Smarticus</p>
     </header>
 
     <!-- User form section -->
@@ -33,7 +33,7 @@
         <form class="center-all" id="user-form" autocomplete="off">
             <label for="user-name">Enter your nickname and then lets have the craic!!</label>
             <input type="text" name="user-name" id="user-name" aria-label="Enter your name (required)" required>
-            <button id="user-submit" class="round-button" aria-label="Link to the catagories screen (opens in the same tab)">
+            <button id="user-submit" class="round-button" aria-label="Opens the catagories screen to play the quiz">
                 <i class="fas fa-arrow-right"></i>
             </button>
         </form>
@@ -47,32 +47,32 @@
             <p>Pick a category</p>
         </div>
         <!-- Chooses the quiz catagories -->
-        <div id="categorySports" class="center-all pointer grid-even category-grid-item2" aria-label="Link to sports questions (opens in the same tab)">
+        <div id="categorySports" class="center-all pointer grid-even category-grid-item2" aria-label="Play our sports quiz">
             <i class="fas fa-dumbbell"></i>
             <p>Sports</p>
         </div>
 
-        <div id="categoryScience" class="center-all pointer grid-odd category-grid-item3" aria-label="Link to science questions (opens in the same tab)">
+        <div id="categoryScience" class="center-all pointer grid-odd category-grid-item3" aria-label="Play our science quiz">
             <i class="fas fa-atom"></i>
             <p>Science</p>
         </div>
 
-        <div id="categoryFilm" class="center-all pointer grid-even category-grid-item4" aria-label="Link to film questions (opens in the same tab)">
+        <div id="categoryFilm" class="center-all pointer grid-even category-grid-item4" aria-label="Play our film quiz">
             <i class="fas fa-video"></i>
             <p>Film</p>
         </div>
 
-        <div id="categoryHistory" class="center-all pointer grid-odd category-grid-item5" aria-label="Link to history questions (opens in the same tab)">
+        <div id="categoryHistory" class="center-all pointer grid-odd category-grid-item5" aria-label="Play our history quiz">
             <i class="fab fa-fort-awesome"></i>
             <p>History</p>
         </div>
 
-        <div id="categoryMusic" class="center-all pointer grid-even category-grid-item6" aria-label="Link to music questions (opens in the same tab)">
+        <div id="categoryMusic" class="center-all pointer grid-even category-grid-item6" aria-label="Play our music quiz">
             <i class="fas fa-music"></i>
             <p>Music</p>
         </div>
 
-        <div id="categoryGeography" class="center-all pointer grid-odd category-grid-item7" aria-label="Link to geography questions (opens in the same tab)">
+        <div id="categoryGeography" class="center-all pointer grid-odd category-grid-item7" aria-label="Play our geography quiz">
             <i class="fas fa-globe-europe"></i>
             <p>Geography</p>
         </div>
@@ -80,7 +80,7 @@
 
     <!-- Question Section -->
     <section id="questions" class="center-all">
-        <p id="questions-menu" class="pointer">
+        <p id="questions-menu" class="pointer" aria-label="Opens the reset and end game menu">
             <i class="fas fa-bars"></i>
         </p>
         <!-- Quiz catagory populated in script.js addCatagoryToQuestionPage() -->
@@ -95,32 +95,32 @@
         <!-- Option text populated in script.js getNewQuestion() -->
         <div class="options-container pointer">
             <p class="option">A</p>
-            <p class="option-text" aria-label="Option a (selects option a)"></p>
+            <p class="option-text" aria-label="Option a"></p>
         </div>
 
         <div class="options-container pointer">
             <p class="option">B</p>
-            <p class="option-text"  aria-label="Option b (selects option b)"></p>
+            <p class="option-text"  aria-label="Option b"></p>
         </div>
 
         <div class="options-container pointer">
             <p class="option">C</p>
-            <p class="option-text" aria-label="Option c (selects option c)"></p>
+            <p class="option-text" aria-label="Option c"></p>
         </div>
 
         <div class="options-container pointer">
             <p class="option">D</p>
-            <p class="option-text"  aria-label="Option d (selects option d)"></p>
+            <p class="option-text"  aria-label="Option d"></p>
         </div>
     </section>
 
     <!-- Question screen pop out menu -->
     <section id="questions-screen-menu" class="center-all">
-        <p id="close-questions-screen-menu" class= "center-all pointer">
+        <p id="close-questions-screen-menu" class= "center-all pointer" aria-label="Closes the reset and end game menu">
             <i class="fas fa-times"></i>
         </p>
-        <p id="reset-game" class="pointer square-button menu-button">Reset Game</p>
-        <p id="end-game" class="pointer square-button menu-button">End Game</p>
+        <p id="reset-game" class="pointer square-button menu-button" aria-label="Resets the game with the same catagory of questions">Reset Game</p>
+        <p id="end-game" class="pointer square-button menu-button" aria-label="Ends the game and returns to the catagories scren">End Game</p>
     </section>
 
     <!-- Results screen section -->
@@ -132,7 +132,7 @@
         <p id="results-user"></p>
         <!-- User's results from the game populated in script.js increaseScore() -->
         <p id="results-score"></p>
-        <button id="results-button" class="round-button pointer" aria-label="Link to the catagories screen (opens in the same tab)">
+        <button id="results-button" class="round-button pointer" aria-label="Opens the catagories screen">
             <i class="fas fa-arrow-right"></i>
         </button>
     </section>
