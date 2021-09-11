@@ -133,11 +133,17 @@ const userFormOpen = () => {
 }
 
 /**
- * Closes the question screen menu and continues the users game
+ * Closes the question screen menu by adding class fade-out and continues the users game
+ * then removes the fade-out class when the menu is closed
  */
-const closeQuestionScreenMenu = () => {
-    handleScreenDisplay('none', questionsScreenMenuRef);
-    handleScreenDisplay('flex', questionsScreenRef);
+ const closeQuestionScreenMenu = () => {
+    questionsScreenMenuRef.classList.add('fade-out');
+    questionsScreenRef.classList.add('fade-in')
+    setTimeout(function(){
+        handleScreenDisplay('none', questionsScreenMenuRef);
+        handleScreenDisplay('flex', questionsScreenRef);
+        questionsScreenMenuRef.classList.remove('fade-out');
+    },300)
 }
 
 /**
