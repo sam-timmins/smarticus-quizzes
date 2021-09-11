@@ -562,6 +562,10 @@ body {
         top: 2rem;
     }
 
+    #close-questions-screen-menu {
+        right: 4rem;
+    }
+
 /* 14.2 Results Screen */
     #results-screen h2 {
         font-size: 8rem;
