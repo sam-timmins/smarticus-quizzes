@@ -484,6 +484,11 @@ body {
     }
 
 /* 13.3 Questions Screen */
+    #question-number {
+        top: 10rem;
+        left: 17rem;
+    }
+
     #question {
         padding: 5rem 6rem;
     }
