@@ -559,7 +559,7 @@ After writing the code then committing and pushing it to GitHub, this project wa
 * Then select 'Pages' on the side navigation.
 * Select the 'None' dropdown, and then click 'master'.
 * Click on the 'Save' button.
-* Now the website is now live on [sam-timmins.github.io/smarticus-quizzes/](sam-timmins.github.io/smarticus-quizzes/ "Smarticus Quizzes")
+* Now the website is now live on [https://sam-timmins.github.io/smarticus-quizzes/](https://sam-timmins.github.io/smarticus-quizzes/ "Smarticus Quizzes")
 * If any changes are required, they can be done, committed and pushed to GitHub and the changes will be updated.
 
 \
