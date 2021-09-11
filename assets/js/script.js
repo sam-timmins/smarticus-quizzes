@@ -121,12 +121,14 @@ const userFormOpen = () => {
 }
 
 /**
- * Opens the question menu and hides the current game
+ * Opens the question menu by adding class fade-in and hides the current game. When 
+ * the menu is open the fade-in class is removed
  */
-const openQuestionMenu = () => {
+ const openQuestionMenu = () => {
+    questionsScreenMenuRef.classList.add('fade-in');
     handleScreenDisplay('flex', questionsScreenMenuRef);
     setTimeout(function(){
-        handleScreenDisplay('none', questionsScreenRef);
+        questionsScreenMenuRef.classList.remove('fade-in')
     },300)
 }
 
