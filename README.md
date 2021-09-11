@@ -361,12 +361,18 @@ The score is then displayed beneath the category. The format is 'correct answers
 
 The question number displays to the user how many questions have been asked. This increments for every time that the user get presented with a new question.
 
-The hamburger is located in the top right corner of the screen. This opens a menu that offers the user three options.
-    * 1 - 
- out of the current set of quiz questions and returns to the personalised categories screen. It also resets the user's score and the question number.
+The hamburger is located in the top right corner of the screen. This slides open a menu that offers the user three options.
+* 1 - To close the menu and continue playing the game that is in progress.
+* 2 - To reset the game using the same category but new questions.
+* 3 - To exit out from the game and return back to the personalised catagories screen.
 
+The two button, again continue the style of the game with the hover effects and animations. The close icon is clean and performs the action that the user would expect.
 
-
+\
+&nbsp;
+![Correct Answer](wireframes/hamburger-menu.gif)
+\
+&nbsp;
 
 The question is populated using the API and is set to a larger font than the rest of the screen, for clarity to the user.
 
@@ -475,10 +481,13 @@ Also, a countdown timer could be included. The only drawback to this would be li
 &nbsp;
 
 # Testing
-## Layout
-During the building of the quiz, I changed my design layout slightly from my initial wireframes design. I felt that the inclusion of a footer restricted the user’s ability to quickly and cleanly play the game. Instead of all the option boxes being within the screen height, the user would have had to scroll to see option D. Along with being able to include the __Smarticus__ name on every page so the user doesn't lose contact, I felt that it was a correct design choice to omit the footer.
+
+## Layout and Content
+With one of the user's goals being 'Visually appealing, not cluttered with information or images', I changed my design layout slightly from my initial wireframes design. I felt that the inclusion of a footer on all pages restricted the user’s ability to quickly and cleanly play the game. On the questions page, instead of all the option boxes being within the screen height, the user would have had to scroll to see option D. Along with being able to include the __Smarticus__ name on every page so the user doesn't lose contact with the site owner, I felt that it was a correct design choice to omit the footer on the question page. 
 
 In relation to responsive design, in my initial planning stages, I thought that a final responsive screen size of min-width 992px would be sufficient, however, the layout did not suit extra-large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
+
+Another user goal, was that the game had to be easily navigated around. This has easily been accomplished. The inclusion of the hamburger menu within the question screen and simple, clean and distinct buttons throughout the game allow the user to navigate and transition smoothly with no confusion as to where they could end up.
 
 Occasionally, using the API to generate questions, a long answer was generated. This caused the option boxes to have the text spill over and on some occasions lose the text outside of the 100vh that I had wanted to keep to hit the single page format goal. A change of stying of the options container's heights to auto solved this issue, along with the use of display flex and justify-content, space-evenly on their parent. 
 
@@ -494,7 +503,7 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 The third recommendation was that there should be a question counter added to the game screen. The testing team noted that they would like to know how many questions that they had answered throughout the game. As this information was already being captured as the questionCounter, this was a simple addition to the screen.
 
-The initial score layout I had was not clear either. I had the layout set up as "3 of 10". This was not clear to the user. Instead of a simple glance and instantly see what it referred to, there was some working out to it. The addition of the word 'Score' and a more generic score layout solved this.
+The initial score layout I had was not clear either. With this being a key user goal, 'Rating on performance', it needed to be clear and obvious. I had the layout set up as "3 of 10". This was not clear to the user. Instead of a simple glance and instantly see what it referred to, there was some working out to it. A more standardised layout of the score and the addition of the word 'Score' solved this.
 
 \
 &nbsp;
@@ -503,6 +512,8 @@ The initial score layout I had was not clear either. I had the layout set up as 
 &nbsp;
 
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially, I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however, it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidance I added it to the head section of the Html and it worked perfectly.
+
+Finally, the 'Medium standard of difficulty for the questions' user goal was accomplised and even bettered. With addition of the difficulty buttons, the user not only has the option of a medium standard of questions, but can also choose higher or lower difficulty.
 
 \
 &nbsp;
