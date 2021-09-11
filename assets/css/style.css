@@ -574,12 +574,16 @@ body {
     }
 }
 
+.fade-in {
+    animation: fade-in 0.3s ease-in forwards;
+}
+
 @keyframes fade-in {
     0% {
-        opacity: 0;
+        right: -100vw;
     }
 
     100% {
-        opacity: 1;
+        right: 0;
     }
 }
