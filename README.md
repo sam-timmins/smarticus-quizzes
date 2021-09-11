@@ -38,7 +38,7 @@ Smarticus is an online quiz that allows the user to select from several categori
         * [Languages](#languages)
         * [Tools and Libraries](#tools-and-libraries)
     * [Testing](#testing)
-        * [Layout](#layout)
+        * [Layout and Content](#layout-and-content)
         * [JavaScript](#javascript)
         * [Unfixed Bugs](#unfixed-bugs)
     * [Deployment](#deployment)
@@ -115,7 +115,7 @@ The colours use are explained from left to right:
 \
 &nbsp;
 
-During the building of the quiz, I realised that I required colour to indicate if a correct answer was submitted. I will go into more detail about this in the [testing section](#testing). I again used [Colourmind](http://colormind.io/) and using my existing pallet to gain a complementary green.
+During the building of the quiz, I realised that I required colour to indicate if a correct answer was submitted. I will go into more detail about this in the [testing section](#testing). I again used [Colourmind](http://colormind.io/) and using my existing pallet to gain a complimentary green.
 \
 &nbsp;
 * #51855f (green) This will show when the user has selected a correct answer.
@@ -260,7 +260,7 @@ Under the site owners name is a small amount of text giving simple instruction t
 
 This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories. Both the logo and the text act as a link back to the Welcome Screen and have a cursor set to pointer for a visual aid to the user. 
 
-The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level. When the game is initially loaded, the default difficulty is set to 'Easy'. This is highlighted by the box-shadow effect that is present on the other buttons across the game, when the user changes difficulty. Along with the bounce animation to match the other buttons, the shadow efect is on the hover state to indicate to the user that it can be changed.
+The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level. When the game is initially loaded, the default difficulty is set to 'Easy'. This is highlighted by the box-shadow effect that is present on the other buttons across the game when the user changes difficulty. Along with the bounce animation to match the other buttons, the shadow effect is on the hover state to indicate to the user that it can be changed.
 
 * *Difficulty buttons in their hover state*
 \
@@ -304,7 +304,7 @@ The categories are clean and clear with their description and are also helped vi
 
 To increase user experience, rather than just the text having to be clicked for the user to progress to the chosen category, the whole colour block it sits in carries out this function. This allows the user not to have to be as precise with their actions.
 
-Also situated at the very bottom of the screen in the form of a footer, is the developers name.  
+Also situated at the very bottom of the screen in the form of a footer, is the developer's name.  
 \
 &nbsp;
 
@@ -334,7 +334,7 @@ Also situated at the very bottom of the screen in the form of a footer, is the d
 
 ### Question Screen 
 
-As mentioned earlier, the spin loader screen initially appears every time the user opens up the question screen while the questions are loading, details on this are in the [spin loader](#spin-loader) section of existing features.
+As mentioned earlier, the spin loader screen initially appears every time the user opens up the question screen while the questions are loading, details on this area in the [spin loader](#spin-loader) section of existing features.
 
 This screen is the main game screen. It is sectioned into 3 areas:
 * Quiz progress details 
@@ -364,9 +364,9 @@ The question number displays to the user how many questions have been asked. Thi
 The hamburger is located in the top right corner of the screen. This slides open a menu that offers the user three options.
 * 1 - To close the menu and continue playing the game that is in progress.
 * 2 - To reset the game using the same category but new questions.
-* 3 - To exit out from the game and return back to the personalised catagories screen.
+* 3 - To exit out from the game and return back to the personalised categories screen.
 
-The two button, again continue the style of the game with the hover effects and animations. The close icon is clean and performs the action that the user would expect.
+The two buttons, again continue the style of the game with the hover effects and animations. The close icon is clean and performs the action that the user would expect.
 
 \
 &nbsp;
@@ -376,7 +376,7 @@ The two button, again continue the style of the game with the hover effects and 
 
 The question is populated using the API and is set to a larger font than the rest of the screen, for clarity to the user.
 
-The answers are designed to be as simple to look at as possible, but also pack in enough information as needed. There is an option identification, A, B, C and D and these are in contrast colours to the actual answer itself. The curser is also set to a pointer for user experience of larger screen sizes.
+The answers are designed to be as simple to look at as possible, but also pack in enough information as needed. There is an option identification, A, B, C and D and these are in contrast colours to the actual answer itself. The curser is also set to a pointer for the user experience of larger screen sizes.
 
 If the answer selected is correct, the option selected flashes green before moving to the next question in the category.
 
@@ -406,7 +406,7 @@ The results screen has very little content, except the essentials.
 
 The site owners name and logo continue with the rest of the screens and is pronounced and clear at the top of the page.
 
-The text feedback uses the username to personalise the final message and also adds in the category that was last attempted. There are nine different messages to the user depending on the results and which difficulty level they  are playing under. Here are an example of some of the screns.
+The text feedback uses the username to personalise the final message and also adds in the category that was last attempted. There are nine different messages to the user depending on the results and which difficulty level they are playing under. Here is an example of some of the screens.
 
 * Less than 5 out of 10
 
@@ -428,7 +428,7 @@ The text feedback uses the username to personalise the final message and also ad
 
 The final score follows the feedback comment. This is simply just a copy of the score from the question screen and displayed clearly for the user to see.
 
-The return button is the same in design as the welcome screen button to keep consistency across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user to the personalised categories screen and secondly it resets the game ready for another round.
+The return button is the same in design as the welcome screen button to keep consistency across the game. It also includes the animation while the user hovers over it, as seen in the [Welcome Screen](#welcome-screen). This button has a dual purpose, firstly it returns the user to the personalised categories screen and secondly, it resets the game ready for another round.
 
 \
 &nbsp;
@@ -487,7 +487,7 @@ With one of the user's goals being 'Visually appealing, not cluttered with infor
 
 In relation to responsive design, in my initial planning stages, I thought that a final responsive screen size of min-width 992px would be sufficient, however, the layout did not suit extra-large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
 
-Another user goal, was that the game had to be easily navigated around. This has easily been accomplished. The inclusion of the hamburger menu within the question screen and simple, clean and distinct buttons throughout the game allow the user to navigate and transition smoothly with no confusion as to where they could end up.
+Another user goal was that the game had to be easily navigated around. This has easily been accomplished. The inclusion of the hamburger menu within the question screen and simple, clean and distinct buttons throughout the game allow the user to navigate and transition smoothly with no confusion as to where they could end up.
 
 Occasionally, using the API to generate questions, a long answer was generated. This caused the option boxes to have the text spill over and on some occasions lose the text outside of the 100vh that I had wanted to keep to hit the single page format goal. A change of stying of the options container's heights to auto solved this issue, along with the use of display flex and justify-content, space-evenly on their parent. 
 
@@ -503,7 +503,7 @@ A second suggestion that was fed back to me during testing was a simple thing to
 
 The third recommendation was that there should be a question counter added to the game screen. The testing team noted that they would like to know how many questions that they had answered throughout the game. As this information was already being captured as the questionCounter, this was a simple addition to the screen.
 
-The initial score layout I had was not clear either. With this being a key user goal, 'Rating on performance', it needed to be clear and obvious. I had the layout set up as "3 of 10". This was not clear to the user. Instead of a simple glance and instantly see what it referred to, there was some working out to it. A more standardised layout of the score and the addition of the word 'Score' solved this.
+The initial score layout I had was not clear either. With this being a key user goal, 'Rating on performance', it needed to be clear and obvious. I had the layout set up as "3 of 10". This was not clear to the user. Instead of a simple glance and instantly see what is referred to, there was some working out to it. A more standardised layout of the score and the addition of the word 'Score' solved this.
 
 \
 &nbsp;
@@ -513,7 +513,7 @@ The initial score layout I had was not clear either. With this being a key user 
 
 An issue I didn't realise that I had until I opened the quiz on Google Chrome following deployment, rather than through the Gitpod terminal, was that the favicon was not showing. Initially, I had learnt that just putting it into the root folder would ensure that it showed up in on the tab, however, it didn't appear, so using [W3C](https://www.w3.org/2005/10/howto-favicon "W3C") as guidance I added it to the head section of the Html and it worked perfectly.
 
-Finally, the 'Medium standard of difficulty for the questions' user goal was accomplised and even bettered. With addition of the difficulty buttons, the user not only has the option of a medium standard of questions, but can also choose higher or lower difficulty.
+Finally, the 'Medium standard of difficulty for the questions' user goal was accomplished and even bettered. With the addition of the difficulty buttons, the user not only has the option of a medium standard of questions but can also choose a higher or lower difficulty.
 
 \
 &nbsp;
