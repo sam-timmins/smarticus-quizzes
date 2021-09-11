@@ -486,7 +486,7 @@ body {
 /* 13.3 Questions Screen */
     #question-number {
         top: 10rem;
-        left: 17rem;
+        right: auto;
     }
 
     #quiz-category {
