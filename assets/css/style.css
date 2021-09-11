@@ -261,7 +261,7 @@ body {
     top: 1rem;
     right: 1.5rem;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -488,7 +488,7 @@ body {
 /* 14.3 Questions Screen */
     #question-number {
         top: 10rem;
-        right: auto;
+        left: auto;
     }
 
     #quiz-category {
