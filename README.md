@@ -258,7 +258,7 @@ Under the site owners name is a small amount of text giving simple instruction t
 
 ### Quiz Category Screen
 
-This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories. 
+This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories. Both the logo and the text act as a link back to the Welcome Screen and have a cursor set to pointer for a visual aid to the user. 
 
 The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level. When the game is initially loaded, the default difficulty is set to 'Easy'. This is highlighted by the box-shadow effect that is present on the other buttons across the game, when the user changes difficulty, the shadow effect reflects this.
 
