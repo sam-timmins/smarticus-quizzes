@@ -489,6 +489,11 @@ body {
         left: 17rem;
     }
 
+    #score {
+        top: 6rem;
+        left: auto;
+    }
+
     #question {
         padding: 5rem 6rem;
     }
