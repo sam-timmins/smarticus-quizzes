@@ -446,6 +446,10 @@ body {
         line-height: 4rem;
         padding: 1rem 6rem;
     }
+
+    #questions-menu {
+        right: 2rem;
+    }
 }
 
 /* 13. >=992px (Desktop) */
