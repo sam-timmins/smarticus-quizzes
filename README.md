@@ -483,6 +483,13 @@ Also, a countdown timer could be included. The only drawback to this would be li
 # Testing
 
 ## Layout and Content
+
+My results from the lighthouse in devtools are below. With no errors inmy CSS or HTML when passed through the validators mentioned in the [tools](#tools) section.
+
+![Lighthouse](wireframes/lighthouse.jpg)
+\
+&nbsp;
+
 With one of the user's goals being 'Visually appealing, not cluttered with information or images', I changed my design layout slightly from my initial wireframes design. I felt that the inclusion of a footer on all pages restricted the user’s ability to quickly and cleanly play the game. On the questions page, instead of all the option boxes being within the screen height, the user would have had to scroll to see option D. Along with being able to include the __Smarticus__ name on every page so the user doesn't lose contact with the site owner, I felt that it was a correct design choice to omit the footer on the question page. 
 
 In relation to responsive design, in my initial planning stages, I thought that a final responsive screen size of min-width 992px would be sufficient, however, the layout did not suit extra-large screens of greater than or equal to 1200px so I added an extra media query to the design, this was a very little extra work for a big gain for larger screen users.
