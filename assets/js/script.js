@@ -64,6 +64,66 @@ let questionCounter = 0;
 const maxQuestions = 10;
 let letUserAnswer = false;
 
+
+/**
+ * Changes the css display property of the html property
+ * @param {string} displayProperty refers to the display property of the specific html element 
+ * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
+ */
+ const handleScreenDisplay = (displayProperty, htmlRef) => {
+    switch (displayProperty) {
+        case 'none':
+            htmlRef.style.display = 'none';
+            break;
+        case 'flex':
+            htmlRef.style.display = 'flex';
+            break;
+        case 'grid':
+            htmlRef.style.display = 'grid';
+            break;
+        case 'inline':
+            htmlRef.style.display = 'inline';
+            break;
+        default: 
+            console.log('Display not recognised');
+        break
+    }
+}
+
+/**
+ * Create the difficulty of the game depending on a selected radio button
+ * by the user
+ */
+ const difficulty = () => {
+    if (easyRef.checked){
+        difficultyLevel = 'easy';
+    } else if (mediumRef.checked) {
+        difficultyLevel = 'medium';
+    } else if (hardRef.checked) {
+        difficultyLevel = 'hard';
+    }
+}
+
+/**
+ * Checks the catagory of the current question and creates a new set of questions
+ * from that catagory
+ */
+ const resetGameCatagories = () => {
+    if (currentQuestion.category === 'Sports') {
+        sportsQuestions();
+    } else if (currentQuestion.category === 'Science & Nature') {
+        scienceQuestions();
+    } else if (currentQuestion.category === 'Entertainment: Film') {
+        filmQuestions();
+    } else if (currentQuestion.category === 'History') {
+        historyQuestions();
+    } else if (currentQuestion.category === 'Entertainment: Music') {
+        musicQuestions();
+    } else if (currentQuestion.category === 'Geography') {
+        geographyQuestions();
+    }
+}
+
 /**
  * Shows spin loader until DOM is loaded then displays the user form
  */
@@ -72,6 +132,54 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScreenDisplay('flex', userSectionRef);
     userNameRef.focus();
 })
+
+/**
+ * Opens the opening user form at the begining of the game. Resets the
+ * previous entries and focuses the text box
+ */
+ const userFormOpen = () => {
+    handleScreenDisplay('none', categoryGridRef);
+    handleScreenDisplay('none', difficultyButtonsRef);
+    handleScreenDisplay('none', headerRef);
+    handleScreenDisplay('none', footerRef);
+    handleScreenDisplay('flex', userSectionRef);
+    welcomeMessageRef.innerHTML = '';
+    userNameRef.value = '';
+    userNameRef.focus();
+}
+
+/**
+ * Logs the name of the user from user-form and then closes the user-form, 
+ * adds name to the welcome box and opens catagory grid.
+ */
+ const handleUserFormSubmit = event => {
+    event.preventDefault();
+    welcomeMessageRef.innerHTML = `Hi ${userNameRef.value}!`;   
+    handleScreenDisplay('none', userSectionRef);
+    handleScreenDisplay('grid', categoryGridRef);
+    handleScreenDisplay('flex', headerRef);
+    handleScreenDisplay('inline', difficultyButtonsRef);
+    handleScreenDisplay('flex', footerRef);
+}
+
+/**
+ * Opens question and answer box, closes the catagories grid, adds the catagory name 
+ * into the title. Displays the initial score until over written by increaseScore(). 
+ */
+ const handleQuestionScreen = () => {
+    handleScreenDisplay('flex', spinLoaderRef);
+    handleScreenDisplay('none', categoryGridRef);
+    handleScreenDisplay('none', headerRef);
+    handleScreenDisplay('none', difficultyButtonsRef);
+    handleScreenDisplay('none', footerRef);
+    difficulty();
+    // Closes spin loader and opens question screen after 3 seconds
+    setTimeout(function(){
+        handleScreenDisplay('flex', questionsScreenRef);
+        scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
+        handleScreenDisplay('none', spinLoaderRef);
+    }, 3000)
+}
 
 /**
  * Close the questions section and returns to the catagory grid, 
@@ -106,21 +214,6 @@ const closeResultsScreen = () => {
 }
 
 /**
- * Opens the opening user form at the begining of the game. Resets the
- * previous entries and focuses the text box
- */
-const userFormOpen = () => {
-    handleScreenDisplay('none', categoryGridRef);
-    handleScreenDisplay('none', difficultyButtonsRef);
-    handleScreenDisplay('none', headerRef);
-    handleScreenDisplay('none', footerRef);
-    handleScreenDisplay('flex', userSectionRef);
-    welcomeMessageRef.innerHTML = '';
-    userNameRef.value = '';
-    userNameRef.focus();
-}
-
-/**
  * Opens the question menu by adding class fade-in and hides the current game. When 
  * the menu is open the fade-in class is removed
  */
@@ -151,7 +244,7 @@ const userFormOpen = () => {
  * Resets the score and questionCounter
  */
 
-const resetGame = () => {
+ const resetGame = () => {
     resetGameCatagories();
     handleScreenDisplay('flex', spinLoaderRef);
     handleScreenDisplay('none', questionsScreenMenuRef); 
@@ -161,99 +254,6 @@ const resetGame = () => {
     },3000)
     score = 0;
     questionCounter = 0;
-
-}
-
-/**
- * Checks the catagory of the current question and creates a new set of questions
- * from that catagory
- */
-const resetGameCatagories = () => {
-    if (currentQuestion.category === 'Sports') {
-        sportsQuestions();
-    } else if (currentQuestion.category === 'Science & Nature') {
-        scienceQuestions();
-    } else if (currentQuestion.category === 'Entertainment: Film') {
-        filmQuestions();
-    } else if (currentQuestion.category === 'History') {
-        historyQuestions();
-    } else if (currentQuestion.category === 'Entertainment: Music') {
-        musicQuestions();
-    } else if (currentQuestion.category === 'Geography') {
-        geographyQuestions();
-    }
-}
-
-/**
- * Changes the css display property of the html property
- * @param {string} displayProperty refers to the display property of the specific html element 
- * @param {HTMLElement} htmlRef refers to the const referance at the top of script.js
- */
-const handleScreenDisplay = (displayProperty, htmlRef) => {
-    switch (displayProperty) {
-        case 'none':
-            htmlRef.style.display = 'none';
-            break;
-        case 'flex':
-            htmlRef.style.display = 'flex';
-            break;
-        case 'grid':
-            htmlRef.style.display = 'grid';
-            break;
-        case 'inline':
-            htmlRef.style.display = 'inline';
-            break;
-        default: 
-            console.log('Display not recognised');
-        break
-    }
-}
-
-/**
- * Create the difficulty of the game depending on a selected radio button
- * by the user
- */
-const difficulty = () => {
-    if (easyRef.checked){
-        difficultyLevel = 'easy';
-    } else if (mediumRef.checked) {
-        difficultyLevel = 'medium';
-    } else if (hardRef.checked) {
-        difficultyLevel = 'hard';
-    }
-}
-
-/**
- * Logs the name of the user from user-form and then closes the user-form, 
- * adds name to the welcome box and opens catagory grid.
- */
-const handleUserFormSubmit = event => {
-    event.preventDefault();
-    welcomeMessageRef.innerHTML = `Hi ${userNameRef.value}!`;   
-    handleScreenDisplay('none', userSectionRef);
-    handleScreenDisplay('grid', categoryGridRef);
-    handleScreenDisplay('flex', headerRef);
-    handleScreenDisplay('inline', difficultyButtonsRef);
-    handleScreenDisplay('flex', footerRef);
-}
-
-/**
- * Opens question and answer box, closes the catagories grid, adds the catagory name 
- * into the title. Displays the initial score until over written by increaseScore(). 
- */
-const handleQuestionScreen = () => {
-    handleScreenDisplay('flex', spinLoaderRef);
-    handleScreenDisplay('none', categoryGridRef);
-    handleScreenDisplay('none', headerRef);
-    handleScreenDisplay('none', difficultyButtonsRef);
-    handleScreenDisplay('none', footerRef);
-    difficulty();
-    // Closes spin loader and opens question screen after 3 seconds
-    setTimeout(function(){
-        handleScreenDisplay('flex', questionsScreenRef);
-        scoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
-        handleScreenDisplay('none', spinLoaderRef);
-    }, 3000)
 }
 
 /**
@@ -447,6 +447,17 @@ const increaseQuestionCounter = () => {
 }
 
 /**
+ * Resets the score, the question counter and all question arrays and objects
+ */
+ const resetCounters = () => {
+    score = 0;
+    questionCounter = 0;
+    questions = [];
+    availableQuestions = [];
+    currentQuestion = {};
+}
+
+/**
  * Adds the username and score to the results screen
  */
 const displayResults = () => {
@@ -479,16 +490,7 @@ const displayResults = () => {
     resultsScoreRef.innerHTML = `Score: ${score} / ${maxQuestions}`;
 }
 
-/**
- * Resets the score, the question counter and all question arrays and objects
- */
-const resetCounters = () => {
-    score = 0;
-    questionCounter = 0;
-    questions = [];
-    availableQuestions = [];
-    currentQuestion = {};
-}
+
 
 // Header
 logoRef.addEventListener('click', userFormOpen);
