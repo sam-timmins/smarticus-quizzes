@@ -260,7 +260,14 @@ Under the site owners name is a small amount of text giving simple instruction t
 
 This screen has the **Smarticus** logo fixed as a permanent header to the page. This being consistent with the site owner's name being present on every screen so the user doesn't lose contact with the owner. It is large enough to be easily read but not too big as to impede the user's view of the categories. Both the logo and the text act as a link back to the Welcome Screen and have a cursor set to pointer for a visual aid to the user. 
 
-The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level. When the game is initially loaded, the default difficulty is set to 'Easy'. This is highlighted by the box-shadow effect that is present on the other buttons across the game, when the user changes difficulty, the shadow effect reflects this.
+The difficulty levels are also placed here, and along with the **Smarticus** logo, they are always in view on this screen so the user doesn't have to scroll back to the top of the page if they decide to change level. When the game is initially loaded, the default difficulty is set to 'Easy'. This is highlighted by the box-shadow effect that is present on the other buttons across the game, when the user changes difficulty. Along with the bounce animation to match the other buttons, the shadow efect is on the hover state to indicate to the user that it can be changed.
+
+* *Difficulty buttons in their hover state*
+\
+&nbsp;
+![Difficulty Buttons](wireframes/difficulty-buttons.gif)
+\
+&nbsp;
 
 * *Header view on initial load of the categories screen*
 \
@@ -342,7 +349,7 @@ The quiz progress details again can be split up into four parts:
 * The category
 * The score
 * The question
-* Close screen icon
+* the hamburger
 
 ![Catagories Screen](wireframes/quiz-screen-details.jpg)
 \
@@ -352,9 +359,13 @@ The category, in keeping with the rest of the screens, has **Smarticus** include
 
 The score is then displayed beneath the category. The format is 'correct answers/number of questions asked'. The correct answers increments for each correct answer that is answered by the user and the number of questions is dictated by the developer within the code so stays static on the display itself. 
 
-The close button is located in the top right corner of the screen. This exits out of the current set of quiz questions and returns to the personalised categories screen. It also resets the user's score and the question number.
+The question number displays to the user how many questions have been asked. This increments for every time that the user get presented with a new question.
 
-Finally, the question number displays to the user how many questions have been asked. This increments for every time that the user get presented with a new question.
+The hamburger is located in the top right corner of the screen. This opens a menu that offers the user three options.
+    * 1 - 
+ out of the current set of quiz questions and returns to the personalised categories screen. It also resets the user's score and the question number.
+
+
 
 
 The question is populated using the API and is set to a larger font than the rest of the screen, for clarity to the user.
