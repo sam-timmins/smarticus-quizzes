@@ -411,6 +411,13 @@ body {
     z-index: 1000;
 }
 
+#close-questions-screen-menu {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
+}
+
 /*  12. >=768px (Tablet) */
 
 @media (min-width: 768px) {
